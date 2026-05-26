@@ -2,7 +2,7 @@
 sdl2_animation.c
 Programmed by H. Mitsuhara (May, 2018)
 
-コンパイルオプション（リンク対象）：-lSDL2 -lSDL2_image
+コンパイルオプション（リンク対象）：-lSDL2 -lSDL2_image -lSDL2_mixer
 動作
 　画像が1->2->3->4と1秒おきに表示される
 　Escキーを押すと終了
