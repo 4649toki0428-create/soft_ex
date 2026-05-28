@@ -10,7 +10,7 @@ LDFLAGS =
 LOADLIBES = 
 LDLIBS = -lm -lSDL2 
 # Joy-Conライブラリを利用するときは以下のライブラリを追加
-# LDLIBS = -lm -lSDL2 -ljoyconlib -lhidapi-hidraw 
+LDLIBS = -lm -lSDL2 -ljoyconlib -lhidapi-hidraw 
 
 TARGET = ui3kadai
 OBJS = $(TARGET).o ui3system.o ui3window.o

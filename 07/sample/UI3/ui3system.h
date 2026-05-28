@@ -5,7 +5,7 @@
 #pragma once
 
 #include <SDL2/SDL.h>
-/* #include <joyconlib.h> */
+#include <joyconlib.h>
 
 /* マップサイズ(チップ数) */
 #define MAP_Width 16

@@ -8,6 +8,7 @@
 /* 関数 */
 static Uint32 FrameTimer(Uint32 interval, void* param);
 static SDL_bool InputEvent(void);
+joyconlib_t gJc; //Joy-Conの状態を格納する変数
 
 /* main */
 int main(int argc, char* argv[])
