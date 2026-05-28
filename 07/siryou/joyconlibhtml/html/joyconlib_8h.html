@@ -1,0 +1,1067 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>joyconlib: joyconlib.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">joyconlib
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">joyconlib.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Joy-Conライブラリ ヘッダ  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;hidapi/hidapi.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div>
+<p><a href="joyconlib_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjoycon__btn.html">joycon_btn</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンボタン  <a href="unionjoycon__btn.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoycon__elapsed.html">joycon_elapsed</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ボタンの経過時間  <a href="structjoycon__elapsed.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoycon__homeled.html">joycon_homeled</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ホームボタンのLED設定情報  <a href="structjoycon__homeled.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoycon__stick.html">joycon_stick</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">スティックの位置情報  <a href="structjoycon__stick.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoycon__axis.html">joycon_axis</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">6軸センサー情報  <a href="structjoycon__axis.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコン情報  <a href="structjoyconlib__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoycon__nfc__data.html">joycon_nfc_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NFCデータ  <a href="structjoycon__nfc__data.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoycon__ir__result.html">joycon_ir_result</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IR取得画像の情報  <a href="structjoycon__ir__result.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a80ce5a0c78551e4ac5e6c5a9776b875a"><td class="memItemLeft" align="right" valign="top"><a id="a80ce5a0c78551e4ac5e6c5a9776b875a" name="a80ce5a0c78551e4ac5e6c5a9776b875a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_HOMELED_OFF</b>&#160;&#160;&#160;((<a class="el" href="structjoycon__homeled.html">joycon_homeled</a>*)0x11)</td></tr>
+<tr class="memdesc:a80ce5a0c78551e4ac5e6c5a9776b875a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ホームボタンLED消灯 <br /></td></tr>
+<tr class="separator:a80ce5a0c78551e4ac5e6c5a9776b875a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd4ec324393d6c39c1798cc54862170"><td class="memItemLeft" align="right" valign="top"><a id="a5bd4ec324393d6c39c1798cc54862170" name="a5bd4ec324393d6c39c1798cc54862170"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_HOMELED_ON</b>&#160;&#160;&#160;((<a class="el" href="structjoycon__homeled.html">joycon_homeled</a>*)0x11f0f00f)</td></tr>
+<tr class="memdesc:a5bd4ec324393d6c39c1798cc54862170"><td class="mdescLeft">&#160;</td><td class="mdescRight">ホームボタンLED点灯 <br /></td></tr>
+<tr class="separator:a5bd4ec324393d6c39c1798cc54862170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2856a761ee1f4933facd5f2445ce19de"><td class="memItemLeft" align="right" valign="top"><a id="a2856a761ee1f4933facd5f2445ce19de" name="a2856a761ee1f4933facd5f2445ce19de"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_HOMELED_BLINK</b>&#160;&#160;&#160;((<a class="el" href="structjoycon__homeled.html">joycon_homeled</a>*)0x21f0f00f0f)</td></tr>
+<tr class="memdesc:a2856a761ee1f4933facd5f2445ce19de"><td class="mdescLeft">&#160;</td><td class="mdescRight">ホームボタンLED点滅 <br /></td></tr>
+<tr class="separator:a2856a761ee1f4933facd5f2445ce19de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3539486b8134fb36741aef8318f35589"><td class="memItemLeft" align="right" valign="top"><a id="a3539486b8134fb36741aef8318f35589" name="a3539486b8134fb36741aef8318f35589"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_1_ON</b>&#160;&#160;&#160;(0x01)</td></tr>
+<tr class="memdesc:a3539486b8134fb36741aef8318f35589"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 1 点灯 <br /></td></tr>
+<tr class="separator:a3539486b8134fb36741aef8318f35589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a76b1d88e4434a34a814aad95ffb044"><td class="memItemLeft" align="right" valign="top"><a id="a2a76b1d88e4434a34a814aad95ffb044" name="a2a76b1d88e4434a34a814aad95ffb044"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_2_ON</b>&#160;&#160;&#160;(0x02)</td></tr>
+<tr class="memdesc:a2a76b1d88e4434a34a814aad95ffb044"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 2 点灯 <br /></td></tr>
+<tr class="separator:a2a76b1d88e4434a34a814aad95ffb044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4ac9ce96a36058103680e930319abb"><td class="memItemLeft" align="right" valign="top"><a id="a7d4ac9ce96a36058103680e930319abb" name="a7d4ac9ce96a36058103680e930319abb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_3_ON</b>&#160;&#160;&#160;(0x04)</td></tr>
+<tr class="memdesc:a7d4ac9ce96a36058103680e930319abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 3 点灯 <br /></td></tr>
+<tr class="separator:a7d4ac9ce96a36058103680e930319abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510ed1a02f91d316a3d9c9cfbe093336"><td class="memItemLeft" align="right" valign="top"><a id="a510ed1a02f91d316a3d9c9cfbe093336" name="a510ed1a02f91d316a3d9c9cfbe093336"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_4_ON</b>&#160;&#160;&#160;(0x08)</td></tr>
+<tr class="memdesc:a510ed1a02f91d316a3d9c9cfbe093336"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 4 点灯 <br /></td></tr>
+<tr class="separator:a510ed1a02f91d316a3d9c9cfbe093336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87214611c539678f3ccd009e4c03592b"><td class="memItemLeft" align="right" valign="top"><a id="a87214611c539678f3ccd009e4c03592b" name="a87214611c539678f3ccd009e4c03592b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_1_BLINK</b>&#160;&#160;&#160;(0x10)</td></tr>
+<tr class="memdesc:a87214611c539678f3ccd009e4c03592b"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 1 点滅 <br /></td></tr>
+<tr class="separator:a87214611c539678f3ccd009e4c03592b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05cd7f3235abda3a7e64f8f657591c59"><td class="memItemLeft" align="right" valign="top"><a id="a05cd7f3235abda3a7e64f8f657591c59" name="a05cd7f3235abda3a7e64f8f657591c59"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_2_BLINK</b>&#160;&#160;&#160;(0x20)</td></tr>
+<tr class="memdesc:a05cd7f3235abda3a7e64f8f657591c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 2 点滅 <br /></td></tr>
+<tr class="separator:a05cd7f3235abda3a7e64f8f657591c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac88f5f88f83910fe805f44bd29578800"><td class="memItemLeft" align="right" valign="top"><a id="ac88f5f88f83910fe805f44bd29578800" name="ac88f5f88f83910fe805f44bd29578800"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_3_BLINK</b>&#160;&#160;&#160;(0x40)</td></tr>
+<tr class="memdesc:ac88f5f88f83910fe805f44bd29578800"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 3 点滅 <br /></td></tr>
+<tr class="separator:ac88f5f88f83910fe805f44bd29578800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8c7e097dda6447f02cfb2358589913"><td class="memItemLeft" align="right" valign="top"><a id="aeb8c7e097dda6447f02cfb2358589913" name="aeb8c7e097dda6447f02cfb2358589913"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_LED_4_BLINK</b>&#160;&#160;&#160;(0x80)</td></tr>
+<tr class="memdesc:aeb8c7e097dda6447f02cfb2358589913"><td class="mdescLeft">&#160;</td><td class="mdescRight">led 4 点滅 <br /></td></tr>
+<tr class="separator:aeb8c7e097dda6447f02cfb2358589913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbdc2500082b9407042205b6a35ecb4"><td class="memItemLeft" align="right" valign="top"><a id="a1bbdc2500082b9407042205b6a35ecb4" name="a1bbdc2500082b9407042205b6a35ecb4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_NFC_TYPE_NTAG</b>&#160;&#160;&#160;(0x02)</td></tr>
+<tr class="memdesc:a1bbdc2500082b9407042205b6a35ecb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">NFCタイプ: NTAG <br /></td></tr>
+<tr class="separator:a1bbdc2500082b9407042205b6a35ecb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ff4c9fd7a373f1ec25964ce12ac278"><td class="memItemLeft" align="right" valign="top"><a id="a00ff4c9fd7a373f1ec25964ce12ac278" name="a00ff4c9fd7a373f1ec25964ce12ac278"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>JOYCON_NFC_TYPE_MIFARE</b>&#160;&#160;&#160;(0x04)</td></tr>
+<tr class="memdesc:a00ff4c9fd7a373f1ec25964ce12ac278"><td class="mdescLeft">&#160;</td><td class="mdescRight">NFCタイプ: MIFARE <br /></td></tr>
+<tr class="separator:a00ff4c9fd7a373f1ec25964ce12ac278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a92c50087ca0e64fa93fc59402c55f8ca"><td class="memItemLeft" align="right" valign="top"><a id="a92c50087ca0e64fa93fc59402c55f8ca" name="a92c50087ca0e64fa93fc59402c55f8ca"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>u8</b></td></tr>
+<tr class="memdesc:a92c50087ca0e64fa93fc59402c55f8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">8bit符号無し整数 <br /></td></tr>
+<tr class="separator:a92c50087ca0e64fa93fc59402c55f8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9d960e74685e2cd84b36132dbbf8aa"><td class="memItemLeft" align="right" valign="top"><a id="ace9d960e74685e2cd84b36132dbbf8aa" name="ace9d960e74685e2cd84b36132dbbf8aa"></a>
+typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>u16</b></td></tr>
+<tr class="memdesc:ace9d960e74685e2cd84b36132dbbf8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">16bit符号無し整数 <br /></td></tr>
+<tr class="separator:ace9d960e74685e2cd84b36132dbbf8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa62991928fb9fb18ff0db62a040aba"><td class="memItemLeft" align="right" valign="top"><a id="afaa62991928fb9fb18ff0db62a040aba" name="afaa62991928fb9fb18ff0db62a040aba"></a>
+typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>u32</b></td></tr>
+<tr class="memdesc:afaa62991928fb9fb18ff0db62a040aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">32bit符号無し整数 <br /></td></tr>
+<tr class="separator:afaa62991928fb9fb18ff0db62a040aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7e2bcbb0b4c338f3c4f6c937cd4234"><td class="memItemLeft" align="right" valign="top"><a id="a3f7e2bcbb0b4c338f3c4f6c937cd4234" name="a3f7e2bcbb0b4c338f3c4f6c937cd4234"></a>
+typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>u64</b></td></tr>
+<tr class="memdesc:a3f7e2bcbb0b4c338f3c4f6c937cd4234"><td class="mdescLeft">&#160;</td><td class="mdescRight">64bit符号無し整数 <br /></td></tr>
+<tr class="separator:a3f7e2bcbb0b4c338f3c4f6c937cd4234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e382f207c65ca13ab4ae98363aeda80"><td class="memItemLeft" align="right" valign="top"><a id="a9e382f207c65ca13ab4ae98363aeda80" name="a9e382f207c65ca13ab4ae98363aeda80"></a>
+typedef int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>s8</b></td></tr>
+<tr class="memdesc:a9e382f207c65ca13ab4ae98363aeda80"><td class="mdescLeft">&#160;</td><td class="mdescRight">8bit符号付き整数 <br /></td></tr>
+<tr class="separator:a9e382f207c65ca13ab4ae98363aeda80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa980e2c02ba2305e0f489d5650655425"><td class="memItemLeft" align="right" valign="top"><a id="aa980e2c02ba2305e0f489d5650655425" name="aa980e2c02ba2305e0f489d5650655425"></a>
+typedef int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>s16</b></td></tr>
+<tr class="memdesc:aa980e2c02ba2305e0f489d5650655425"><td class="mdescLeft">&#160;</td><td class="mdescRight">16bit符号付き整数 <br /></td></tr>
+<tr class="separator:aa980e2c02ba2305e0f489d5650655425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b1af5c037e57a98884758875d3a7c4"><td class="memItemLeft" align="right" valign="top"><a id="ae9b1af5c037e57a98884758875d3a7c4" name="ae9b1af5c037e57a98884758875d3a7c4"></a>
+typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>s32</b></td></tr>
+<tr class="memdesc:ae9b1af5c037e57a98884758875d3a7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">32bit符号付き整数 <br /></td></tr>
+<tr class="separator:ae9b1af5c037e57a98884758875d3a7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350c6fc928e3bdc6c6486268ac8fb269"><td class="memItemLeft" align="right" valign="top"><a id="a350c6fc928e3bdc6c6486268ac8fb269" name="a350c6fc928e3bdc6c6486268ac8fb269"></a>
+typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>s64</b></td></tr>
+<tr class="memdesc:a350c6fc928e3bdc6c6486268ac8fb269"><td class="mdescLeft">&#160;</td><td class="mdescRight">64bit符号付き整数 <br /></td></tr>
+<tr class="separator:a350c6fc928e3bdc6c6486268ac8fb269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a7111072c760b1f4dc15cb42f952f3287"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> { <br />
+&#160;&#160;<a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287add11fe0482c65898e1d34b3d2d444429">JOYCON_ERR_NONE</a> = 0
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a00da445dda54f6bb5cbd995771c08951">JOYCON_ERR_INVALID_ARGUMENT</a> = -1
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a31c72be8bc255114e19d6ae06e64e862">JOYCON_ERR_OPEN_FAILED</a> = -2
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287ab46d1562bc0b27707beac371a5546ddb">JOYCON_ERR_WRITE_FAILED</a> = -3
+, <br />
+&#160;&#160;<a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a2bfc6aa91d8940995e18d6cad40337e2">JOYCON_ERR_READ_FAILED</a> = -4
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a50de4d97473497bed66f56694585bb12">JOYCON_ERR_READ_TIMEOUT</a> = -5
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a311a91a0b8f32b882a01c6d15bf81025">JOYCON_ERR_READ_NODATA</a> = -6
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a72badfcc05702586abf50c3b219ed175">JOYCON_ERR_INVALID_TYPE</a> = -7
+, <br />
+&#160;&#160;<a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a8daa22bc8126b6904a76dd4e9ca5bc92">JOYCON_ERR_MCU_1ID31</a> = -11
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287ab4707b8ed906c9dee3670f43f3fe8a1b">JOYCON_ERR_MCU_2MCUON</a> = -12
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287ad0b07f637053648c0d261a1d16c19838">JOYCON_ERR_MCU_3MCUONBUSY</a> = -13
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a3db3de420b35b6e55662f90a993640ea">JOYCON_ERR_MCU_4MCUMODESET</a> = -14
+, <br />
+&#160;&#160;<a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a0bdd8af74b2bc547e1959bd2061ce44f">JOYCON_ERR_MCU_5MCUSETBUSY</a> = -15
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a54ea48612bf3259231c8bee2bf265bc0">JOYCON_ERR_MCU_6NFCPOLL</a> = -16
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a0e0575d1d7b27dcfd5c3d58c7a8f8767">JOYCON_ERR_MCU_NOTAG</a> = -17
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287ab19b6ad1bfd54893990bd5b5459513cb">JOYCON_ERR_MCU_NOTSUPPORTED</a> = -18
+, <br />
+&#160;&#160;<a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a1f86e21ef299a5d5b3f6a06a806d9988">JOYCON_ERR_MCU_READ</a> = -19
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287ac52b5740eb656cb47db3e2123001a8a3">JOYCON_ERR_MCU_IRNOREADY</a> = -21
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a41e5edf80994073b3f80f0f746d9ac9b">JOYCON_ERR_MCU_6IRMODESET</a> = -26
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a0689f000e573cca24597a5ecf4bd63f0">JOYCON_ERR_MCU_7IRSETBUSY</a> = -27
+, <br />
+&#160;&#160;<a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287a9c706c8ad91b5f89595a9f723ff0e2a4">JOYCON_ERR_MCU_8IRCFG</a> = -28
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287abcfe82a7e23ad5b1a3f850ca19c4af22">JOYCON_ERR_MCU_9IRFCFG</a> = -29
+, <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287ace92aaa1cea2f702fa845abfdf36bbf0">JOYCON_ERR_UNKNOWN</a> = -99
+<br />
+ }</td></tr>
+<tr class="memdesc:a7111072c760b1f4dc15cb42f952f3287"><td class="mdescLeft">&#160;</td><td class="mdescRight">エラーコード  <a href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">[詳解]</a><br /></td></tr>
+<tr class="separator:a7111072c760b1f4dc15cb42f952f3287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3608958b81ad42853383a1f50b1e5e4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4d">joycon_type</a> { <a class="el" href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4da87b53ce71d99150fa4c5b186960ecf8b">JOYCON_L</a> = 0x1
+, <a class="el" href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4da7fd6a7ed24799a6d5176a2d8f08b15db">JOYCON_R</a> = 0x2
+ }</td></tr>
+<tr class="memdesc:a3608958b81ad42853383a1f50b1e5e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンタイプ  <a href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4d">[詳解]</a><br /></td></tr>
+<tr class="separator:a3608958b81ad42853383a1f50b1e5e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab028bb976fd284a3abdfacc432c88ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88ee">joycon_ir_resolution</a> { <a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88eeae6e2aa09e75db4916fa08f7869fefeb1">JOYCON_IR320X240</a> = 320
+, <a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88eea95fe23cec7e70d28043776f58dc776e6">JOYCON_IR160X120</a> = 160
+, <a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88eea68c129c6f2b16ad387ca9eb6eb7ea4ff">JOYCON_IR80X60</a> = 80
+, <a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88eea8f455fec7ff72222d1f76f1853c65e68">JOYCON_IR40X30</a> = 40
+ }</td></tr>
+<tr class="memdesc:aab028bb976fd284a3abdfacc432c88ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRカメラ解像度  <a href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88ee">[詳解]</a><br /></td></tr>
+<tr class="separator:aab028bb976fd284a3abdfacc432c88ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a76ad85dc15fed0a071b5ef88f44ff15e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a76ad85dc15fed0a071b5ef88f44ff15e">joycon_open</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, <a class="el" href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4d">joycon_type</a> type)</td></tr>
+<tr class="memdesc:a76ad85dc15fed0a071b5ef88f44ff15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンを開く  <a href="joyconlib_8h.html#a76ad85dc15fed0a071b5ef88f44ff15e">[詳解]</a><br /></td></tr>
+<tr class="separator:a76ad85dc15fed0a071b5ef88f44ff15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cd321324ba3ed1e8919fc6aa48f996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#af5cd321324ba3ed1e8919fc6aa48f996">joycon_close</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc)</td></tr>
+<tr class="memdesc:af5cd321324ba3ed1e8919fc6aa48f996"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンを閉じる  <a href="joyconlib_8h.html#af5cd321324ba3ed1e8919fc6aa48f996">[詳解]</a><br /></td></tr>
+<tr class="separator:af5cd321324ba3ed1e8919fc6aa48f996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5234e58301352bb695a8ec936fd1384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#ad5234e58301352bb695a8ec936fd1384">joycon_get_state</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc)</td></tr>
+<tr class="memdesc:ad5234e58301352bb695a8ec936fd1384"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンの状態（ボタン，スティック，6軸センサー）を取得する  <a href="joyconlib_8h.html#ad5234e58301352bb695a8ec936fd1384">[詳解]</a><br /></td></tr>
+<tr class="separator:ad5234e58301352bb695a8ec936fd1384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68adee19dcd04da8efa18807152f280a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a68adee19dcd04da8efa18807152f280a">joycon_rumble</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, int amp)</td></tr>
+<tr class="memdesc:a68adee19dcd04da8efa18807152f280a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンを振動する  <a href="joyconlib_8h.html#a68adee19dcd04da8efa18807152f280a">[詳解]</a><br /></td></tr>
+<tr class="separator:a68adee19dcd04da8efa18807152f280a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af375a7cd0de513dd4bc72b57c9fc0baf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#af375a7cd0de513dd4bc72b57c9fc0baf">joycon_rumble_raw</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, int hfreq, int hamp, int lfreq, int lamp)</td></tr>
+<tr class="memdesc:af375a7cd0de513dd4bc72b57c9fc0baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンを振動する  <a href="joyconlib_8h.html#af375a7cd0de513dd4bc72b57c9fc0baf">[詳解]</a><br /></td></tr>
+<tr class="separator:af375a7cd0de513dd4bc72b57c9fc0baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9f3139ed62ada0752bd5d8cb9ff66e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a8c9f3139ed62ada0752bd5d8cb9ff66e">joycon_get_button_elapsed</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, <a class="el" href="structjoycon__elapsed.html">joycon_elapsed</a> *etime)</td></tr>
+<tr class="memdesc:a8c9f3139ed62ada0752bd5d8cb9ff66e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンの特定ボタンの経過時間を取得する  <a href="joyconlib_8h.html#a8c9f3139ed62ada0752bd5d8cb9ff66e">[詳解]</a><br /></td></tr>
+<tr class="separator:a8c9f3139ed62ada0752bd5d8cb9ff66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb0f119ddafb68a4ed56d0e5fe42f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#addb0f119ddafb68a4ed56d0e5fe42f9f">joycon_set_led</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, <a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> led)</td></tr>
+<tr class="memdesc:addb0f119ddafb68a4ed56d0e5fe42f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンのLEDを設定する  <a href="joyconlib_8h.html#addb0f119ddafb68a4ed56d0e5fe42f9f">[詳解]</a><br /></td></tr>
+<tr class="separator:addb0f119ddafb68a4ed56d0e5fe42f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a33f495fe094da380eea00eda29ef8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a9a33f495fe094da380eea00eda29ef8a">joycon_set_homeled</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, <a class="el" href="structjoycon__homeled.html">joycon_homeled</a> *data)</td></tr>
+<tr class="memdesc:a9a33f495fe094da380eea00eda29ef8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンhomeボタンのLEDを設定する  <a href="joyconlib_8h.html#a9a33f495fe094da380eea00eda29ef8a">[詳解]</a><br /></td></tr>
+<tr class="separator:a9a33f495fe094da380eea00eda29ef8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0444218fdfeb7a3107a5b7b49bebd20b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a0444218fdfeb7a3107a5b7b49bebd20b">joycon_play_rumble</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, char *mml, size_t sz, int(*callback)(void *), void *data)</td></tr>
+<tr class="memdesc:a0444218fdfeb7a3107a5b7b49bebd20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコン振動による演奏  <a href="joyconlib_8h.html#a0444218fdfeb7a3107a5b7b49bebd20b">[詳解]</a><br /></td></tr>
+<tr class="separator:a0444218fdfeb7a3107a5b7b49bebd20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680807c87fed48f0ee9653996dff4616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a680807c87fed48f0ee9653996dff4616">joycon_enable_ir</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, <a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88ee">joycon_ir_resolution</a> resolution, <a class="el" href="joyconlib_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> exposure)</td></tr>
+<tr class="memdesc:a680807c87fed48f0ee9653996dff4616"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンのIRカメラの準備  <a href="joyconlib_8h.html#a680807c87fed48f0ee9653996dff4616">[詳解]</a><br /></td></tr>
+<tr class="separator:a680807c87fed48f0ee9653996dff4616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639f8c7813a120a834846908131a1119"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a639f8c7813a120a834846908131a1119">joycon_disable_ir</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc)</td></tr>
+<tr class="memdesc:a639f8c7813a120a834846908131a1119"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンのIRカメラの終了  <a href="joyconlib_8h.html#a639f8c7813a120a834846908131a1119">[詳解]</a><br /></td></tr>
+<tr class="separator:a639f8c7813a120a834846908131a1119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1400e9118f48a8351c97001b795300d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a1400e9118f48a8351c97001b795300d0">joycon_read_ir</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, <a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *image, size_t size, <a class="el" href="joyconlib_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> exposure, <a class="el" href="structjoycon__ir__result.html">joycon_ir_result</a> *result)</td></tr>
+<tr class="memdesc:a1400e9118f48a8351c97001b795300d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンでIR画像を読み取る  <a href="joyconlib_8h.html#a1400e9118f48a8351c97001b795300d0">[詳解]</a><br /></td></tr>
+<tr class="separator:a1400e9118f48a8351c97001b795300d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4789ce0f831c423b3d8a20f0ce32f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joyconlib_8h.html#a6b4789ce0f831c423b3d8a20f0ce32f8">joycon_read_nfc</a> (<a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *jc, <a class="el" href="structjoycon__nfc__data.html">joycon_nfc_data</a> *nfc)</td></tr>
+<tr class="memdesc:a6b4789ce0f831c423b3d8a20f0ce32f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイコンでNFCタグ情報を読み取る  <a href="joyconlib_8h.html#a6b4789ce0f831c423b3d8a20f0ce32f8">[詳解]</a><br /></td></tr>
+<tr class="separator:a6b4789ce0f831c423b3d8a20f0ce32f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >Joy-Conライブラリ ヘッダ </p>
+<dl class="section author"><dt>著者</dt><dd>K. Morita </dd></dl>
+<dl class="section remark"><dt>注釈</dt><dd>The following resources/projects were referenced for this library: <a href="https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering">https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering</a> <a href="https://github.com/CTCaer/jc_toolkit">https://github.com/CTCaer/jc_toolkit</a></dd></dl>
+<dl class="section copyright"><dt>著作権所有</dt><dd>Copyright (c) 2022 K. Morita, All Rights Reserved. this library is released under the MIT license, see the end of this file. </dd></dl>
+</div><h2 class="groupheader">列挙型詳解</h2>
+<a id="a7111072c760b1f4dc15cb42f952f3287" name="a7111072c760b1f4dc15cb42f952f3287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7111072c760b1f4dc15cb42f952f3287">&#9670;&nbsp;</a></span>joycon_err</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エラーコード </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287add11fe0482c65898e1d34b3d2d444429" name="a7111072c760b1f4dc15cb42f952f3287add11fe0482c65898e1d34b3d2d444429"></a>JOYCON_ERR_NONE&#160;</td><td class="fielddoc"><p >正常終了 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a00da445dda54f6bb5cbd995771c08951" name="a7111072c760b1f4dc15cb42f952f3287a00da445dda54f6bb5cbd995771c08951"></a>JOYCON_ERR_INVALID_ARGUMENT&#160;</td><td class="fielddoc"><p >不正な引数 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a31c72be8bc255114e19d6ae06e64e862" name="a7111072c760b1f4dc15cb42f952f3287a31c72be8bc255114e19d6ae06e64e862"></a>JOYCON_ERR_OPEN_FAILED&#160;</td><td class="fielddoc"><p >オープン失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287ab46d1562bc0b27707beac371a5546ddb" name="a7111072c760b1f4dc15cb42f952f3287ab46d1562bc0b27707beac371a5546ddb"></a>JOYCON_ERR_WRITE_FAILED&#160;</td><td class="fielddoc"><p >データ送信失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a2bfc6aa91d8940995e18d6cad40337e2" name="a7111072c760b1f4dc15cb42f952f3287a2bfc6aa91d8940995e18d6cad40337e2"></a>JOYCON_ERR_READ_FAILED&#160;</td><td class="fielddoc"><p >データ読込失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a50de4d97473497bed66f56694585bb12" name="a7111072c760b1f4dc15cb42f952f3287a50de4d97473497bed66f56694585bb12"></a>JOYCON_ERR_READ_TIMEOUT&#160;</td><td class="fielddoc"><p >データ読込タイムアウト </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a311a91a0b8f32b882a01c6d15bf81025" name="a7111072c760b1f4dc15cb42f952f3287a311a91a0b8f32b882a01c6d15bf81025"></a>JOYCON_ERR_READ_NODATA&#160;</td><td class="fielddoc"><p >読込データ無し </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a72badfcc05702586abf50c3b219ed175" name="a7111072c760b1f4dc15cb42f952f3287a72badfcc05702586abf50c3b219ed175"></a>JOYCON_ERR_INVALID_TYPE&#160;</td><td class="fielddoc"><p >不正なタイプ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a8daa22bc8126b6904a76dd4e9ca5bc92" name="a7111072c760b1f4dc15cb42f952f3287a8daa22bc8126b6904a76dd4e9ca5bc92"></a>JOYCON_ERR_MCU_1ID31&#160;</td><td class="fielddoc"><p >NFC/IR初期化エラー1 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287ab4707b8ed906c9dee3670f43f3fe8a1b" name="a7111072c760b1f4dc15cb42f952f3287ab4707b8ed906c9dee3670f43f3fe8a1b"></a>JOYCON_ERR_MCU_2MCUON&#160;</td><td class="fielddoc"><p >NFC/IR初期化エラー2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287ad0b07f637053648c0d261a1d16c19838" name="a7111072c760b1f4dc15cb42f952f3287ad0b07f637053648c0d261a1d16c19838"></a>JOYCON_ERR_MCU_3MCUONBUSY&#160;</td><td class="fielddoc"><p >NFC/IR初期化エラー3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a3db3de420b35b6e55662f90a993640ea" name="a7111072c760b1f4dc15cb42f952f3287a3db3de420b35b6e55662f90a993640ea"></a>JOYCON_ERR_MCU_4MCUMODESET&#160;</td><td class="fielddoc"><p >NFC/IR初期化エラー4 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a0bdd8af74b2bc547e1959bd2061ce44f" name="a7111072c760b1f4dc15cb42f952f3287a0bdd8af74b2bc547e1959bd2061ce44f"></a>JOYCON_ERR_MCU_5MCUSETBUSY&#160;</td><td class="fielddoc"><p >NFC/IR初期化エラー5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a54ea48612bf3259231c8bee2bf265bc0" name="a7111072c760b1f4dc15cb42f952f3287a54ea48612bf3259231c8bee2bf265bc0"></a>JOYCON_ERR_MCU_6NFCPOLL&#160;</td><td class="fielddoc"><p >NFC読み取り準備エラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a0e0575d1d7b27dcfd5c3d58c7a8f8767" name="a7111072c760b1f4dc15cb42f952f3287a0e0575d1d7b27dcfd5c3d58c7a8f8767"></a>JOYCON_ERR_MCU_NOTAG&#160;</td><td class="fielddoc"><p >NFCタグ読み取りエラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287ab19b6ad1bfd54893990bd5b5459513cb" name="a7111072c760b1f4dc15cb42f952f3287ab19b6ad1bfd54893990bd5b5459513cb"></a>JOYCON_ERR_MCU_NOTSUPPORTED&#160;</td><td class="fielddoc"><p >NFC未サポートのタグ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a1f86e21ef299a5d5b3f6a06a806d9988" name="a7111072c760b1f4dc15cb42f952f3287a1f86e21ef299a5d5b3f6a06a806d9988"></a>JOYCON_ERR_MCU_READ&#160;</td><td class="fielddoc"><p >NFC読み取りエラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287ac52b5740eb656cb47db3e2123001a8a3" name="a7111072c760b1f4dc15cb42f952f3287ac52b5740eb656cb47db3e2123001a8a3"></a>JOYCON_ERR_MCU_IRNOREADY&#160;</td><td class="fielddoc"><p >IR未初期化 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a41e5edf80994073b3f80f0f746d9ac9b" name="a7111072c760b1f4dc15cb42f952f3287a41e5edf80994073b3f80f0f746d9ac9b"></a>JOYCON_ERR_MCU_6IRMODESET&#160;</td><td class="fielddoc"><p >IR設定エラー1 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a0689f000e573cca24597a5ecf4bd63f0" name="a7111072c760b1f4dc15cb42f952f3287a0689f000e573cca24597a5ecf4bd63f0"></a>JOYCON_ERR_MCU_7IRSETBUSY&#160;</td><td class="fielddoc"><p >IR設定中エラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287a9c706c8ad91b5f89595a9f723ff0e2a4" name="a7111072c760b1f4dc15cb42f952f3287a9c706c8ad91b5f89595a9f723ff0e2a4"></a>JOYCON_ERR_MCU_8IRCFG&#160;</td><td class="fielddoc"><p >IR設定エラー2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287abcfe82a7e23ad5b1a3f850ca19c4af22" name="a7111072c760b1f4dc15cb42f952f3287abcfe82a7e23ad5b1a3f850ca19c4af22"></a>JOYCON_ERR_MCU_9IRFCFG&#160;</td><td class="fielddoc"><p >IR設定エラー3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7111072c760b1f4dc15cb42f952f3287ace92aaa1cea2f702fa845abfdf36bbf0" name="a7111072c760b1f4dc15cb42f952f3287ace92aaa1cea2f702fa845abfdf36bbf0"></a>JOYCON_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p >不明エラー </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aab028bb976fd284a3abdfacc432c88ee" name="aab028bb976fd284a3abdfacc432c88ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab028bb976fd284a3abdfacc432c88ee">&#9670;&nbsp;</a></span>joycon_ir_resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88ee">joycon_ir_resolution</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRカメラ解像度 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aab028bb976fd284a3abdfacc432c88eeae6e2aa09e75db4916fa08f7869fefeb1" name="aab028bb976fd284a3abdfacc432c88eeae6e2aa09e75db4916fa08f7869fefeb1"></a>JOYCON_IR320X240&#160;</td><td class="fielddoc"><p >320 x 240 ピクセル </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab028bb976fd284a3abdfacc432c88eea95fe23cec7e70d28043776f58dc776e6" name="aab028bb976fd284a3abdfacc432c88eea95fe23cec7e70d28043776f58dc776e6"></a>JOYCON_IR160X120&#160;</td><td class="fielddoc"><p >160 x 120 ピクセル </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab028bb976fd284a3abdfacc432c88eea68c129c6f2b16ad387ca9eb6eb7ea4ff" name="aab028bb976fd284a3abdfacc432c88eea68c129c6f2b16ad387ca9eb6eb7ea4ff"></a>JOYCON_IR80X60&#160;</td><td class="fielddoc"><p >80 x 60 ピクセル </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab028bb976fd284a3abdfacc432c88eea8f455fec7ff72222d1f76f1853c65e68" name="aab028bb976fd284a3abdfacc432c88eea8f455fec7ff72222d1f76f1853c65e68"></a>JOYCON_IR40X30&#160;</td><td class="fielddoc"><p >40 x 30 ピクセル </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3608958b81ad42853383a1f50b1e5e4d" name="a3608958b81ad42853383a1f50b1e5e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3608958b81ad42853383a1f50b1e5e4d">&#9670;&nbsp;</a></span>joycon_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4d">joycon_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンタイプ </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a3608958b81ad42853383a1f50b1e5e4da87b53ce71d99150fa4c5b186960ecf8b" name="a3608958b81ad42853383a1f50b1e5e4da87b53ce71d99150fa4c5b186960ecf8b"></a>JOYCON_L&#160;</td><td class="fielddoc"><p >左 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3608958b81ad42853383a1f50b1e5e4da7fd6a7ed24799a6d5176a2d8f08b15db" name="a3608958b81ad42853383a1f50b1e5e4da7fd6a7ed24799a6d5176a2d8f08b15db"></a>JOYCON_R&#160;</td><td class="fielddoc"><p >右 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af5cd321324ba3ed1e8919fc6aa48f996" name="af5cd321324ba3ed1e8919fc6aa48f996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cd321324ba3ed1e8919fc6aa48f996">&#9670;&nbsp;</a></span>joycon_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_close </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンを閉じる </p>
+<p >振動を止め，homeledを消灯し，ledを復元する </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a639f8c7813a120a834846908131a1119" name="a639f8c7813a120a834846908131a1119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639f8c7813a120a834846908131a1119">&#9670;&nbsp;</a></span>joycon_disable_ir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_disable_ir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンのIRカメラの終了 </p>
+<p >IRカメラの使用を終了し，通常に戻す </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a680807c87fed48f0ee9653996dff4616" name="a680807c87fed48f0ee9653996dff4616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680807c87fed48f0ee9653996dff4616">&#9670;&nbsp;</a></span>joycon_enable_ir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_enable_ir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88ee">joycon_ir_resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="joyconlib_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>exposure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンのIRカメラの準備 </p>
+<p >IRカメラを使用するための設定を行う </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>解像度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exposure</td><td>露出時間（シャッター速度） 0 - 600 (us, 0 - 1/1666.66s)で指定する </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88ee" title="IRカメラ解像度">joycon_ir_resolution</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8c9f3139ed62ada0752bd5d8cb9ff66e" name="a8c9f3139ed62ada0752bd5d8cb9ff66e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9f3139ed62ada0752bd5d8cb9ff66e">&#9670;&nbsp;</a></span>joycon_get_button_elapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_get_button_elapsed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoycon__elapsed.html">joycon_elapsed</a> *&#160;</td>
+          <td class="paramname"><em>etime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンの特定ボタンの経過時間を取得する </p>
+<p >ボタンが押されてからの経過時間を10ms単位で取得する 最大値は65535(*10ms)で，それ以上は計測されない 押すと0になる</p>
+<h4><a class="anchor" id="autotoc_md2"></a>
+例</h4>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="structjoycon__elapsed.html">joycon_elapsed</a> et;</div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a8c9f3139ed62ada0752bd5d8cb9ff66e">joycon_get_button_elapsed</a>(&amp;jc, &amp;et);</div>
+<div class="line">printf(<span class="stringliteral">&quot;Rが押されてから%f秒\n&quot;</span>, et.<a class="code hl_variable" href="structjoycon__elapsed.html#a3547f64f51741621a1338f6f8c2f4817">R</a>/100.0);</div>
+<div class="ttc" id="ajoyconlib_8h_html_a8c9f3139ed62ada0752bd5d8cb9ff66e"><div class="ttname"><a href="joyconlib_8h.html#a8c9f3139ed62ada0752bd5d8cb9ff66e">joycon_get_button_elapsed</a></div><div class="ttdeci">joycon_err joycon_get_button_elapsed(joyconlib_t *jc, joycon_elapsed *etime)</div><div class="ttdoc">ジョイコンの特定ボタンの経過時間を取得する</div></div>
+<div class="ttc" id="astructjoycon__elapsed_html"><div class="ttname"><a href="structjoycon__elapsed.html">joycon_elapsed</a></div><div class="ttdoc">ボタンの経過時間</div><div class="ttdef"><b>Definition:</b> joyconlib.h:104</div></div>
+<div class="ttc" id="astructjoycon__elapsed_html_a3547f64f51741621a1338f6f8c2f4817"><div class="ttname"><a href="structjoycon__elapsed.html#a3547f64f51741621a1338f6f8c2f4817">joycon_elapsed::R</a></div><div class="ttdeci">u16 R</div><div class="ttdoc">Rボタン（右）の経過時間</div><div class="ttdef"><b>Definition:</b> joyconlib.h:106</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">etime</td><td>経過時間情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="structjoycon__elapsed.html" title="ボタンの経過時間">joycon_elapsed</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad5234e58301352bb695a8ec936fd1384" name="ad5234e58301352bb695a8ec936fd1384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5234e58301352bb695a8ec936fd1384">&#9670;&nbsp;</a></span>joycon_get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_get_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンの状態（ボタン，スティック，6軸センサー）を取得する </p>
+<p >取得した状態はそれぞれ，jc.button，jc.stick，jc.axis に保存されている</p>
+<h4><a class="anchor" id="autotoc_md1"></a>
+例</h4>
+<div class="fragment"><div class="line"><a class="code hl_function" href="joyconlib_8h.html#ad5234e58301352bb695a8ec936fd1384">joycon_get_state</a>(&amp;jc);</div>
+<div class="line"><span class="keywordflow">if</span>(jc.button.btn.X){</div>
+<div class="line">  <span class="comment">// Xが押されているとき</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">if</span>(jc.stick.y &lt; 0.0){</div>
+<div class="line">  <span class="comment">// スティックが下に…</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">if</span>(jc.axis[0].acc_z &lt; -9.8){</div>
+<div class="line">  <span class="comment">// ジョイコンが上に？…</span></div>
+<div class="line">}</div>
+<div class="ttc" id="ajoyconlib_8h_html_ad5234e58301352bb695a8ec936fd1384"><div class="ttname"><a href="joyconlib_8h.html#ad5234e58301352bb695a8ec936fd1384">joycon_get_state</a></div><div class="ttdeci">joycon_err joycon_get_state(joyconlib_t *jc)</div><div class="ttdoc">ジョイコンの状態（ボタン，スティック，6軸センサー）を取得する</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="structjoyconlib__t.html" title="ジョイコン情報">joyconlib_t</a> </dd></dl>
+
+</div>
+</div>
+<a id="a76ad85dc15fed0a071b5ef88f44ff15e" name="a76ad85dc15fed0a071b5ef88f44ff15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ad85dc15fed0a071b5ef88f44ff15e">&#9670;&nbsp;</a></span>joycon_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4d">joycon_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンを開く </p>
+<p >あらかじめPCにジョイコンをBluetooth接続しておく必要がある</p>
+<h4><a class="anchor" id="autotoc_md0"></a>
+例</h4>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="structjoyconlib__t.html">joyconlib_t</a> jc;</div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a76ad85dc15fed0a071b5ef88f44ff15e">joycon_open</a>(&amp;jc, <a class="code hl_enumvalue" href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4da7fd6a7ed24799a6d5176a2d8f08b15db">JOYCON_R</a>);</div>
+<div class="ttc" id="ajoyconlib_8h_html_a3608958b81ad42853383a1f50b1e5e4da7fd6a7ed24799a6d5176a2d8f08b15db"><div class="ttname"><a href="joyconlib_8h.html#a3608958b81ad42853383a1f50b1e5e4da7fd6a7ed24799a6d5176a2d8f08b15db">JOYCON_R</a></div><div class="ttdeci">@ JOYCON_R</div><div class="ttdoc">右</div><div class="ttdef"><b>Definition:</b> joyconlib.h:60</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_a76ad85dc15fed0a071b5ef88f44ff15e"><div class="ttname"><a href="joyconlib_8h.html#a76ad85dc15fed0a071b5ef88f44ff15e">joycon_open</a></div><div class="ttdeci">joycon_err joycon_open(joyconlib_t *jc, joycon_type type)</div><div class="ttdoc">ジョイコンを開く</div></div>
+<div class="ttc" id="astructjoyconlib__t_html"><div class="ttname"><a href="structjoyconlib__t.html">joyconlib_t</a></div><div class="ttdoc">ジョイコン情報</div><div class="ttdef"><b>Definition:</b> joyconlib.h:191</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">jc</td><td>オープンしたジョイコンの情報を保持する joyconlib_t構造体変数へのポインタ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>オープンするジョイコンのタイプを JOYCON_R（右）か JOYCON_L（左）で指定する。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a0444218fdfeb7a3107a5b7b49bebd20b" name="a0444218fdfeb7a3107a5b7b49bebd20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0444218fdfeb7a3107a5b7b49bebd20b">&#9670;&nbsp;</a></span>joycon_play_rumble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_play_rumble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(void *)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコン振動による演奏 </p>
+<p >簡易MML演奏データを読みと取り，音階に対応する振動周波数の振動により演奏する 指定できる振動周波数が音階と正確にに一致しないため，多少音程はずれる</p>
+<p >演奏が終了するまで関数も終了しない ただしコールバック関数による終了は指示できる <br  />
+ コールバック関数は </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> callback(<span class="keywordtype">void</span>* data) </div>
+</div><!-- fragment --><p> で作成し， 戻り値0で演奏終了，0以外で継続するようにする</p>
+<p >MMLに指定できる文字は，CDEFGAB,R,L,O,&lt;,&gt;,T,V，小文字も使える（意味は同じ） <br  />
+ 音階はド〜シ(CDEFGAB)，シャープ(#,+)，フラット(-)，休符(R) <br  />
+ 音符は全音符〜64分音符(1,2,4,8,16,32,64)で音階の後に付ける 省略するとLで指定した値を用いる，初期値は4，付点(.)は32分音符まで <br  />
+ オクターブ(O)は1-6だが実用的な範囲は3-5，初期値は4， &lt;で1オクターブ上げ，&gt;で1オクターブ下げる <br  />
+ テンポ(T)は30-240，初期値は120 音量(V)は0-100，初期値は50</p>
+<h4><a class="anchor" id="autotoc_md5"></a>
+例</h4>
+<div class="fragment"><div class="line"><span class="keywordtype">char</span> *mml=<span class="stringliteral">&quot;cdefgab&lt;c&quot;</span>;</div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a0444218fdfeb7a3107a5b7b49bebd20b">joycon_play_rumble</a>(&amp;jc, mml, strlen(mml), NULL, NULL);</div>
+<div class="ttc" id="ajoyconlib_8h_html_a0444218fdfeb7a3107a5b7b49bebd20b"><div class="ttname"><a href="joyconlib_8h.html#a0444218fdfeb7a3107a5b7b49bebd20b">joycon_play_rumble</a></div><div class="ttdeci">joycon_err joycon_play_rumble(joyconlib_t *jc, char *mml, size_t sz, int(*callback)(void *), void *data)</div><div class="ttdoc">ジョイコン振動による演奏</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mml</td><td>簡易MMLによる演奏データ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sz</td><td>mmlのサイズ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>コールバック関数，NULLの場合は呼び出されない </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>コールバック関数に渡す引数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a href="https://www.google.com/search?q=mml">Music Macro Language</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1400e9118f48a8351c97001b795300d0" name="a1400e9118f48a8351c97001b795300d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1400e9118f48a8351c97001b795300d0">&#9670;&nbsp;</a></span>joycon_read_ir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_read_ir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="joyconlib_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>exposure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoycon__ir__result.html">joycon_ir_result</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンでIR画像を読み取る </p>
+<p >ジョイコン(右)の下部がIRカメラになっており， 対象に向けて実行することで画像を取得する 画像の読み取りには時間がかかるので注意 （最大解像度で4s程度，最小で0.1s程度）</p>
+<h4><a class="anchor" id="autotoc_md6"></a>
+例</h4>
+<div class="fragment"><div class="line"><a class="code hl_function" href="joyconlib_8h.html#a680807c87fed48f0ee9653996dff4616">joycon_enable_ir</a>(&amp;jc, <a class="code hl_enumvalue" href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88eea68c129c6f2b16ad387ca9eb6eb7ea4ff">JOYCON_IR80X60</a>, 600);</div>
+<div class="line"><span class="keywordtype">size_t</span> sz = jc.ir_max_frag_no*300;</div>
+<div class="line"><a class="code hl_typedef" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> img[sz] = {0};</div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a1400e9118f48a8351c97001b795300d0">joycon_read_ir</a>(&amp;jc, img, sz, 0, NULL);</div>
+<div class="line"><span class="comment">// img に対する処理</span></div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a639f8c7813a120a834846908131a1119">joycon_disable_ir</a>(&amp;jc);</div>
+<div class="ttc" id="ajoyconlib_8h_html_a1400e9118f48a8351c97001b795300d0"><div class="ttname"><a href="joyconlib_8h.html#a1400e9118f48a8351c97001b795300d0">joycon_read_ir</a></div><div class="ttdeci">joycon_err joycon_read_ir(joyconlib_t *jc, u8 *image, size_t size, u16 exposure, joycon_ir_result *result)</div><div class="ttdoc">ジョイコンでIR画像を読み取る</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_a639f8c7813a120a834846908131a1119"><div class="ttname"><a href="joyconlib_8h.html#a639f8c7813a120a834846908131a1119">joycon_disable_ir</a></div><div class="ttdeci">joycon_err joycon_disable_ir(joyconlib_t *jc)</div><div class="ttdoc">ジョイコンのIRカメラの終了</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_a680807c87fed48f0ee9653996dff4616"><div class="ttname"><a href="joyconlib_8h.html#a680807c87fed48f0ee9653996dff4616">joycon_enable_ir</a></div><div class="ttdeci">joycon_err joycon_enable_ir(joyconlib_t *jc, joycon_ir_resolution resolution, u16 exposure)</div><div class="ttdoc">ジョイコンのIRカメラの準備</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_a92c50087ca0e64fa93fc59402c55f8ca"><div class="ttname"><a href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a></div><div class="ttdeci">uint8_t u8</div><div class="ttdoc">8bit符号無し整数</div><div class="ttdef"><b>Definition:</b> joyconlib.h:21</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_aab028bb976fd284a3abdfacc432c88eea68c129c6f2b16ad387ca9eb6eb7ea4ff"><div class="ttname"><a href="joyconlib_8h.html#aab028bb976fd284a3abdfacc432c88eea68c129c6f2b16ad387ca9eb6eb7ea4ff">JOYCON_IR80X60</a></div><div class="ttdeci">@ JOYCON_IR80X60</div><div class="ttdoc">80 x 60 ピクセル</div><div class="ttdef"><b>Definition:</b> joyconlib.h:235</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">image</td><td>画像データ保存先 保存に必要なサイズは jc.ir_max_frag_no*300 ， データは1ピクセル8ビットのグレースケールである </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>imageのサイズ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exposure</td><td>露出時間(0-600), 0で指定しない（前回と同じ） </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>読み取った画像情報の保存先, 必要ない場合はNULLを指定する </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="structjoycon__ir__result.html" title="IR取得画像の情報">joycon_ir_result</a> <a class="el" href="joyconlib_8h.html#a680807c87fed48f0ee9653996dff4616" title="ジョイコンのIRカメラの準備">joycon_enable_ir</a> <a class="el" href="joyconlib_8h.html#a639f8c7813a120a834846908131a1119" title="ジョイコンのIRカメラの終了">joycon_disable_ir</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6b4789ce0f831c423b3d8a20f0ce32f8" name="a6b4789ce0f831c423b3d8a20f0ce32f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b4789ce0f831c423b3d8a20f0ce32f8">&#9670;&nbsp;</a></span>joycon_read_nfc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_read_nfc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoycon__nfc__data.html">joycon_nfc_data</a> *&#160;</td>
+          <td class="paramname"><em>nfc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンでNFCタグ情報を読み取る </p>
+<p >ジョイコン(右)のスティックがNFCリーダーになっており， スティックにNFCカード等をかざして実行すると読み取る タグの読み取りに対応しているのは，NTAG213,NTAG215,NTAG216 その他はUIDの読み取りのみ</p>
+<h4><a class="anchor" id="autotoc_md7"></a>
+例</h4>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="structjoycon__nfc__data.html">joycon_nfc_data</a> nfc;</div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a6b4789ce0f831c423b3d8a20f0ce32f8">joycon_read_nfc</a>(&amp;jc, &amp;nfc);</div>
+<div class="line">printf(<span class="stringliteral">&quot;UID=&quot;</span>);</div>
+<div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;nfc.<a class="code hl_variable" href="structjoycon__nfc__data.html#a45ad9f9e2336c04b8577de8a1cc27bac">tag_uid_size</a>;i++)</div>
+<div class="line">  printf(<span class="stringliteral">&quot;%02x &quot;</span>, nfc.<a class="code hl_variable" href="structjoycon__nfc__data.html#abb7e400812c3c3b19ffdb87d1f1df524">tag_uid</a>[i]);</div>
+<div class="ttc" id="ajoyconlib_8h_html_a6b4789ce0f831c423b3d8a20f0ce32f8"><div class="ttname"><a href="joyconlib_8h.html#a6b4789ce0f831c423b3d8a20f0ce32f8">joycon_read_nfc</a></div><div class="ttdeci">joycon_err joycon_read_nfc(joyconlib_t *jc, joycon_nfc_data *nfc)</div><div class="ttdoc">ジョイコンでNFCタグ情報を読み取る</div></div>
+<div class="ttc" id="astructjoycon__nfc__data_html"><div class="ttname"><a href="structjoycon__nfc__data.html">joycon_nfc_data</a></div><div class="ttdoc">NFCデータ</div><div class="ttdef"><b>Definition:</b> joyconlib.h:223</div></div>
+<div class="ttc" id="astructjoycon__nfc__data_html_a45ad9f9e2336c04b8577de8a1cc27bac"><div class="ttname"><a href="structjoycon__nfc__data.html#a45ad9f9e2336c04b8577de8a1cc27bac">joycon_nfc_data::tag_uid_size</a></div><div class="ttdeci">u8 tag_uid_size</div><div class="ttdoc">UIDのサイズ</div><div class="ttdef"><b>Definition:</b> joyconlib.h:225</div></div>
+<div class="ttc" id="astructjoycon__nfc__data_html_abb7e400812c3c3b19ffdb87d1f1df524"><div class="ttname"><a href="structjoycon__nfc__data.html#abb7e400812c3c3b19ffdb87d1f1df524">joycon_nfc_data::tag_uid</a></div><div class="ttdeci">u8 tag_uid[10]</div><div class="ttdoc">UID</div><div class="ttdef"><b>Definition:</b> joyconlib.h:226</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nfc</td><td>NFC情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="structjoycon__nfc__data.html" title="NFCデータ">joycon_nfc_data</a> </dd></dl>
+
+</div>
+</div>
+<a id="a68adee19dcd04da8efa18807152f280a" name="a68adee19dcd04da8efa18807152f280a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68adee19dcd04da8efa18807152f280a">&#9670;&nbsp;</a></span>joycon_rumble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_rumble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>amp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンを振動する </p>
+<p >振動周波数はデフォルト値に固定で強さ(振幅)のみを指定する 内部的に </p><div class="fragment"><div class="line"><a class="code hl_function" href="joyconlib_8h.html#af375a7cd0de513dd4bc72b57c9fc0baf">joycon_rumble_raw</a>(jc, 96, amp, 64, amp); </div>
+<div class="ttc" id="ajoyconlib_8h_html_af375a7cd0de513dd4bc72b57c9fc0baf"><div class="ttname"><a href="joyconlib_8h.html#af375a7cd0de513dd4bc72b57c9fc0baf">joycon_rumble_raw</a></div><div class="ttdeci">joycon_err joycon_rumble_raw(joyconlib_t *jc, int hfreq, int hamp, int lfreq, int lamp)</div><div class="ttdoc">ジョイコンを振動する</div></div>
+</div><!-- fragment --><p> を呼び出しているだけである </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amp</td><td>強さ(0-100，0でoff) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="af375a7cd0de513dd4bc72b57c9fc0baf" name="af375a7cd0de513dd4bc72b57c9fc0baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af375a7cd0de513dd4bc72b57c9fc0baf">&#9670;&nbsp;</a></span>joycon_rumble_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_rumble_raw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hfreq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lfreq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンを振動する </p>
+<p >高/低帯域の周波数と振幅を指定する 指定値と周波数，振幅の関係は <a class="el" href="rumbletable.html">別表</a> の通り</p>
+<p >この関数は振動を1回指示するだけであり，いずれ振動は減衰する <br  />
+ 連続して振動させるには，関数を呼び出し続ける必要がある （joycon_open，joycon_close，joycon_get_state以外の関数呼び出しでも振動は継続する）</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hfreq</td><td>高帯域周波数(33-159) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hamp</td><td>高帯域振幅(0-100) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lfreq</td><td>低帯域周波数(1-127) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lamp</td><td>低帯域振幅(0-100) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a9a33f495fe094da380eea00eda29ef8a" name="a9a33f495fe094da380eea00eda29ef8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a33f495fe094da380eea00eda29ef8a">&#9670;&nbsp;</a></span>joycon_set_homeled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_set_homeled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoycon__homeled.html">joycon_homeled</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンhomeボタンのLEDを設定する </p>
+<p >点灯/点滅に対する細かい指定ができる <br  />
+ 単純な点灯/点滅を指定するためのマクロ (<a class="el" href="joyconlib_8h.html#a80ce5a0c78551e4ac5e6c5a9776b875a">JOYCON_HOMELED_OFF</a>, <a class="el" href="joyconlib_8h.html#a5bd4ec324393d6c39c1798cc54862170">JOYCON_HOMELED_ON</a>, <a class="el" href="joyconlib_8h.html#a2856a761ee1f4933facd5f2445ce19de">JOYCON_HOMELED_BLINK</a>)が用意されている</p>
+<h4><a class="anchor" id="autotoc_md4"></a>
+例</h4>
+<div class="fragment"><div class="line"><span class="comment">// 単純な点滅</span></div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a9a33f495fe094da380eea00eda29ef8a">joycon_set_homeled</a>(&amp;jc, <a class="code hl_define" href="joyconlib_8h.html#a2856a761ee1f4933facd5f2445ce19de">JOYCON_HOMELED_BLINK</a>);</div>
+<div class="line"><span class="comment">// 暗めにフェードイン/アウト</span></div>
+<div class="line"><a class="code hl_struct" href="structjoycon__homeled.html">joycon_homeled</a> hl={0};</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#a46f2f7bb9e8fb7ad07a2ab26b86d7865">mc_duration</a>=5;</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#a0e200f2b8e42e939a33cda1455cc49f8">mc_num</a>=2;</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#ae5560218545b59a62a6f79a036e77e42">fc_num</a>=0;</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#a3da82644fdf59ee42cfd63fada7d9a19">intensity</a>=0;</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#a246800fa61c5966489019d36f98ab397">mc</a>[0].<a class="code hl_variable" href="structjoycon__homeled.html#afc56c1cdada0a37d99db232336faa442">mc1_intensity</a>=3;</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#a246800fa61c5966489019d36f98ab397">mc</a>[0].<a class="code hl_variable" href="structjoycon__homeled.html#af3e7bb11e6aeb1617600fc0e2d2489d5">mc1_transition</a>=8;</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#a246800fa61c5966489019d36f98ab397">mc</a>[0].<a class="code hl_variable" href="structjoycon__homeled.html#a7690e7d601e2c54a7ff59cf22df382ad">mc2_intensity</a>=0;</div>
+<div class="line">hl.<a class="code hl_variable" href="structjoycon__homeled.html#a246800fa61c5966489019d36f98ab397">mc</a>[0].<a class="code hl_variable" href="structjoycon__homeled.html#af3e0e697220168cdccd9756616c6b645">mc2_transition</a>=8;</div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#a9a33f495fe094da380eea00eda29ef8a">joycon_set_homeled</a>(&amp;jc, &amp;hl);</div>
+<div class="ttc" id="ajoyconlib_8h_html_a2856a761ee1f4933facd5f2445ce19de"><div class="ttname"><a href="joyconlib_8h.html#a2856a761ee1f4933facd5f2445ce19de">JOYCON_HOMELED_BLINK</a></div><div class="ttdeci">#define JOYCON_HOMELED_BLINK</div><div class="ttdoc">ホームボタンLED点滅</div><div class="ttdef"><b>Definition:</b> joyconlib.h:146</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_a9a33f495fe094da380eea00eda29ef8a"><div class="ttname"><a href="joyconlib_8h.html#a9a33f495fe094da380eea00eda29ef8a">joycon_set_homeled</a></div><div class="ttdeci">joycon_err joycon_set_homeled(joyconlib_t *jc, joycon_homeled *data)</div><div class="ttdoc">ジョイコンhomeボタンのLEDを設定する</div></div>
+<div class="ttc" id="astructjoycon__homeled_html"><div class="ttname"><a href="structjoycon__homeled.html">joycon_homeled</a></div><div class="ttdoc">ホームボタンのLED設定情報</div><div class="ttdef"><b>Definition:</b> joyconlib.h:121</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_a0e200f2b8e42e939a33cda1455cc49f8"><div class="ttname"><a href="structjoycon__homeled.html#a0e200f2b8e42e939a33cda1455cc49f8">joycon_homeled::mc_num</a></div><div class="ttdeci">u8 mc_num</div><div class="ttdoc">サイクル数 Number of Mini Cycles. 1-15. If number of cycles is &gt; 0 then x0 = x1</div><div class="ttdef"><b>Definition:</b> joyconlib.h:123</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_a246800fa61c5966489019d36f98ab397"><div class="ttname"><a href="structjoycon__homeled.html#a246800fa61c5966489019d36f98ab397">joycon_homeled::mc</a></div><div class="ttdeci">struct joycon_homeled::@1 mc[7]</div><div class="ttdoc">2サイクル*7で14回分の情報</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_a3da82644fdf59ee42cfd63fada7d9a19"><div class="ttname"><a href="structjoycon__homeled.html#a3da82644fdf59ee42cfd63fada7d9a19">joycon_homeled::intensity</a></div><div class="ttdeci">u8 intensity</div><div class="ttdoc">LEDの明るさ初期値 LED Start Intensity. Value x0=0% - xF=100%</div><div class="ttdef"><b>Definition:</b> joyconlib.h:125</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_a46f2f7bb9e8fb7ad07a2ab26b86d7865"><div class="ttname"><a href="structjoycon__homeled.html#a46f2f7bb9e8fb7ad07a2ab26b86d7865">joycon_homeled::mc_duration</a></div><div class="ttdeci">u8 mc_duration</div><div class="ttdoc">1サイクルの基準時間 Global Mini Cycle Duration. 8ms - 175ms. Value x0 = 0ms/OFF</div><div class="ttdef"><b>Definition:</b> joyconlib.h:122</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_a7690e7d601e2c54a7ff59cf22df382ad"><div class="ttname"><a href="structjoycon__homeled.html#a7690e7d601e2c54a7ff59cf22df382ad">joycon_homeled::mc2_intensity</a></div><div class="ttdeci">u8 mc2_intensity</div><div class="ttdoc">サイクル 2,4,6,8,10,12,14 のLED明るさ</div><div class="ttdef"><b>Definition:</b> joyconlib.h:127</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_ae5560218545b59a62a6f79a036e77e42"><div class="ttname"><a href="structjoycon__homeled.html#ae5560218545b59a62a6f79a036e77e42">joycon_homeled::fc_num</a></div><div class="ttdeci">u8 fc_num</div><div class="ttdoc">全サイクルの繰り返し数 0で無限 Number of Full Cycles. 1-15. Value x0 is repeat forever, but if also Byte x00 High n...</div><div class="ttdef"><b>Definition:</b> joyconlib.h:124</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_af3e0e697220168cdccd9756616c6b645"><div class="ttname"><a href="structjoycon__homeled.html#af3e0e697220168cdccd9756616c6b645">joycon_homeled::mc2_transition</a></div><div class="ttdeci">u8 mc2_transition</div><div class="ttdoc">前サイクルから自サイクル(2,4,6,8,10,12,14)へのフェードイン/アウト段階数（*基準時間） Fading Transition Duration to Mini Cycle 2,...</div><div class="ttdef"><b>Definition:</b> joyconlib.h:132</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_af3e7bb11e6aeb1617600fc0e2d2489d5"><div class="ttname"><a href="structjoycon__homeled.html#af3e7bb11e6aeb1617600fc0e2d2489d5">joycon_homeled::mc1_transition</a></div><div class="ttdeci">u8 mc1_transition</div><div class="ttdoc">前サイクルから自サイクル(1,3,5,7,9,11,13)へのフェードイン/アウト段階数（*基準時間） Fading Transition Duration to Mini Cycle 1,...</div><div class="ttdef"><b>Definition:</b> joyconlib.h:130</div></div>
+<div class="ttc" id="astructjoycon__homeled_html_afc56c1cdada0a37d99db232336faa442"><div class="ttname"><a href="structjoycon__homeled.html#afc56c1cdada0a37d99db232336faa442">joycon_homeled::mc1_intensity</a></div><div class="ttdeci">u8 mc1_intensity</div><div class="ttdoc">サイクル 1,3,5,7,9,11,13 のLED明るさ</div><div class="ttdef"><b>Definition:</b> joyconlib.h:128</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>ホームLEDの設定情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a class="el" href="structjoycon__homeled.html" title="ホームボタンのLED設定情報">joycon_homeled</a> </dd></dl>
+
+</div>
+</div>
+<a id="addb0f119ddafb68a4ed56d0e5fe42f9f" name="addb0f119ddafb68a4ed56d0e5fe42f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb0f119ddafb68a4ed56d0e5fe42f9f">&#9670;&nbsp;</a></span>joycon_set_led()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="joyconlib_8h.html#a7111072c760b1f4dc15cb42f952f3287">joycon_err</a> joycon_set_led </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoyconlib__t.html">joyconlib_t</a> *&#160;</td>
+          <td class="paramname"><em>jc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td>
+          <td class="paramname"><em>led</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイコンのLEDを設定する </p>
+<p >4つのLEDに対して，点灯か点滅を同時に指定する <a class="el" href="joyconlib_8h.html#a3539486b8134fb36741aef8318f35589">マクロ</a> が用意されており， | で結合して指定する 点灯が優先される</p>
+<h4><a class="anchor" id="autotoc_md3"></a>
+例</h4>
+<div class="fragment"><div class="line"><span class="comment">// 1を点灯，3を点滅</span></div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#addb0f119ddafb68a4ed56d0e5fe42f9f">joycon_set_led</a>(&amp;jc, <a class="code hl_define" href="joyconlib_8h.html#a3539486b8134fb36741aef8318f35589">JOYCON_LED_1_ON</a> | <a class="code hl_define" href="joyconlib_8h.html#ac88f5f88f83910fe805f44bd29578800">JOYCON_LED_3_BLINK</a>);</div>
+<div class="line"><span class="comment">// すべて消灯</span></div>
+<div class="line"><a class="code hl_function" href="joyconlib_8h.html#addb0f119ddafb68a4ed56d0e5fe42f9f">joycon_set_led</a>(&amp;jc, 0);</div>
+<div class="ttc" id="ajoyconlib_8h_html_a3539486b8134fb36741aef8318f35589"><div class="ttname"><a href="joyconlib_8h.html#a3539486b8134fb36741aef8318f35589">JOYCON_LED_1_ON</a></div><div class="ttdeci">#define JOYCON_LED_1_ON</div><div class="ttdoc">led 1 点灯</div><div class="ttdef"><b>Definition:</b> joyconlib.h:148</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_ac88f5f88f83910fe805f44bd29578800"><div class="ttname"><a href="joyconlib_8h.html#ac88f5f88f83910fe805f44bd29578800">JOYCON_LED_3_BLINK</a></div><div class="ttdeci">#define JOYCON_LED_3_BLINK</div><div class="ttdoc">led 3 点滅</div><div class="ttdef"><b>Definition:</b> joyconlib.h:154</div></div>
+<div class="ttc" id="ajoyconlib_8h_html_addb0f119ddafb68a4ed56d0e5fe42f9f"><div class="ttname"><a href="joyconlib_8h.html#addb0f119ddafb68a4ed56d0e5fe42f9f">joycon_set_led</a></div><div class="ttdeci">joycon_err joycon_set_led(joyconlib_t *jc, u8 led)</div><div class="ttdoc">ジョイコンのLEDを設定する</div></div>
+</div><!-- fragment --> <dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">jc</td><td>ジョイコン情報 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">led</td><td>LED情報 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

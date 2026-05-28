@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>joyconlib: joycon_ir_result 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">joyconlib
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">フィールド</a>  </div>
+  <div class="headertitle"><div class="title">joycon_ir_result 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>IR取得画像の情報  
+ <a href="structjoycon__ir__result.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="joyconlib_8h_source.html">joyconlib.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+フィールド</h2></td></tr>
+<tr class="memitem:a8c52c95445707b07e4a36ac2e9437ea0"><td class="memItemLeft" align="right" valign="top"><a id="a8c52c95445707b07e4a36ac2e9437ea0" name="a8c52c95445707b07e4a36ac2e9437ea0"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>avg_intensity</b></td></tr>
+<tr class="memdesc:a8c52c95445707b07e4a36ac2e9437ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">平均強度(0-255) Average Intensity. 0-255 scale. <br /></td></tr>
+<tr class="separator:a8c52c95445707b07e4a36ac2e9437ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c2ece2d61e9ecb8da97e8916d19732"><td class="memItemLeft" align="right" valign="top"><a id="ad8c2ece2d61e9ecb8da97e8916d19732" name="ad8c2ece2d61e9ecb8da97e8916d19732"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unknown</b></td></tr>
+<tr class="memdesc:ad8c2ece2d61e9ecb8da97e8916d19732"><td class="mdescLeft">&#160;</td><td class="mdescRight">不明 Unknown. Shows up only when EXFilter is enabled. <br /></td></tr>
+<tr class="separator:ad8c2ece2d61e9ecb8da97e8916d19732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8338d51bd77bfafc81a03448121a8f2"><td class="memItemLeft" align="right" valign="top"><a id="ab8338d51bd77bfafc81a03448121a8f2" name="ab8338d51bd77bfafc81a03448121a8f2"></a>
+<a class="el" href="joyconlib_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>white_pixels</b></td></tr>
+<tr class="memdesc:ab8338d51bd77bfafc81a03448121a8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">白(255値)ピクセルの数，最大値は65535 White pixels (pixels with 255 value). Max 65535. Uint16 constraints, even though max is 76800. <br /></td></tr>
+<tr class="separator:ab8338d51bd77bfafc81a03448121a8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f9eecb45652190eb68d0ac524f55d0"><td class="memItemLeft" align="right" valign="top"><a id="a16f9eecb45652190eb68d0ac524f55d0" name="a16f9eecb45652190eb68d0ac524f55d0"></a>
+<a class="el" href="joyconlib_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>noise_pixels</b></td></tr>
+<tr class="memdesc:a16f9eecb45652190eb68d0ac524f55d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">環境ノイズのピクセル数 Pixels with ambient noise from external light sources (sun, lighter, IR remotes, etc). Cleaned by External Light Filter. <br /></td></tr>
+<tr class="separator:a16f9eecb45652190eb68d0ac524f55d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >IR取得画像の情報 </p>
+</div><hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="joyconlib_8h_source.html">joyconlib.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

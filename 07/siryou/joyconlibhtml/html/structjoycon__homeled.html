@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>joyconlib: joycon_homeled 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">joyconlib
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">フィールド</a>  </div>
+  <div class="headertitle"><div class="title">joycon_homeled 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ホームボタンのLED設定情報  
+ <a href="structjoycon__homeled.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="joyconlib_8h_source.html">joyconlib.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+フィールド</h2></td></tr>
+<tr class="memitem:a46f2f7bb9e8fb7ad07a2ab26b86d7865"><td class="memItemLeft" align="right" valign="top"><a id="a46f2f7bb9e8fb7ad07a2ab26b86d7865" name="a46f2f7bb9e8fb7ad07a2ab26b86d7865"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mc_duration</b>: 4</td></tr>
+<tr class="memdesc:a46f2f7bb9e8fb7ad07a2ab26b86d7865"><td class="mdescLeft">&#160;</td><td class="mdescRight">1サイクルの基準時間 Global Mini Cycle Duration. 8ms - 175ms. Value x0 = 0ms/OFF <br /></td></tr>
+<tr class="separator:a46f2f7bb9e8fb7ad07a2ab26b86d7865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e200f2b8e42e939a33cda1455cc49f8"><td class="memItemLeft" align="right" valign="top"><a id="a0e200f2b8e42e939a33cda1455cc49f8" name="a0e200f2b8e42e939a33cda1455cc49f8"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mc_num</b>: 4</td></tr>
+<tr class="memdesc:a0e200f2b8e42e939a33cda1455cc49f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイクル数 Number of Mini Cycles. 1-15. If number of cycles is &gt; 0 then x0 = x1 <br /></td></tr>
+<tr class="separator:a0e200f2b8e42e939a33cda1455cc49f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5560218545b59a62a6f79a036e77e42"><td class="memItemLeft" align="right" valign="top"><a id="ae5560218545b59a62a6f79a036e77e42" name="ae5560218545b59a62a6f79a036e77e42"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fc_num</b>: 4</td></tr>
+<tr class="memdesc:ae5560218545b59a62a6f79a036e77e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">全サイクルの繰り返し数 0で無限 Number of Full Cycles. 1-15. Value x0 is repeat forever, but if also Byte x00 High nibble is set to x0, it does the 1st Mini Cycle and then the LED stays on with LED Start Intensity. <br /></td></tr>
+<tr class="separator:ae5560218545b59a62a6f79a036e77e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da82644fdf59ee42cfd63fada7d9a19"><td class="memItemLeft" align="right" valign="top"><a id="a3da82644fdf59ee42cfd63fada7d9a19" name="a3da82644fdf59ee42cfd63fada7d9a19"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>intensity</b>: 4</td></tr>
+<tr class="memdesc:a3da82644fdf59ee42cfd63fada7d9a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">LEDの明るさ初期値 LED Start Intensity. Value x0=0% - xF=100% <br /></td></tr>
+<tr class="separator:a3da82644fdf59ee42cfd63fada7d9a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246800fa61c5966489019d36f98ab397"><td class="memItemLeft" ><a id="a246800fa61c5966489019d36f98ab397" name="a246800fa61c5966489019d36f98ab397"></a>
+struct {</td></tr>
+<tr class="memitem:a7690e7d601e2c54a7ff59cf22df382ad"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;&#160;&#160;<b>mc2_intensity</b>: 4</td></tr>
+<tr class="memdesc:a7690e7d601e2c54a7ff59cf22df382ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイクル 2,4,6,8,10,12,14 のLED明るさ <br /></td></tr>
+<tr class="separator:a7690e7d601e2c54a7ff59cf22df382ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc56c1cdada0a37d99db232336faa442"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;&#160;&#160;<b>mc1_intensity</b>: 4</td></tr>
+<tr class="memdesc:afc56c1cdada0a37d99db232336faa442"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイクル 1,3,5,7,9,11,13 のLED明るさ <br /></td></tr>
+<tr class="separator:afc56c1cdada0a37d99db232336faa442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994da569bc29de3f8064aaae766b023a"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;&#160;&#160;<b>mc1_duration</b>: 4</td></tr>
+<tr class="memdesc:a994da569bc29de3f8064aaae766b023a"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイクル 1,3,5,7,9,11,13 の時間（基準時間に対する倍数） LED Duration Multiplier of Mini Cycle 1,3,... x0 = x1 = x1 <br /></td></tr>
+<tr class="separator:a994da569bc29de3f8064aaae766b023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e7bb11e6aeb1617600fc0e2d2489d5"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;&#160;&#160;<b>mc1_transition</b>: 4</td></tr>
+<tr class="memdesc:af3e7bb11e6aeb1617600fc0e2d2489d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">前サイクルから自サイクル(1,3,5,7,9,11,13)へのフェードイン/アウト段階数（*基準時間） Fading Transition Duration to Mini Cycle 1,3,... (Uses PWM). Value is a Multiplier of Global Mini Cycle Duration <br /></td></tr>
+<tr class="separator:af3e7bb11e6aeb1617600fc0e2d2489d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38a05b6caf49357bcd40fdfd864d4d9"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;&#160;&#160;<b>mc2_duration</b>: 4</td></tr>
+<tr class="memdesc:ad38a05b6caf49357bcd40fdfd864d4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイクル 2,4,6,8,10,12,14 の時間（基準時間に対する倍数） LED Duration Multiplier of Mini Cycle 2,4,... x0 = x1 = x1 <br /></td></tr>
+<tr class="separator:ad38a05b6caf49357bcd40fdfd864d4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e0e697220168cdccd9756616c6b645"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;&#160;&#160;<b>mc2_transition</b>: 4</td></tr>
+<tr class="memdesc:af3e0e697220168cdccd9756616c6b645"><td class="mdescLeft">&#160;</td><td class="mdescRight">前サイクルから自サイクル(2,4,6,8,10,12,14)へのフェードイン/アウト段階数（*基準時間） Fading Transition Duration to Mini Cycle 2,4,... (Uses PWM). Value is a Multiplier of Global Mini Cycle Duration <br /></td></tr>
+<tr class="separator:af3e0e697220168cdccd9756616c6b645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246800fa61c5966489019d36f98ab397"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>mc</b> [7]</td></tr>
+<tr class="memdesc:a246800fa61c5966489019d36f98ab397"><td class="mdescLeft">&#160;</td><td class="mdescRight">2サイクル*7で14回分の情報 <br /></td></tr>
+<tr class="separator:a246800fa61c5966489019d36f98ab397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988f365635765c79268c1d4fdcd22c08"><td class="memItemLeft" align="right" valign="top"><a id="a988f365635765c79268c1d4fdcd22c08" name="a988f365635765c79268c1d4fdcd22c08"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unused</b>: 4</td></tr>
+<tr class="memdesc:a988f365635765c79268c1d4fdcd22c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">未使用 <br /></td></tr>
+<tr class="separator:a988f365635765c79268c1d4fdcd22c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58aa95d782dd9ba4b48bf29c9685d500"><td class="memItemLeft" align="right" valign="top"><a id="a58aa95d782dd9ba4b48bf29c9685d500" name="a58aa95d782dd9ba4b48bf29c9685d500"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mc15_intensity</b>: 4</td></tr>
+<tr class="memdesc:a58aa95d782dd9ba4b48bf29c9685d500"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイクル15のLED明るさ <br /></td></tr>
+<tr class="separator:a58aa95d782dd9ba4b48bf29c9685d500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957e03f674391d0992f7acbb929da7a8"><td class="memItemLeft" align="right" valign="top"><a id="a957e03f674391d0992f7acbb929da7a8" name="a957e03f674391d0992f7acbb929da7a8"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mc15_duration</b>: 4</td></tr>
+<tr class="memdesc:a957e03f674391d0992f7acbb929da7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイクル15の時間（基準時間に対する倍数） LED Duration Multiplier of Mini Cycle 15 x0 = x1 = x1 <br /></td></tr>
+<tr class="separator:a957e03f674391d0992f7acbb929da7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd00c3f9dc70a4ad75980f709c6cebcf"><td class="memItemLeft" align="right" valign="top"><a id="afd00c3f9dc70a4ad75980f709c6cebcf" name="afd00c3f9dc70a4ad75980f709c6cebcf"></a>
+<a class="el" href="joyconlib_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mc15_transition</b>: 4</td></tr>
+<tr class="memdesc:afd00c3f9dc70a4ad75980f709c6cebcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">前サイクルから自サイクル(15)へのフェードイン/アウト段階数（*基準時間） Fading Transition Duration to Mini Cycle 15 (Uses PWM). Value is a Multiplier of Global Mini Cycle Duration <br /></td></tr>
+<tr class="separator:afd00c3f9dc70a4ad75980f709c6cebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >ホームボタンのLED設定情報 </p>
+<p >明るさ，時間，繰り返しなどを指定することで 複雑な点灯パターンを表現できる 指定値はすべて0-15 </p><dl class="section see"><dt>参照</dt><dd><a class="el" href="joyconlib_8h.html#a9a33f495fe094da380eea00eda29ef8a" title="ジョイコンhomeボタンのLEDを設定する">joycon_set_homeled</a> </dd></dl>
+</div><hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="joyconlib_8h_source.html">joyconlib.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>
