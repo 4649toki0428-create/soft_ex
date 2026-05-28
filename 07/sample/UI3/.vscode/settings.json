@@ -1,0 +1,8 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: WebKit, IndentWidth: 4, AlignConsecutiveAssignments: true, DerivePointerAlignment: true, AllowShortFunctionsOnASingleLine: Inline, AlignTrailingComments: true}",
+    "editor.cursorStyle": "block",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Ubuntu Mono', 'Ricty Diminished'",
+    "C_Cpp.clang_format_style": "{BasedOnStyle: WebKit, IndentWidth: 4, AlignConsecutiveAssignments: true, DerivePointerAlignment: true, AllowShortFunctionsOnASingleLine: Inline, AlignTrailingComments: true}",
+}
