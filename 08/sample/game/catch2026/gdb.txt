@@ -106085,3 +106085,1632 @@ Use the "file" or "exec-file" command.
 =thread-group-exited,id="i1",exit-code="0"
 *stopped,reason="exited-normally"
 ^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+=thread-group-started,id="i1",pid="19856"
+=thread-created,id="1",group-id="i1"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
+1013^error,msg="During startup program exited with code 127."
+(gdb) 
+1014^done,threads=[]
+(gdb) 
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+=thread-group-started,id="i1",pid="19951"
+=thread-created,id="1",group-id="i1"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
+1013^error,msg="During startup program exited with code 127."
+(gdb) 
+1014^done,threads=[]
+(gdb) 
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+=thread-group-started,id="i1",pid="20036"
+=thread-created,id="1",group-id="i1"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
+1013^error,msg="During startup program exited with code 127."
+(gdb) 
+1014^done,threads=[]
+(gdb) 
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+=thread-group-started,id="i1",pid="20124"
+=thread-created,id="1",group-id="i1"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
+1013^error,msg="During startup program exited with code 127."
+(gdb) 
+1014^done,threads=[]
+(gdb) 
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="catch.c:16"}
+(gdb) 
+1014^done,lines=[{pc="0x00000000000027a9",line="16"},{pc="0x00000000000027bc",line="16"},{pc="0x00000000000027cb",line="19"},{pc="0x00000000000027d5",line="19"},{pc="0x00000000000027d9",line="20"},{pc="0x00000000000027eb",line="23"},{pc="0x00000000000027fe",line="23"},{pc="0x0000000000002802",line="24"},{pc="0x000000000000280e",line="25"},{pc="0x0000000000002813",line="28"},{pc="0x000000000000281f",line="28"},{pc="0x0000000000002823",line="29"},{pc="0x000000000000282f",line="30"},{pc="0x0000000000002834",line="36"},{pc="0x000000000000283b",line="38"},{pc="0x0000000000002856",line="39"},{pc="0x000000000000285c",line="40"},{pc="0x0000000000002869",line="41"},{pc="0x000000000000286e",line="46"},{pc="0x0000000000002878",line="48"},{pc="0x000000000000287f",line="49"},{pc="0x0000000000002884",line="51"},{pc="0x000000000000288c",line="53"},{pc="0x0000000000002892",line="53"},{pc="0x000000000000289b",line="55"},{pc="0x00000000000028a2",line="55"},{pc="0x00000000000028a4",line="56"},{pc="0x00000000000028d0",line="55"},{pc="0x00000000000028df",line="59"},{pc="0x00000000000028e6",line="59"},{pc="0x00000000000028e8",line="60"},{pc="0x0000000000002914",line="59"},{pc="0x0000000000002923",line="63"},{pc="0x000000000000292a",line="63"},{pc="0x000000000000292c",line="64"},{pc="0x0000000000002935",line="64"},{pc="0x0000000000002937",line="65"},{pc="0x000000000000298a",line="64"},{pc="0x0000000000002999",line="63"},{pc="0x00000000000029a8",line="70"},{pc="0x00000000000029ad",line="74"},{pc="0x00000000000029b2",line="81"},{pc="0x00000000000029bc",line="84"},{pc="0x00000000000029c5",line="49"},{pc="0x00000000000029cf",line="88"},{pc="0x00000000000029d9",line="90"},{pc="0x00000000000029de",line="92"},{pc="0x00000000000029e3",line="93"},{pc="0x00000000000029e8",line="95"},{pc="0x00000000000029ed",line="96"},{pc="0x0000000000002a03",line="106"},{pc="0x0000000000002a13",line="107"},{pc="0x0000000000002a32",line="108"},{pc="0x0000000000002a37",line="109"},{pc="0x0000000000002a39",line="113"},{pc="0x0000000000002a4c",line="117"},{pc="0x0000000000002a52",line="117"},{pc="0x0000000000002a5a",line="119"},{pc="0x0000000000002a60",line="119"},{pc="0x0000000000002a76",line="120"},{pc="0x0000000000002a80",line="121"},{pc="0x0000000000002a86",line="121"},{pc="0x0000000000002a9a",line="121"},{pc="0x0000000000002aa2",line="122"},{pc="0x0000000000002aa8",line="122"},{pc="0x0000000000002ac4",line="123"},{pc="0x0000000000002ad3",line="124"},{pc="0x0000000000002add",line="129"},{pc="0x0000000000002ae4",line="129"},{pc="0x0000000000002ae9",line="129"},{pc="0x0000000000002b28",line="131"},{pc="0x0000000000002b31",line="132"},{pc="0x0000000000002b38",line="132"},{pc="0x0000000000002b52",line="132"},{pc="0x0000000000002b59",line="134"},{pc="0x0000000000002b60",line="134"},{pc="0x0000000000002b6c",line="135"},{pc="0x0000000000002b73",line="135"},{pc="0x0000000000002b76",line="135"},{pc="0x0000000000002b7e",line="135"},{pc="0x0000000000002b81",line="135"},{pc="0x0000000000002b86",line="135"},{pc="0x0000000000002b8d",line="136"},{pc="0x0000000000002b94",line="136"},{pc="0x0000000000002b9b",line="136"},{pc="0x0000000000002b9e",line="136"},{pc="0x0000000000002ba5",line="131"},{pc="0x0000000000002bb8",line="140"},{pc="0x0000000000002bbb",line="141"},{pc="0x0000000000002bbd",line="145"},{pc="0x0000000000002bc5",line="147"},{pc="0x0000000000002bcc",line="148"},{pc="0x0000000000002bd3",line="149"},{pc="0x0000000000002bda",line="149"},{pc="0x0000000000002bdc",line="150"},{pc="0x0000000000002be3",line="150"},{pc="0x0000000000002bfd",line="150"},{pc="0x0000000000002c04",line="151"},{pc="0x0000000000002c0b",line="151"},{pc="0x0000000000002c10",line="152"},{pc="0x0000000000002c14",line="153"},{pc="0x0000000000002c1a",line="153"},{pc="0x0000000000002c1f",line="154"},{pc="0x0000000000002c23",line="149"},{pc="0x0000000000002c32",line="158"},{pc="0x0000000000002c3a",line="159"},{pc="0x0000000000002c44",line="160"},{pc="0x0000000000002c4e",line="162"},{pc="0x0000000000002c51",line="171"},{pc="0x0000000000002c62",line="173"},{pc="0x0000000000002c68",line="173"},{pc="0x0000000000002c7f",line="177"},{pc="0x0000000000002c8b",line="180"},{pc="0x0000000000002c90",line="180"},{pc="0x0000000000002c99",line="180"},{pc="0x0000000000002ca2",line="180"},{pc="0x0000000000002ca6",line="180"},{pc="0x0000000000002cae",line="180"},{pc="0x0000000000002cb2",line="180"},{pc="0x0000000000002cbb",line="181"},{pc="0x0000000000002cc0",line="181"},{pc="0x0000000000002cc9",line="181"},{pc="0x0000000000002cd2",line="181"},{pc="0x0000000000002cd6",line="181"},{pc="0x0000000000002cde",line="181"},{pc="0x0000000000002ce2",line="181"},{pc="0x0000000000002ceb",line="184"},{pc="0x0000000000002cf2",line="185"},{pc="0x0000000000002cf7",line="185"},{pc="0x0000000000002cff",line="185"},{pc="0x0000000000002d02",line="185"},{pc="0x0000000000002d0a",line="185"},{pc="0x0000000000002d13",line="186"},{pc="0x0000000000002d1b",line="186"},{pc="0x0000000000002d1e",line="186"},{pc="0x0000000000002d20",line="186"},{pc="0x0000000000002d29",line="187"},{pc="0x0000000000002d32",line="188"},{pc="0x0000000000002d37",line="188"},{pc="0x0000000000002d3f",line="188"},{pc="0x0000000000002d42",line="188"},{pc="0x0000000000002d4a",line="188"},{pc="0x0000000000002d51",line="188"},{pc="0x0000000000002d59",line="188"},{pc="0x0000000000002d62",line="189"},{pc="0x0000000000002d6a",line="189"},{pc="0x0000000000002d6d",line="189"},{pc="0x0000000000002d74",line="189"},{pc="0x0000000000002d7b",line="189"},{pc="0x0000000000002d7f",line="189"},{pc="0x0000000000002d88",line="190"},{pc="0x0000000000002d8f",line="192"},{pc="0x0000000000002d94",line="192"},{pc="0x0000000000002d9c",line="192"},{pc="0x0000000000002d9f",line="192"},{pc="0x0000000000002da7",line="192"},{pc="0x0000000000002db0",line="193"},{pc="0x0000000000002db8",line="193"},{pc="0x0000000000002dbb",line="193"},{pc="0x0000000000002dbd",line="193"},{pc="0x0000000000002dc6",line="194"},{pc="0x0000000000002dcf",line="195"},{pc="0x0000000000002dd4",line="195"},{pc="0x0000000000002ddc",line="195"},{pc="0x0000000000002ddf",line="195"},{pc="0x0000000000002de7",line="195"},{pc="0x0000000000002dee",line="195"},{pc="0x0000000000002df6",line="195"},{pc="0x0000000000002dff",line="196"},{pc="0x0000000000002e07",line="196"},{pc="0x0000000000002e0a",line="196"},{pc="0x0000000000002e11",line="196"},{pc="0x0000000000002e18",line="196"},{pc="0x0000000000002e1c",line="196"},{pc="0x0000000000002e25",line="197"},{pc="0x0000000000002e2c",line="201"},{pc="0x0000000000002e38",line="202"},{pc="0x0000000000002e3d",line="202"},{pc="0x0000000000002e45",line="202"},{pc="0x0000000000002e48",line="202"},{pc="0x0000000000002e50",line="202"},{pc="0x0000000000002e5b",line="203"},{pc="0x0000000000002e60",line="203"},{pc="0x0000000000002e68",line="203"},{pc="0x0000000000002e6b",line="203"},{pc="0x0000000000002e73",line="203"},{pc="0x0000000000002e7e",line="206"},{pc="0x0000000000002e85",line="206"},{pc="0x0000000000002e8d",line="208"},{pc="0x0000000000002e96",line="208"},{pc="0x0000000000002ec3",line="209"},{pc="0x0000000000002ed1",line="211"},{pc="0x0000000000002ed8",line="212"},{pc="0x0000000000002ee4",line="212"},{pc="0x0000000000002ee6",line="213"},{pc="0x0000000000002f04",line="214"},{pc="0x0000000000002f2b",line="215"},{pc="0x0000000000002f52",line="216"},{pc="0x0000000000002f56",line="212"},{pc="0x0000000000002f6f",line="220"},{pc="0x0000000000002f81",line="221"},{pc="0x0000000000002f87",line="222"},{pc="0x0000000000002f90",line="222"},{pc="0x0000000000002f9b",line="222"},{pc="0x0000000000002fa6",line="224"},{pc="0x0000000000002faf",line="224"},{pc="0x0000000000002fba",line="224"},{pc="0x0000000000002fc5",line="174"},{pc="0x0000000000002fc6",line="226"},{pc="0x0000000000002fcd",line="235"},{pc="0x0000000000002fd9",line="235"},{pc="0x0000000000002fe8",line="237"},{pc="0x0000000000002fed",line="238"},{pc="0x0000000000002ff0",line="238"},{pc="0x0000000000003019",line="241"},{pc="0x0000000000003023",line="244"},{pc="0x0000000000003027",line="244"},{pc="0x000000000000302b",line="245"},{pc="0x0000000000003030",line="247"},{pc="0x0000000000003069",line="264"},{pc="0x000000000000306b",line="250"},{pc="0x0000000000003075",line="252"},{pc="0x000000000000307f",line="253"},{pc="0x0000000000003081",line="255"},{pc="0x000000000000308b",line="256"},{pc="0x000000000000308d",line="258"},{pc="0x0000000000003097",line="259"},{pc="0x0000000000003099",line="261"},{pc="0x00000000000030a3",line="262"},{pc="0x00000000000030a5",line="264"},{pc="0x00000000000030a6",line="266"},{pc="0x00000000000030a8",line="268"},{pc="0x00000000000030ac",line="268"},{pc="0x00000000000030b0",line="269"},{pc="0x00000000000030b2",line="271"},{pc="0x00000000000030df",line="285"},{pc="0x00000000000030e1",line="273"},{pc="0x00000000000030eb",line="274"},{pc="0x00000000000030ed",line="276"},{pc="0x00000000000030f7",line="277"},{pc="0x00000000000030f9",line="279"},{pc="0x0000000000003103",line="280"},{pc="0x0000000000003105",line="282"},{pc="0x000000000000310f",line="283"},{pc="0x0000000000003111",line="285"},{pc="0x0000000000003112",line="288"},{pc="0x0000000000003113",line="237"},{pc="0x000000000000311f",line="237"},{pc="0x0000000000003127",line="291"},{pc="0x000000000000312c",line="292"}]
+(gdb) 
+=thread-group-started,id="i1",pid="20194"
+=thread-created,id="1",group-id="i1"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
+1015^error,msg="During startup program exited with code 127."
+(gdb) 
+1016^done,threads=[]
+(gdb) 
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="20244"
+=thread-created,id="1",group-id="i1"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
+1014^error,msg="During startup program exited with code 127."
+(gdb) 
+1015^done,threads=[]
+(gdb) 
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="20476"
+=thread-created,id="1",group-id="i1"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
+1014^error,msg="During startup program exited with code 127."
+(gdb) 
+1015^done,threads=[]
+(gdb) 
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="21117"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+1014^running
+*running,thread-id="all"
+(gdb) 
+1015^done,threads=[{id="1",target-id="process 21117",name="catch",state="running",core="10"}]
+(gdb) 
+~"Stopped due to shared library event (no libraries added or removed)\n"
+*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="10"
+1016^done
+(gdb) 
+1017^done
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+1018^done
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e533c0",to="0x00007ffff7ef9f18"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7d11640",to="0x00007ffff7de51f2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cd0810",to="0x00007ffff7ce7f9e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cc5290",to="0x00007ffff7cc8e48"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7af6630",to="0x00007ffff7c6b20d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasound.so.2",target-name="/lib/x86_64-linux-gnu/libasound.so.2",host-name="/lib/x86_64-linux-gnu/libasound.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a01380",to="0x00007ffff7a8e146"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff79cf220",to="0x00007ffff79d0179"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpulse.so.0",target-name="/lib/x86_64-linux-gnu/libpulse.so.0",host-name="/lib/x86_64-linux-gnu/libpulse.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7986f60",to="0x00007ffff79b4ab1"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11.so.6",target-name="/lib/x86_64-linux-gnu/libX11.so.6",host-name="/lib/x86_64-linux-gnu/libX11.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78550c0",to="0x00007ffff78de766"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXext.so.6",target-name="/lib/x86_64-linux-gnu/libXext.so.6",host-name="/lib/x86_64-linux-gnu/libXext.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff782b5e0",to="0x00007ffff783584e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXcursor.so.1",target-name="/lib/x86_64-linux-gnu/libXcursor.so.1",host-name="/lib/x86_64-linux-gnu/libXcursor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff781d660",to="0x00007ffff7822288"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXinerama.so.1",target-name="/lib/x86_64-linux-gnu/libXinerama.so.1",host-name="/lib/x86_64-linux-gnu/libXinerama.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78160f0",to="0x00007ffff7816a31"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXi.so.6",target-name="/lib/x86_64-linux-gnu/libXi.so.6",host-name="/lib/x86_64-linux-gnu/libXi.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7803460",to="0x00007ffff780dd1b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrandr.so.2",target-name="/lib/x86_64-linux-gnu/libXrandr.so.2",host-name="/lib/x86_64-linux-gnu/libXrandr.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f6360",to="0x00007ffff77fc6b9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXss.so.1",target-name="/lib/x86_64-linux-gnu/libXss.so.1",host-name="/lib/x86_64-linux-gnu/libXss.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f0140",to="0x00007ffff77f0d5d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXxf86vm.so.1",target-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",host-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e9240",to="0x00007ffff77eb9f9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-egl.so.1",target-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",host-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e4080",to="0x00007ffff77e4219"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-client.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77d75c0",to="0x00007ffff77dc345"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77c7460",to="0x00007ffff77c8ff7"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxkbcommon.so.0",target-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",host-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7787560",to="0x00007ffff77a2703"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7767ae0",to="0x00007ffff77774d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpng16.so.16",target-name="/lib/x86_64-linux-gnu/libpng16.so.16",host-name="/lib/x86_64-linux-gnu/libpng16.so.16",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff772d510",to="0x00007ffff775129d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjpeg.so.8",target-name="/lib/x86_64-linux-gnu/libjpeg.so.8",host-name="/lib/x86_64-linux-gnu/libjpeg.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff76a7540",to="0x00007ffff76ea469"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libtiff.so.5",target-name="/lib/x86_64-linux-gnu/libtiff.so.5",host-name="/lib/x86_64-linux-gnu/libtiff.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff762ae60",to="0x00007ffff766dcf5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwebp.so.6",target-name="/lib/x86_64-linux-gnu/libwebp.so.6",host-name="/lib/x86_64-linux-gnu/libwebp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff75b8320",to="0x00007ffff7608b78"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libfreetype.so.6",target-name="/lib/x86_64-linux-gnu/libfreetype.so.6",host-name="/lib/x86_64-linux-gnu/libfreetype.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7503790",to="0x00007ffff7582205"}]
+=library-loaded,id="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",target-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",host-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff74883e0",to="0x00007ffff74cd002"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdbus-1.so.3",target-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",host-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff742feb0",to="0x00007ffff745c915"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb.so.1",target-name="/lib/x86_64-linux-gnu/libxcb.so.1",host-name="/lib/x86_64-linux-gnu/libxcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7405620",to="0x00007ffff7418699"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrender.so.1",target-name="/lib/x86_64-linux-gnu/libXrender.so.1",host-name="/lib/x86_64-linux-gnu/libXrender.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71efa60",to="0x00007ffff71f5ab5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXfixes.so.3",target-name="/lib/x86_64-linux-gnu/libXfixes.so.3",host-name="/lib/x86_64-linux-gnu/libXfixes.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71e8300",to="0x00007ffff71ea6ea"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libffi.so.7",target-name="/lib/x86_64-linux-gnu/libffi.so.7",host-name="/lib/x86_64-linux-gnu/libffi.so.7",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71dc230",to="0x00007ffff71e1a46"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libz.so.1",target-name="/lib/x86_64-linux-gnu/libz.so.1",host-name="/lib/x86_64-linux-gnu/libz.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71c0280",to="0x00007ffff71d0e2b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libzstd.so.1",target-name="/lib/x86_64-linux-gnu/libzstd.so.1",host-name="/lib/x86_64-linux-gnu/libzstd.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7119240",to="0x00007ffff71aad0a"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblzma.so.5",target-name="/lib/x86_64-linux-gnu/liblzma.so.5",host-name="/lib/x86_64-linux-gnu/liblzma.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff70ed3c0",to="0x00007ffff71043a6"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjbig.so.0",target-name="/lib/x86_64-linux-gnu/libjbig.so.0",host-name="/lib/x86_64-linux-gnu/libjbig.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6edd0a0",to="0x00007ffff6ee55b5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsystemd.so.0",target-name="/lib/x86_64-linux-gnu/libsystemd.so.0",host-name="/lib/x86_64-linux-gnu/libsystemd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e3ebc0",to="0x00007ffff6eb1780"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwrap.so.0",target-name="/lib/x86_64-linux-gnu/libwrap.so.0",host-name="/lib/x86_64-linux-gnu/libwrap.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e24b20",to="0x00007ffff6e2888c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsndfile.so.1",target-name="/lib/x86_64-linux-gnu/libsndfile.so.1",host-name="/lib/x86_64-linux-gnu/libsndfile.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6daafa0",to="0x00007ffff6dfcf05"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasyncns.so.0",target-name="/lib/x86_64-linux-gnu/libasyncns.so.0",host-name="/lib/x86_64-linux-gnu/libasyncns.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b9e1d0",to="0x00007ffff6ba0848"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libapparmor.so.1",target-name="/lib/x86_64-linux-gnu/libapparmor.so.1",host-name="/lib/x86_64-linux-gnu/libapparmor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b898c0",to="0x00007ffff6b91380"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b7e720",to="0x00007ffff6b81d70"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXau.so.6",target-name="/lib/x86_64-linux-gnu/libXau.so.6",host-name="/lib/x86_64-linux-gnu/libXau.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b76360",to="0x00007ffff6b77052"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXdmcp.so.6",target-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",host-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b6f1a0",to="0x00007ffff6b70a03"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblz4.so.1",target-name="/lib/x86_64-linux-gnu/liblz4.so.1",host-name="/lib/x86_64-linux-gnu/liblz4.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b4e120",to="0x00007ffff6b678fb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcrypt.so.20",target-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",host-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a38580",to="0x00007ffff6b059dc"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnsl.so.1",target-name="/lib/x86_64-linux-gnu/libnsl.so.1",host-name="/lib/x86_64-linux-gnu/libnsl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a14d20",to="0x00007ffff6a23711"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libFLAC.so.8",target-name="/lib/x86_64-linux-gnu/libFLAC.so.8",host-name="/lib/x86_64-linux-gnu/libFLAC.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69d9800",to="0x00007ffff6a01c33"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libogg.so.0",target-name="/lib/x86_64-linux-gnu/libogg.so.0",host-name="/lib/x86_64-linux-gnu/libogg.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69c6480",to="0x00007ffff69ca539"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbis.so.0",target-name="/lib/x86_64-linux-gnu/libvorbis.so.0",host-name="/lib/x86_64-linux-gnu/libvorbis.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6999480",to="0x00007ffff69afc4d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbisenc.so.2",target-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",host-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68ff0c0",to="0x00007ffff690177e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libresolv.so.2",target-name="/lib/x86_64-linux-gnu/libresolv.so.2",host-name="/lib/x86_64-linux-gnu/libresolv.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68d1720",to="0x00007ffff68e011c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libbsd.so.0",target-name="/lib/x86_64-linux-gnu/libbsd.so.0",host-name="/lib/x86_64-linux-gnu/libbsd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68b7e40",to="0x00007ffff68c5e69"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgpg-error.so.0",target-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",host-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6894c60",to="0x00007ffff68a6a92"}]
+~"[Thread debugging using libthread_db enabled]\n"
+~"Using host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Breakpoint 1, main (argc=21845, argv=0x0) at catch.c:16\n"
+~"16\t{\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+1019^done,threads=[{id="1",target-id="Thread 0x7ffff68897c0 (LWP 21117)",name="catch",frame={level="0",addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},state="stopped",core="0"}],current-thread-id="1"
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+~"0x00007ffff7e533c0  0x00007ffff7ef9f18  Yes         /lib/x86_64-linux-gnu/libm.so.6\n"
+~"0x00007ffff7d11640  0x00007ffff7de51f2  Yes         /lib/x86_64-linux-gnu/libSDL2-2.0.so.0\n"
+~"0x00007ffff7cd0810  0x00007ffff7ce7f9e  Yes         /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0\n"
+~"0x00007ffff7cc5290  0x00007ffff7cc8e48  Yes         /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0\n"
+~"0x00007ffff7af6630  0x00007ffff7c6b20d  Yes         /lib/x86_64-linux-gnu/libc.so.6\n"
+~"0x00007ffff7a01380  0x00007ffff7a8e146  Yes         /lib/x86_64-linux-gnu/libasound.so.2\n"
+~"0x00007ffff79cf220  0x00007ffff79d0179  Yes         /lib/x86_64-linux-gnu/libdl.so.2\n"
+~"0x00007ffff7986f60  0x00007ffff79b4ab1  Yes         /lib/x86_64-linux-gnu/libpulse.so.0\n"
+~"0x00007ffff78550c0  0x00007ffff78de766  Yes         /lib/x86_64-linux-gnu/libX11.so.6\n"
+~"0x00007ffff782b5e0  0x00007ffff783584e  Yes         /lib/x86_64-linux-gnu/libXext.so.6\n"
+~"0x00007ffff781d660  0x00007ffff7822288  Yes         /lib/x86_64-linux-gnu/libXcursor.so.1\n"
+~"0x00007ffff78160f0  0x00007ffff7816a31  Yes         /lib/x86_64-linux-gnu/libXinerama.so.1\n"
+~"0x00007ffff7803460  0x00007ffff780dd1b  Yes         /lib/x86_64-linux-gnu/libXi.so.6\n"
+~"0x00007ffff77f6360  0x00007ffff77fc6b9  Yes         /lib/x86_64-linux-gnu/libXrandr.so.2\n"
+~"0x00007ffff77f0140  0x00007ffff77f0d5d  Yes         /lib/x86_64-linux-gnu/libXss.so.1\n"
+~"0x00007ffff77e9240  0x00007ffff77eb9f9  Yes         /lib/x86_64-linux-gnu/libXxf86vm.so.1\n"
+~"0x00007ffff77e4080  0x00007ffff77e4219  Yes         /lib/x86_64-linux-gnu/libwayland-egl.so.1\n"
+~"0x00007ffff77d75c0  0x00007ffff77dc345  Yes         /lib/x86_64-linux-gnu/libwayland-client.so.0\n"
+~"0x00007ffff77c7460  0x00007ffff77c8ff7  Yes         /lib/x86_64-linux-gnu/libwayland-cursor.so.0\n"
+~"0x00007ffff7787560  0x00007ffff77a2703  Yes         /lib/x86_64-linux-gnu/libxkbcommon.so.0\n"
+~"0x00007ffff7767ae0  0x00007ffff77774d5  Yes         /lib/x86_64-linux-gnu/libpthread.so.0\n"
+~"0x00007ffff772d510  0x00007ffff775129d  Yes         /lib/x86_64-linux-gnu/libpng16.so.16\n"
+~"0x00007ffff76a7540  0x00007ffff76ea469  Yes         /lib/x86_64-linux-gnu/libjpeg.so.8\n"
+~"0x00007ffff762ae60  0x00007ffff766dcf5  Yes         /lib/x86_64-linux-gnu/libtiff.so.5\n"
+~"0x00007ffff75b8320  0x00007ffff7608b78  Yes         /lib/x86_64-linux-gnu/libwebp.so.6\n"
+~"0x00007ffff7503790  0x00007ffff7582205  Yes         /lib/x86_64-linux-gnu/libfreetype.so.6\n"
+~"0x00007ffff74883e0  0x00007ffff74cd002  Yes         /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so\n"
+~"0x00007ffff742feb0  0x00007ffff745c915  Yes         /lib/x86_64-linux-gnu/libdbus-1.so.3\n"
+~"0x00007ffff7405620  0x00007ffff7418699  Yes         /lib/x86_64-linux-gnu/libxcb.so.1\n"
+~"0x00007ffff71efa60  0x00007ffff71f5ab5  Yes         /lib/x86_64-linux-gnu/libXrender.so.1\n"
+~"0x00007ffff71e8300  0x00007ffff71ea6ea  Yes         /lib/x86_64-linux-gnu/libXfixes.so.3\n"
+~"0x00007ffff71dc230  0x00007ffff71e1a46  Yes         /lib/x86_64-linux-gnu/libffi.so.7\n"
+~"0x00007ffff71c0280  0x00007ffff71d0e2b  Yes         /lib/x86_64-linux-gnu/libz.so.1\n"
+~"0x00007ffff7119240  0x00007ffff71aad0a  Yes         /lib/x86_64-linux-gnu/libzstd.so.1\n"
+~"0x00007ffff70ed3c0  0x00007ffff71043a6  Yes         /lib/x86_64-linux-gnu/liblzma.so.5\n"
+~"0x00007ffff6edd0a0  0x00007ffff6ee55b5  Yes         /lib/x86_64-linux-gnu/libjbig.so.0\n"
+~"0x00007ffff6e3ebc0  0x00007ffff6eb1780  Yes         /lib/x86_64-linux-gnu/libsystemd.so.0\n"
+~"0x00007ffff6e24b20  0x00007ffff6e2888c  Yes         /lib/x86_64-linux-gnu/libwrap.so.0\n"
+~"0x00007ffff6daafa0  0x00007ffff6dfcf05  Yes         /lib/x86_64-linux-gnu/libsndfile.so.1\n"
+~"0x00007ffff6b9e1d0  0x00007ffff6ba0848  Yes         /lib/x86_64-linux-gnu/libasyncns.so.0\n"
+~"0x00007ffff6b898c0  0x00007ffff6b91380  Yes         /lib/x86_64-linux-gnu/libapparmor.so.1\n"
+~"0x00007ffff6b7e720  0x00007ffff6b81d70  Yes         /lib/x86_64-linux-gnu/librt.so.1\n"
+~"0x00007ffff6b76360  0x00007ffff6b77052  Yes         /lib/x86_64-linux-gnu/libXau.so.6\n"
+~"0x00007ffff6b6f1a0  0x00007ffff6b70a03  Yes         /lib/x86_64-linux-gnu/libXdmcp.so.6\n"
+~"0x00007ffff6b4e120  0x00007ffff6b678fb  Yes         /lib/x86_64-linux-gnu/liblz4.so.1\n"
+~"0x00007ffff6a38580  0x00007ffff6b059dc  Yes         /lib/x86_64-linux-gnu/libgcrypt.so.20\n"
+~"0x00007ffff6a14d20  0x00007ffff6a23711  Yes         /lib/x86_64-linux-gnu/libnsl.so.1\n"
+~"0x00007ffff69d9800  0x00007ffff6a01c33  Yes         /lib/x86_64-linux-gnu/libFLAC.so.8\n"
+~"0x00007ffff69c6480  0x00007ffff69ca539  Yes         /lib/x86_64-linux-gnu/libogg.so.0\n"
+~"0x00007ffff6999480  0x00007ffff69afc4d  Yes         /lib/x86_64-linux-gnu/libvorbis.so.0\n"
+~"0x00007ffff68ff0c0  0x00007ffff690177e  Yes         /lib/x86_64-linux-gnu/libvorbisenc.so.2\n"
+~"0x00007ffff68d1720  0x00007ffff68e011c  Yes         /lib/x86_64-linux-gnu/libresolv.so.2\n"
+~"0x00007ffff68b7e40  0x00007ffff68c5e69  Yes         /lib/x86_64-linux-gnu/libbsd.so.0\n"
+~"0x00007ffff6894c60  0x00007ffff68a6a92  Yes         /lib/x86_64-linux-gnu/libgpg-error.so.0\n"
+1020^done
+(gdb) 
+1021^done,stack=[frame={level="0",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"}]
+(gdb) 
+1022^done
+(gdb) 
+1023^done,features=["frozen-varobjs","pending-breakpoints","thread-info","data-read-memory-bytes","breakpoint-notifications","ada-task-info","language-option","info-gdb-mi-command","undefined-command-error-code","exec-run-start-option","data-disassemble-a-option","python"]
+(gdb) 
+1024^done,stack-args=[frame={level="0",args=[name="argc",name="argv"]}]
+(gdb) 
+1025^done,name="var1",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1026^done,ndeleted="1"
+(gdb) 
+1027^done,name="var2",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1028^done,ndeleted="1"
+(gdb) 
+1029^done,variables=[{name="argc",arg="1"},{name="argv",arg="1"},{name="framecnt"},{name="atimer"},{name="loopflg"}]
+(gdb) 
+1030^done,name="var3",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1031^done,name="var4",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1032^done,name="var5",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1033^done,name="var6",numchild="0",value="32767",type="SDL_TimerID",thread-id="1",has_more="0"
+(gdb) 
+1034^done,name="var7",numchild="0",value="SDL_FALSE",type="SDL_bool",thread-id="1",has_more="0"
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+~"[New Thread 0x7ffff6888700 (LWP 21168)]\n"
+*running,thread-id="2"
+1035^done,threads=[{id="2",target-id="Thread 0x7ffff6888700 (LWP 21168)",name="SDLTimer",state="running",core="9"}]
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libGL.so.1",target-name="/lib/x86_64-linux-gnu/libGL.so.1",host-name="/lib/x86_64-linux-gnu/libGL.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff51631c0",to="0x00007ffff516601d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLdispatch.so.0",target-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",host-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4fe2240",to="0x00007ffff4fe44eb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX.so.0",target-name="/lib/x86_64-linux-gnu/libGLX.so.0",host-name="/lib/x86_64-linux-gnu/libGLX.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50ef700",to="0x00007ffff510948c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",target-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",host-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4caf990",to="0x00007ffff4d16082"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff49d4490",to="0x00007ffff4a2c7d2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff47bfb40",to="0x00007ffff47c1162"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff277d600",to="0x00007ffff37a0552"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50e8040",to="0x00007ffff50e811f"}]
+=library-unloaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb-glx.so.0",target-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",host-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50da0a0",to="0x00007ffff50e2b29"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdrm.so.2",target-name="/lib/x86_64-linux-gnu/libdrm.so.2",host-name="/lib/x86_64-linux-gnu/libdrm.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fa9700",to="0x00007ffff7fb2c49"}]
+~"[Thread 0x7ffff6888700 (LWP 21168) exited]\n"
+=thread-exited,id="2",group-id="i1"
+~"[Inferior 1 (process 21117) exited normally]\n"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1",exit-code="0"
+*stopped,reason="exited-normally"
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="21468"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+1014^running
+*running,thread-id="all"
+(gdb) 
+1015^done,threads=[{id="1",target-id="process 21468",name="catch",state="running",core="3"}]
+(gdb) 
+~"Stopped due to shared library event (no libraries added or removed)\n"
+*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="3"
+1016^done
+(gdb) 
+1017^done
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+1018^done
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e533c0",to="0x00007ffff7ef9f18"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7d11640",to="0x00007ffff7de51f2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cd0810",to="0x00007ffff7ce7f9e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cc5290",to="0x00007ffff7cc8e48"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7af6630",to="0x00007ffff7c6b20d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasound.so.2",target-name="/lib/x86_64-linux-gnu/libasound.so.2",host-name="/lib/x86_64-linux-gnu/libasound.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a01380",to="0x00007ffff7a8e146"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff79cf220",to="0x00007ffff79d0179"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpulse.so.0",target-name="/lib/x86_64-linux-gnu/libpulse.so.0",host-name="/lib/x86_64-linux-gnu/libpulse.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7986f60",to="0x00007ffff79b4ab1"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11.so.6",target-name="/lib/x86_64-linux-gnu/libX11.so.6",host-name="/lib/x86_64-linux-gnu/libX11.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78550c0",to="0x00007ffff78de766"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXext.so.6",target-name="/lib/x86_64-linux-gnu/libXext.so.6",host-name="/lib/x86_64-linux-gnu/libXext.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff782b5e0",to="0x00007ffff783584e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXcursor.so.1",target-name="/lib/x86_64-linux-gnu/libXcursor.so.1",host-name="/lib/x86_64-linux-gnu/libXcursor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff781d660",to="0x00007ffff7822288"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXinerama.so.1",target-name="/lib/x86_64-linux-gnu/libXinerama.so.1",host-name="/lib/x86_64-linux-gnu/libXinerama.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78160f0",to="0x00007ffff7816a31"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXi.so.6",target-name="/lib/x86_64-linux-gnu/libXi.so.6",host-name="/lib/x86_64-linux-gnu/libXi.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7803460",to="0x00007ffff780dd1b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrandr.so.2",target-name="/lib/x86_64-linux-gnu/libXrandr.so.2",host-name="/lib/x86_64-linux-gnu/libXrandr.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f6360",to="0x00007ffff77fc6b9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXss.so.1",target-name="/lib/x86_64-linux-gnu/libXss.so.1",host-name="/lib/x86_64-linux-gnu/libXss.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f0140",to="0x00007ffff77f0d5d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXxf86vm.so.1",target-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",host-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e9240",to="0x00007ffff77eb9f9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-egl.so.1",target-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",host-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e4080",to="0x00007ffff77e4219"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-client.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77d75c0",to="0x00007ffff77dc345"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77c7460",to="0x00007ffff77c8ff7"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxkbcommon.so.0",target-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",host-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7787560",to="0x00007ffff77a2703"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7767ae0",to="0x00007ffff77774d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpng16.so.16",target-name="/lib/x86_64-linux-gnu/libpng16.so.16",host-name="/lib/x86_64-linux-gnu/libpng16.so.16",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff772d510",to="0x00007ffff775129d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjpeg.so.8",target-name="/lib/x86_64-linux-gnu/libjpeg.so.8",host-name="/lib/x86_64-linux-gnu/libjpeg.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff76a7540",to="0x00007ffff76ea469"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libtiff.so.5",target-name="/lib/x86_64-linux-gnu/libtiff.so.5",host-name="/lib/x86_64-linux-gnu/libtiff.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff762ae60",to="0x00007ffff766dcf5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwebp.so.6",target-name="/lib/x86_64-linux-gnu/libwebp.so.6",host-name="/lib/x86_64-linux-gnu/libwebp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff75b8320",to="0x00007ffff7608b78"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libfreetype.so.6",target-name="/lib/x86_64-linux-gnu/libfreetype.so.6",host-name="/lib/x86_64-linux-gnu/libfreetype.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7503790",to="0x00007ffff7582205"}]
+=library-loaded,id="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",target-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",host-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff74883e0",to="0x00007ffff74cd002"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdbus-1.so.3",target-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",host-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff742feb0",to="0x00007ffff745c915"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb.so.1",target-name="/lib/x86_64-linux-gnu/libxcb.so.1",host-name="/lib/x86_64-linux-gnu/libxcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7405620",to="0x00007ffff7418699"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrender.so.1",target-name="/lib/x86_64-linux-gnu/libXrender.so.1",host-name="/lib/x86_64-linux-gnu/libXrender.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71efa60",to="0x00007ffff71f5ab5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXfixes.so.3",target-name="/lib/x86_64-linux-gnu/libXfixes.so.3",host-name="/lib/x86_64-linux-gnu/libXfixes.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71e8300",to="0x00007ffff71ea6ea"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libffi.so.7",target-name="/lib/x86_64-linux-gnu/libffi.so.7",host-name="/lib/x86_64-linux-gnu/libffi.so.7",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71dc230",to="0x00007ffff71e1a46"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libz.so.1",target-name="/lib/x86_64-linux-gnu/libz.so.1",host-name="/lib/x86_64-linux-gnu/libz.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71c0280",to="0x00007ffff71d0e2b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libzstd.so.1",target-name="/lib/x86_64-linux-gnu/libzstd.so.1",host-name="/lib/x86_64-linux-gnu/libzstd.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7119240",to="0x00007ffff71aad0a"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblzma.so.5",target-name="/lib/x86_64-linux-gnu/liblzma.so.5",host-name="/lib/x86_64-linux-gnu/liblzma.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff70ed3c0",to="0x00007ffff71043a6"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjbig.so.0",target-name="/lib/x86_64-linux-gnu/libjbig.so.0",host-name="/lib/x86_64-linux-gnu/libjbig.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6edd0a0",to="0x00007ffff6ee55b5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsystemd.so.0",target-name="/lib/x86_64-linux-gnu/libsystemd.so.0",host-name="/lib/x86_64-linux-gnu/libsystemd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e3ebc0",to="0x00007ffff6eb1780"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwrap.so.0",target-name="/lib/x86_64-linux-gnu/libwrap.so.0",host-name="/lib/x86_64-linux-gnu/libwrap.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e24b20",to="0x00007ffff6e2888c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsndfile.so.1",target-name="/lib/x86_64-linux-gnu/libsndfile.so.1",host-name="/lib/x86_64-linux-gnu/libsndfile.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6daafa0",to="0x00007ffff6dfcf05"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasyncns.so.0",target-name="/lib/x86_64-linux-gnu/libasyncns.so.0",host-name="/lib/x86_64-linux-gnu/libasyncns.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b9e1d0",to="0x00007ffff6ba0848"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libapparmor.so.1",target-name="/lib/x86_64-linux-gnu/libapparmor.so.1",host-name="/lib/x86_64-linux-gnu/libapparmor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b898c0",to="0x00007ffff6b91380"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b7e720",to="0x00007ffff6b81d70"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXau.so.6",target-name="/lib/x86_64-linux-gnu/libXau.so.6",host-name="/lib/x86_64-linux-gnu/libXau.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b76360",to="0x00007ffff6b77052"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXdmcp.so.6",target-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",host-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b6f1a0",to="0x00007ffff6b70a03"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblz4.so.1",target-name="/lib/x86_64-linux-gnu/liblz4.so.1",host-name="/lib/x86_64-linux-gnu/liblz4.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b4e120",to="0x00007ffff6b678fb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcrypt.so.20",target-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",host-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a38580",to="0x00007ffff6b059dc"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnsl.so.1",target-name="/lib/x86_64-linux-gnu/libnsl.so.1",host-name="/lib/x86_64-linux-gnu/libnsl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a14d20",to="0x00007ffff6a23711"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libFLAC.so.8",target-name="/lib/x86_64-linux-gnu/libFLAC.so.8",host-name="/lib/x86_64-linux-gnu/libFLAC.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69d9800",to="0x00007ffff6a01c33"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libogg.so.0",target-name="/lib/x86_64-linux-gnu/libogg.so.0",host-name="/lib/x86_64-linux-gnu/libogg.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69c6480",to="0x00007ffff69ca539"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbis.so.0",target-name="/lib/x86_64-linux-gnu/libvorbis.so.0",host-name="/lib/x86_64-linux-gnu/libvorbis.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6999480",to="0x00007ffff69afc4d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbisenc.so.2",target-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",host-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68ff0c0",to="0x00007ffff690177e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libresolv.so.2",target-name="/lib/x86_64-linux-gnu/libresolv.so.2",host-name="/lib/x86_64-linux-gnu/libresolv.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68d1720",to="0x00007ffff68e011c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libbsd.so.0",target-name="/lib/x86_64-linux-gnu/libbsd.so.0",host-name="/lib/x86_64-linux-gnu/libbsd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68b7e40",to="0x00007ffff68c5e69"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgpg-error.so.0",target-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",host-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6894c60",to="0x00007ffff68a6a92"}]
+~"[Thread debugging using libthread_db enabled]\n"
+~"Using host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Breakpoint 1, main (argc=21845, argv=0x0) at catch.c:16\n"
+~"16\t{\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="6"
+1019^done,threads=[{id="1",target-id="Thread 0x7ffff68897c0 (LWP 21468)",name="catch",frame={level="0",addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},state="stopped",core="6"}],current-thread-id="1"
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+~"0x00007ffff7e533c0  0x00007ffff7ef9f18  Yes         /lib/x86_64-linux-gnu/libm.so.6\n"
+~"0x00007ffff7d11640  0x00007ffff7de51f2  Yes         /lib/x86_64-linux-gnu/libSDL2-2.0.so.0\n"
+~"0x00007ffff7cd0810  0x00007ffff7ce7f9e  Yes         /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0\n"
+~"0x00007ffff7cc5290  0x00007ffff7cc8e48  Yes         /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0\n"
+~"0x00007ffff7af6630  0x00007ffff7c6b20d  Yes         /lib/x86_64-linux-gnu/libc.so.6\n"
+~"0x00007ffff7a01380  0x00007ffff7a8e146  Yes         /lib/x86_64-linux-gnu/libasound.so.2\n"
+~"0x00007ffff79cf220  0x00007ffff79d0179  Yes         /lib/x86_64-linux-gnu/libdl.so.2\n"
+~"0x00007ffff7986f60  0x00007ffff79b4ab1  Yes         /lib/x86_64-linux-gnu/libpulse.so.0\n"
+~"0x00007ffff78550c0  0x00007ffff78de766  Yes         /lib/x86_64-linux-gnu/libX11.so.6\n"
+~"0x00007ffff782b5e0  0x00007ffff783584e  Yes         /lib/x86_64-linux-gnu/libXext.so.6\n"
+~"0x00007ffff781d660  0x00007ffff7822288  Yes         /lib/x86_64-linux-gnu/libXcursor.so.1\n"
+~"0x00007ffff78160f0  0x00007ffff7816a31  Yes         /lib/x86_64-linux-gnu/libXinerama.so.1\n"
+~"0x00007ffff7803460  0x00007ffff780dd1b  Yes         /lib/x86_64-linux-gnu/libXi.so.6\n"
+~"0x00007ffff77f6360  0x00007ffff77fc6b9  Yes         /lib/x86_64-linux-gnu/libXrandr.so.2\n"
+~"0x00007ffff77f0140  0x00007ffff77f0d5d  Yes         /lib/x86_64-linux-gnu/libXss.so.1\n"
+~"0x00007ffff77e9240  0x00007ffff77eb9f9  Yes         /lib/x86_64-linux-gnu/libXxf86vm.so.1\n"
+~"0x00007ffff77e4080  0x00007ffff77e4219  Yes         /lib/x86_64-linux-gnu/libwayland-egl.so.1\n"
+~"0x00007ffff77d75c0  0x00007ffff77dc345  Yes         /lib/x86_64-linux-gnu/libwayland-client.so.0\n"
+~"0x00007ffff77c7460  0x00007ffff77c8ff7  Yes         /lib/x86_64-linux-gnu/libwayland-cursor.so.0\n"
+~"0x00007ffff7787560  0x00007ffff77a2703  Yes         /lib/x86_64-linux-gnu/libxkbcommon.so.0\n"
+~"0x00007ffff7767ae0  0x00007ffff77774d5  Yes         /lib/x86_64-linux-gnu/libpthread.so.0\n"
+~"0x00007ffff772d510  0x00007ffff775129d  Yes         /lib/x86_64-linux-gnu/libpng16.so.16\n"
+~"0x00007ffff76a7540  0x00007ffff76ea469  Yes         /lib/x86_64-linux-gnu/libjpeg.so.8\n"
+~"0x00007ffff762ae60  0x00007ffff766dcf5  Yes         /lib/x86_64-linux-gnu/libtiff.so.5\n"
+~"0x00007ffff75b8320  0x00007ffff7608b78  Yes         /lib/x86_64-linux-gnu/libwebp.so.6\n"
+~"0x00007ffff7503790  0x00007ffff7582205  Yes         /lib/x86_64-linux-gnu/libfreetype.so.6\n"
+~"0x00007ffff74883e0  0x00007ffff74cd002  Yes         /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so\n"
+~"0x00007ffff742feb0  0x00007ffff745c915  Yes         /lib/x86_64-linux-gnu/libdbus-1.so.3\n"
+~"0x00007ffff7405620  0x00007ffff7418699  Yes         /lib/x86_64-linux-gnu/libxcb.so.1\n"
+~"0x00007ffff71efa60  0x00007ffff71f5ab5  Yes         /lib/x86_64-linux-gnu/libXrender.so.1\n"
+~"0x00007ffff71e8300  0x00007ffff71ea6ea  Yes         /lib/x86_64-linux-gnu/libXfixes.so.3\n"
+~"0x00007ffff71dc230  0x00007ffff71e1a46  Yes         /lib/x86_64-linux-gnu/libffi.so.7\n"
+~"0x00007ffff71c0280  0x00007ffff71d0e2b  Yes         /lib/x86_64-linux-gnu/libz.so.1\n"
+~"0x00007ffff7119240  0x00007ffff71aad0a  Yes         /lib/x86_64-linux-gnu/libzstd.so.1\n"
+~"0x00007ffff70ed3c0  0x00007ffff71043a6  Yes         /lib/x86_64-linux-gnu/liblzma.so.5\n"
+~"0x00007ffff6edd0a0  0x00007ffff6ee55b5  Yes         /lib/x86_64-linux-gnu/libjbig.so.0\n"
+~"0x00007ffff6e3ebc0  0x00007ffff6eb1780  Yes         /lib/x86_64-linux-gnu/libsystemd.so.0\n"
+~"0x00007ffff6e24b20  0x00007ffff6e2888c  Yes         /lib/x86_64-linux-gnu/libwrap.so.0\n"
+~"0x00007ffff6daafa0  0x00007ffff6dfcf05  Yes         /lib/x86_64-linux-gnu/libsndfile.so.1\n"
+~"0x00007ffff6b9e1d0  0x00007ffff6ba0848  Yes         /lib/x86_64-linux-gnu/libasyncns.so.0\n"
+~"0x00007ffff6b898c0  0x00007ffff6b91380  Yes         /lib/x86_64-linux-gnu/libapparmor.so.1\n"
+~"0x00007ffff6b7e720  0x00007ffff6b81d70  Yes         /lib/x86_64-linux-gnu/librt.so.1\n"
+~"0x00007ffff6b76360  0x00007ffff6b77052  Yes         /lib/x86_64-linux-gnu/libXau.so.6\n"
+~"0x00007ffff6b6f1a0  0x00007ffff6b70a03  Yes         /lib/x86_64-linux-gnu/libXdmcp.so.6\n"
+~"0x00007ffff6b4e120  0x00007ffff6b678fb  Yes         /lib/x86_64-linux-gnu/liblz4.so.1\n"
+~"0x00007ffff6a38580  0x00007ffff6b059dc  Yes         /lib/x86_64-linux-gnu/libgcrypt.so.20\n"
+~"0x00007ffff6a14d20  0x00007ffff6a23711  Yes         /lib/x86_64-linux-gnu/libnsl.so.1\n"
+~"0x00007ffff69d9800  0x00007ffff6a01c33  Yes         /lib/x86_64-linux-gnu/libFLAC.so.8\n"
+~"0x00007ffff69c6480  0x00007ffff69ca539  Yes         /lib/x86_64-linux-gnu/libogg.so.0\n"
+~"0x00007ffff6999480  0x00007ffff69afc4d  Yes         /lib/x86_64-linux-gnu/libvorbis.so.0\n"
+~"0x00007ffff68ff0c0  0x00007ffff690177e  Yes         /lib/x86_64-linux-gnu/libvorbisenc.so.2\n"
+~"0x00007ffff68d1720  0x00007ffff68e011c  Yes         /lib/x86_64-linux-gnu/libresolv.so.2\n"
+~"0x00007ffff68b7e40  0x00007ffff68c5e69  Yes         /lib/x86_64-linux-gnu/libbsd.so.0\n"
+~"0x00007ffff6894c60  0x00007ffff68a6a92  Yes         /lib/x86_64-linux-gnu/libgpg-error.so.0\n"
+1020^done
+(gdb) 
+1021^done,stack=[frame={level="0",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"}]
+(gdb) 
+1022^done
+(gdb) 
+1023^done,features=["frozen-varobjs","pending-breakpoints","thread-info","data-read-memory-bytes","breakpoint-notifications","ada-task-info","language-option","info-gdb-mi-command","undefined-command-error-code","exec-run-start-option","data-disassemble-a-option","python"]
+(gdb) 
+1024^done,stack-args=[frame={level="0",args=[name="argc",name="argv"]}]
+(gdb) 
+1025^done,name="var1",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1026^done,ndeleted="1"
+(gdb) 
+1027^done,name="var2",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1028^done,ndeleted="1"
+(gdb) 
+1029^done,variables=[{name="argc",arg="1"},{name="argv",arg="1"},{name="framecnt"},{name="atimer"},{name="loopflg"}]
+(gdb) 
+1030^done,name="var3",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1031^done,name="var4",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1032^done,name="var5",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1033^done,name="var6",numchild="0",value="32767",type="SDL_TimerID",thread-id="1",has_more="0"
+(gdb) 
+1034^done,name="var7",numchild="0",value="SDL_FALSE",type="SDL_bool",thread-id="1",has_more="0"
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+~"[New Thread 0x7ffff6888700 (LWP 21488)]\n"
+*running,thread-id="2"
+1035^done,threads=[{id="2",target-id="Thread 0x7ffff6888700 (LWP 21488)",name="SDLTimer",state="running",core="2"}]
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libGL.so.1",target-name="/lib/x86_64-linux-gnu/libGL.so.1",host-name="/lib/x86_64-linux-gnu/libGL.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff51631c0",to="0x00007ffff516601d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLdispatch.so.0",target-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",host-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4fe2240",to="0x00007ffff4fe44eb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX.so.0",target-name="/lib/x86_64-linux-gnu/libGLX.so.0",host-name="/lib/x86_64-linux-gnu/libGLX.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50ef700",to="0x00007ffff510948c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",target-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",host-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4caf990",to="0x00007ffff4d16082"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff49d4490",to="0x00007ffff4a2c7d2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff47bfb40",to="0x00007ffff47c1162"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff277d600",to="0x00007ffff37a0552"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50e8040",to="0x00007ffff50e811f"}]
+=library-unloaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb-glx.so.0",target-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",host-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50da0a0",to="0x00007ffff50e2b29"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdrm.so.2",target-name="/lib/x86_64-linux-gnu/libdrm.so.2",host-name="/lib/x86_64-linux-gnu/libdrm.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fa9700",to="0x00007ffff7fb2c49"}]
+~"[Thread 0x7ffff6888700 (LWP 21488) exited]\n"
+=thread-exited,id="2",group-id="i1"
+~"[Inferior 1 (process 21468) exited normally]\n"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1",exit-code="0"
+*stopped,reason="exited-normally"
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="21645"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+1014^running
+*running,thread-id="all"
+(gdb) 
+1015^done,threads=[{id="1",target-id="process 21645",name="catch",state="running",core="2"}]
+(gdb) 
+~"Stopped due to shared library event (no libraries added or removed)\n"
+*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="2"
+1016^done
+(gdb) 
+1017^done
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+1018^done
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e533c0",to="0x00007ffff7ef9f18"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7d11640",to="0x00007ffff7de51f2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cd0810",to="0x00007ffff7ce7f9e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cc5290",to="0x00007ffff7cc8e48"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7af6630",to="0x00007ffff7c6b20d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasound.so.2",target-name="/lib/x86_64-linux-gnu/libasound.so.2",host-name="/lib/x86_64-linux-gnu/libasound.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a01380",to="0x00007ffff7a8e146"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff79cf220",to="0x00007ffff79d0179"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpulse.so.0",target-name="/lib/x86_64-linux-gnu/libpulse.so.0",host-name="/lib/x86_64-linux-gnu/libpulse.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7986f60",to="0x00007ffff79b4ab1"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11.so.6",target-name="/lib/x86_64-linux-gnu/libX11.so.6",host-name="/lib/x86_64-linux-gnu/libX11.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78550c0",to="0x00007ffff78de766"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXext.so.6",target-name="/lib/x86_64-linux-gnu/libXext.so.6",host-name="/lib/x86_64-linux-gnu/libXext.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff782b5e0",to="0x00007ffff783584e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXcursor.so.1",target-name="/lib/x86_64-linux-gnu/libXcursor.so.1",host-name="/lib/x86_64-linux-gnu/libXcursor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff781d660",to="0x00007ffff7822288"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXinerama.so.1",target-name="/lib/x86_64-linux-gnu/libXinerama.so.1",host-name="/lib/x86_64-linux-gnu/libXinerama.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78160f0",to="0x00007ffff7816a31"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXi.so.6",target-name="/lib/x86_64-linux-gnu/libXi.so.6",host-name="/lib/x86_64-linux-gnu/libXi.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7803460",to="0x00007ffff780dd1b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrandr.so.2",target-name="/lib/x86_64-linux-gnu/libXrandr.so.2",host-name="/lib/x86_64-linux-gnu/libXrandr.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f6360",to="0x00007ffff77fc6b9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXss.so.1",target-name="/lib/x86_64-linux-gnu/libXss.so.1",host-name="/lib/x86_64-linux-gnu/libXss.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f0140",to="0x00007ffff77f0d5d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXxf86vm.so.1",target-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",host-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e9240",to="0x00007ffff77eb9f9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-egl.so.1",target-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",host-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e4080",to="0x00007ffff77e4219"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-client.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77d75c0",to="0x00007ffff77dc345"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77c7460",to="0x00007ffff77c8ff7"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxkbcommon.so.0",target-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",host-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7787560",to="0x00007ffff77a2703"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7767ae0",to="0x00007ffff77774d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpng16.so.16",target-name="/lib/x86_64-linux-gnu/libpng16.so.16",host-name="/lib/x86_64-linux-gnu/libpng16.so.16",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff772d510",to="0x00007ffff775129d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjpeg.so.8",target-name="/lib/x86_64-linux-gnu/libjpeg.so.8",host-name="/lib/x86_64-linux-gnu/libjpeg.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff76a7540",to="0x00007ffff76ea469"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libtiff.so.5",target-name="/lib/x86_64-linux-gnu/libtiff.so.5",host-name="/lib/x86_64-linux-gnu/libtiff.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff762ae60",to="0x00007ffff766dcf5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwebp.so.6",target-name="/lib/x86_64-linux-gnu/libwebp.so.6",host-name="/lib/x86_64-linux-gnu/libwebp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff75b8320",to="0x00007ffff7608b78"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libfreetype.so.6",target-name="/lib/x86_64-linux-gnu/libfreetype.so.6",host-name="/lib/x86_64-linux-gnu/libfreetype.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7503790",to="0x00007ffff7582205"}]
+=library-loaded,id="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",target-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",host-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff74883e0",to="0x00007ffff74cd002"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdbus-1.so.3",target-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",host-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff742feb0",to="0x00007ffff745c915"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb.so.1",target-name="/lib/x86_64-linux-gnu/libxcb.so.1",host-name="/lib/x86_64-linux-gnu/libxcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7405620",to="0x00007ffff7418699"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrender.so.1",target-name="/lib/x86_64-linux-gnu/libXrender.so.1",host-name="/lib/x86_64-linux-gnu/libXrender.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71efa60",to="0x00007ffff71f5ab5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXfixes.so.3",target-name="/lib/x86_64-linux-gnu/libXfixes.so.3",host-name="/lib/x86_64-linux-gnu/libXfixes.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71e8300",to="0x00007ffff71ea6ea"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libffi.so.7",target-name="/lib/x86_64-linux-gnu/libffi.so.7",host-name="/lib/x86_64-linux-gnu/libffi.so.7",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71dc230",to="0x00007ffff71e1a46"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libz.so.1",target-name="/lib/x86_64-linux-gnu/libz.so.1",host-name="/lib/x86_64-linux-gnu/libz.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71c0280",to="0x00007ffff71d0e2b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libzstd.so.1",target-name="/lib/x86_64-linux-gnu/libzstd.so.1",host-name="/lib/x86_64-linux-gnu/libzstd.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7119240",to="0x00007ffff71aad0a"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblzma.so.5",target-name="/lib/x86_64-linux-gnu/liblzma.so.5",host-name="/lib/x86_64-linux-gnu/liblzma.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff70ed3c0",to="0x00007ffff71043a6"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjbig.so.0",target-name="/lib/x86_64-linux-gnu/libjbig.so.0",host-name="/lib/x86_64-linux-gnu/libjbig.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6edd0a0",to="0x00007ffff6ee55b5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsystemd.so.0",target-name="/lib/x86_64-linux-gnu/libsystemd.so.0",host-name="/lib/x86_64-linux-gnu/libsystemd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e3ebc0",to="0x00007ffff6eb1780"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwrap.so.0",target-name="/lib/x86_64-linux-gnu/libwrap.so.0",host-name="/lib/x86_64-linux-gnu/libwrap.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e24b20",to="0x00007ffff6e2888c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsndfile.so.1",target-name="/lib/x86_64-linux-gnu/libsndfile.so.1",host-name="/lib/x86_64-linux-gnu/libsndfile.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6daafa0",to="0x00007ffff6dfcf05"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasyncns.so.0",target-name="/lib/x86_64-linux-gnu/libasyncns.so.0",host-name="/lib/x86_64-linux-gnu/libasyncns.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b9e1d0",to="0x00007ffff6ba0848"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libapparmor.so.1",target-name="/lib/x86_64-linux-gnu/libapparmor.so.1",host-name="/lib/x86_64-linux-gnu/libapparmor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b898c0",to="0x00007ffff6b91380"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b7e720",to="0x00007ffff6b81d70"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXau.so.6",target-name="/lib/x86_64-linux-gnu/libXau.so.6",host-name="/lib/x86_64-linux-gnu/libXau.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b76360",to="0x00007ffff6b77052"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXdmcp.so.6",target-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",host-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b6f1a0",to="0x00007ffff6b70a03"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblz4.so.1",target-name="/lib/x86_64-linux-gnu/liblz4.so.1",host-name="/lib/x86_64-linux-gnu/liblz4.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b4e120",to="0x00007ffff6b678fb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcrypt.so.20",target-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",host-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a38580",to="0x00007ffff6b059dc"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnsl.so.1",target-name="/lib/x86_64-linux-gnu/libnsl.so.1",host-name="/lib/x86_64-linux-gnu/libnsl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a14d20",to="0x00007ffff6a23711"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libFLAC.so.8",target-name="/lib/x86_64-linux-gnu/libFLAC.so.8",host-name="/lib/x86_64-linux-gnu/libFLAC.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69d9800",to="0x00007ffff6a01c33"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libogg.so.0",target-name="/lib/x86_64-linux-gnu/libogg.so.0",host-name="/lib/x86_64-linux-gnu/libogg.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69c6480",to="0x00007ffff69ca539"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbis.so.0",target-name="/lib/x86_64-linux-gnu/libvorbis.so.0",host-name="/lib/x86_64-linux-gnu/libvorbis.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6999480",to="0x00007ffff69afc4d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbisenc.so.2",target-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",host-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68ff0c0",to="0x00007ffff690177e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libresolv.so.2",target-name="/lib/x86_64-linux-gnu/libresolv.so.2",host-name="/lib/x86_64-linux-gnu/libresolv.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68d1720",to="0x00007ffff68e011c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libbsd.so.0",target-name="/lib/x86_64-linux-gnu/libbsd.so.0",host-name="/lib/x86_64-linux-gnu/libbsd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68b7e40",to="0x00007ffff68c5e69"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgpg-error.so.0",target-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",host-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6894c60",to="0x00007ffff68a6a92"}]
+~"[Thread debugging using libthread_db enabled]\n"
+~"Using host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Breakpoint 1, main (argc=21845, argv=0x0) at catch.c:16\n"
+~"16\t{\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="2"
+1019^done,threads=[{id="1",target-id="Thread 0x7ffff68897c0 (LWP 21645)",name="catch",frame={level="0",addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},state="stopped",core="2"}],current-thread-id="1"
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+~"0x00007ffff7e533c0  0x00007ffff7ef9f18  Yes         /lib/x86_64-linux-gnu/libm.so.6\n"
+~"0x00007ffff7d11640  0x00007ffff7de51f2  Yes         /lib/x86_64-linux-gnu/libSDL2-2.0.so.0\n"
+~"0x00007ffff7cd0810  0x00007ffff7ce7f9e  Yes         /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0\n"
+~"0x00007ffff7cc5290  0x00007ffff7cc8e48  Yes         /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0\n"
+~"0x00007ffff7af6630  0x00007ffff7c6b20d  Yes         /lib/x86_64-linux-gnu/libc.so.6\n"
+~"0x00007ffff7a01380  0x00007ffff7a8e146  Yes         /lib/x86_64-linux-gnu/libasound.so.2\n"
+~"0x00007ffff79cf220  0x00007ffff79d0179  Yes         /lib/x86_64-linux-gnu/libdl.so.2\n"
+~"0x00007ffff7986f60  0x00007ffff79b4ab1  Yes         /lib/x86_64-linux-gnu/libpulse.so.0\n"
+~"0x00007ffff78550c0  0x00007ffff78de766  Yes         /lib/x86_64-linux-gnu/libX11.so.6\n"
+~"0x00007ffff782b5e0  0x00007ffff783584e  Yes         /lib/x86_64-linux-gnu/libXext.so.6\n"
+~"0x00007ffff781d660  0x00007ffff7822288  Yes         /lib/x86_64-linux-gnu/libXcursor.so.1\n"
+~"0x00007ffff78160f0  0x00007ffff7816a31  Yes         /lib/x86_64-linux-gnu/libXinerama.so.1\n"
+~"0x00007ffff7803460  0x00007ffff780dd1b  Yes         /lib/x86_64-linux-gnu/libXi.so.6\n"
+~"0x00007ffff77f6360  0x00007ffff77fc6b9  Yes         /lib/x86_64-linux-gnu/libXrandr.so.2\n"
+~"0x00007ffff77f0140  0x00007ffff77f0d5d  Yes         /lib/x86_64-linux-gnu/libXss.so.1\n"
+~"0x00007ffff77e9240  0x00007ffff77eb9f9  Yes         /lib/x86_64-linux-gnu/libXxf86vm.so.1\n"
+~"0x00007ffff77e4080  0x00007ffff77e4219  Yes         /lib/x86_64-linux-gnu/libwayland-egl.so.1\n"
+~"0x00007ffff77d75c0  0x00007ffff77dc345  Yes         /lib/x86_64-linux-gnu/libwayland-client.so.0\n"
+~"0x00007ffff77c7460  0x00007ffff77c8ff7  Yes         /lib/x86_64-linux-gnu/libwayland-cursor.so.0\n"
+~"0x00007ffff7787560  0x00007ffff77a2703  Yes         /lib/x86_64-linux-gnu/libxkbcommon.so.0\n"
+~"0x00007ffff7767ae0  0x00007ffff77774d5  Yes         /lib/x86_64-linux-gnu/libpthread.so.0\n"
+~"0x00007ffff772d510  0x00007ffff775129d  Yes         /lib/x86_64-linux-gnu/libpng16.so.16\n"
+~"0x00007ffff76a7540  0x00007ffff76ea469  Yes         /lib/x86_64-linux-gnu/libjpeg.so.8\n"
+~"0x00007ffff762ae60  0x00007ffff766dcf5  Yes         /lib/x86_64-linux-gnu/libtiff.so.5\n"
+~"0x00007ffff75b8320  0x00007ffff7608b78  Yes         /lib/x86_64-linux-gnu/libwebp.so.6\n"
+~"0x00007ffff7503790  0x00007ffff7582205  Yes         /lib/x86_64-linux-gnu/libfreetype.so.6\n"
+~"0x00007ffff74883e0  0x00007ffff74cd002  Yes         /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so\n"
+~"0x00007ffff742feb0  0x00007ffff745c915  Yes         /lib/x86_64-linux-gnu/libdbus-1.so.3\n"
+~"0x00007ffff7405620  0x00007ffff7418699  Yes         /lib/x86_64-linux-gnu/libxcb.so.1\n"
+~"0x00007ffff71efa60  0x00007ffff71f5ab5  Yes         /lib/x86_64-linux-gnu/libXrender.so.1\n"
+~"0x00007ffff71e8300  0x00007ffff71ea6ea  Yes         /lib/x86_64-linux-gnu/libXfixes.so.3\n"
+~"0x00007ffff71dc230  0x00007ffff71e1a46  Yes         /lib/x86_64-linux-gnu/libffi.so.7\n"
+~"0x00007ffff71c0280  0x00007ffff71d0e2b  Yes         /lib/x86_64-linux-gnu/libz.so.1\n"
+~"0x00007ffff7119240  0x00007ffff71aad0a  Yes         /lib/x86_64-linux-gnu/libzstd.so.1\n"
+~"0x00007ffff70ed3c0  0x00007ffff71043a6  Yes         /lib/x86_64-linux-gnu/liblzma.so.5\n"
+~"0x00007ffff6edd0a0  0x00007ffff6ee55b5  Yes         /lib/x86_64-linux-gnu/libjbig.so.0\n"
+~"0x00007ffff6e3ebc0  0x00007ffff6eb1780  Yes         /lib/x86_64-linux-gnu/libsystemd.so.0\n"
+~"0x00007ffff6e24b20  0x00007ffff6e2888c  Yes         /lib/x86_64-linux-gnu/libwrap.so.0\n"
+~"0x00007ffff6daafa0  0x00007ffff6dfcf05  Yes         /lib/x86_64-linux-gnu/libsndfile.so.1\n"
+~"0x00007ffff6b9e1d0  0x00007ffff6ba0848  Yes         /lib/x86_64-linux-gnu/libasyncns.so.0\n"
+~"0x00007ffff6b898c0  0x00007ffff6b91380  Yes         /lib/x86_64-linux-gnu/libapparmor.so.1\n"
+~"0x00007ffff6b7e720  0x00007ffff6b81d70  Yes         /lib/x86_64-linux-gnu/librt.so.1\n"
+~"0x00007ffff6b76360  0x00007ffff6b77052  Yes         /lib/x86_64-linux-gnu/libXau.so.6\n"
+~"0x00007ffff6b6f1a0  0x00007ffff6b70a03  Yes         /lib/x86_64-linux-gnu/libXdmcp.so.6\n"
+~"0x00007ffff6b4e120  0x00007ffff6b678fb  Yes         /lib/x86_64-linux-gnu/liblz4.so.1\n"
+~"0x00007ffff6a38580  0x00007ffff6b059dc  Yes         /lib/x86_64-linux-gnu/libgcrypt.so.20\n"
+~"0x00007ffff6a14d20  0x00007ffff6a23711  Yes         /lib/x86_64-linux-gnu/libnsl.so.1\n"
+~"0x00007ffff69d9800  0x00007ffff6a01c33  Yes         /lib/x86_64-linux-gnu/libFLAC.so.8\n"
+~"0x00007ffff69c6480  0x00007ffff69ca539  Yes         /lib/x86_64-linux-gnu/libogg.so.0\n"
+~"0x00007ffff6999480  0x00007ffff69afc4d  Yes         /lib/x86_64-linux-gnu/libvorbis.so.0\n"
+~"0x00007ffff68ff0c0  0x00007ffff690177e  Yes         /lib/x86_64-linux-gnu/libvorbisenc.so.2\n"
+~"0x00007ffff68d1720  0x00007ffff68e011c  Yes         /lib/x86_64-linux-gnu/libresolv.so.2\n"
+~"0x00007ffff68b7e40  0x00007ffff68c5e69  Yes         /lib/x86_64-linux-gnu/libbsd.so.0\n"
+~"0x00007ffff6894c60  0x00007ffff68a6a92  Yes         /lib/x86_64-linux-gnu/libgpg-error.so.0\n"
+1020^done
+(gdb) 
+1021^done,stack=[frame={level="0",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"}]
+(gdb) 
+1022^done
+(gdb) 
+1023^done,features=["frozen-varobjs","pending-breakpoints","thread-info","data-read-memory-bytes","breakpoint-notifications","ada-task-info","language-option","info-gdb-mi-command","undefined-command-error-code","exec-run-start-option","data-disassemble-a-option","python"]
+(gdb) 
+1024^done,stack-args=[frame={level="0",args=[name="argc",name="argv"]}]
+(gdb) 
+1025^done,name="var1",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1026^done,ndeleted="1"
+(gdb) 
+1027^done,name="var2",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1028^done,ndeleted="1"
+(gdb) 
+1029^done,variables=[{name="argc",arg="1"},{name="argv",arg="1"},{name="framecnt"},{name="atimer"},{name="loopflg"}]
+(gdb) 
+1030^done,name="var3",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1031^done,name="var4",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1032^done,name="var5",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1033^done,name="var6",numchild="0",value="32767",type="SDL_TimerID",thread-id="1",has_more="0"
+(gdb) 
+1034^done,name="var7",numchild="0",value="SDL_FALSE",type="SDL_bool",thread-id="1",has_more="0"
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+~"[New Thread 0x7ffff6888700 (LWP 21659)]\n"
+*running,thread-id="2"
+1035^done,threads=[{id="2",target-id="Thread 0x7ffff6888700 (LWP 21659)",name="SDLTimer",state="running",core="3"}]
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libGL.so.1",target-name="/lib/x86_64-linux-gnu/libGL.so.1",host-name="/lib/x86_64-linux-gnu/libGL.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff51631c0",to="0x00007ffff516601d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLdispatch.so.0",target-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",host-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4fe2240",to="0x00007ffff4fe44eb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX.so.0",target-name="/lib/x86_64-linux-gnu/libGLX.so.0",host-name="/lib/x86_64-linux-gnu/libGLX.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50ef700",to="0x00007ffff510948c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",target-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",host-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4caf990",to="0x00007ffff4d16082"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff49d4490",to="0x00007ffff4a2c7d2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff47bfb40",to="0x00007ffff47c1162"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff277d600",to="0x00007ffff37a0552"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50e8040",to="0x00007ffff50e811f"}]
+=library-unloaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb-glx.so.0",target-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",host-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50da0a0",to="0x00007ffff50e2b29"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdrm.so.2",target-name="/lib/x86_64-linux-gnu/libdrm.so.2",host-name="/lib/x86_64-linux-gnu/libdrm.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fa9700",to="0x00007ffff7fb2c49"}]
+~"[Thread 0x7ffff6888700 (LWP 21659) exited]\n"
+=thread-exited,id="2",group-id="i1"
+~"[Inferior 1 (process 21645) exited normally]\n"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1",exit-code="0"
+*stopped,reason="exited-normally"
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="21773"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+1014^running
+*running,thread-id="all"
+(gdb) 
+1015^done,threads=[{id="1",target-id="process 21773",name="catch",state="running",core="0"}]
+(gdb) 
+~"Stopped due to shared library event (no libraries added or removed)\n"
+*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="0"
+1016^done
+(gdb) 
+1017^done
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+1018^done
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e533c0",to="0x00007ffff7ef9f18"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7d11640",to="0x00007ffff7de51f2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cd0810",to="0x00007ffff7ce7f9e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cc5290",to="0x00007ffff7cc8e48"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7af6630",to="0x00007ffff7c6b20d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasound.so.2",target-name="/lib/x86_64-linux-gnu/libasound.so.2",host-name="/lib/x86_64-linux-gnu/libasound.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a01380",to="0x00007ffff7a8e146"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff79cf220",to="0x00007ffff79d0179"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpulse.so.0",target-name="/lib/x86_64-linux-gnu/libpulse.so.0",host-name="/lib/x86_64-linux-gnu/libpulse.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7986f60",to="0x00007ffff79b4ab1"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11.so.6",target-name="/lib/x86_64-linux-gnu/libX11.so.6",host-name="/lib/x86_64-linux-gnu/libX11.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78550c0",to="0x00007ffff78de766"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXext.so.6",target-name="/lib/x86_64-linux-gnu/libXext.so.6",host-name="/lib/x86_64-linux-gnu/libXext.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff782b5e0",to="0x00007ffff783584e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXcursor.so.1",target-name="/lib/x86_64-linux-gnu/libXcursor.so.1",host-name="/lib/x86_64-linux-gnu/libXcursor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff781d660",to="0x00007ffff7822288"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXinerama.so.1",target-name="/lib/x86_64-linux-gnu/libXinerama.so.1",host-name="/lib/x86_64-linux-gnu/libXinerama.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78160f0",to="0x00007ffff7816a31"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXi.so.6",target-name="/lib/x86_64-linux-gnu/libXi.so.6",host-name="/lib/x86_64-linux-gnu/libXi.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7803460",to="0x00007ffff780dd1b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrandr.so.2",target-name="/lib/x86_64-linux-gnu/libXrandr.so.2",host-name="/lib/x86_64-linux-gnu/libXrandr.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f6360",to="0x00007ffff77fc6b9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXss.so.1",target-name="/lib/x86_64-linux-gnu/libXss.so.1",host-name="/lib/x86_64-linux-gnu/libXss.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f0140",to="0x00007ffff77f0d5d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXxf86vm.so.1",target-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",host-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e9240",to="0x00007ffff77eb9f9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-egl.so.1",target-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",host-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e4080",to="0x00007ffff77e4219"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-client.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77d75c0",to="0x00007ffff77dc345"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77c7460",to="0x00007ffff77c8ff7"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxkbcommon.so.0",target-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",host-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7787560",to="0x00007ffff77a2703"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7767ae0",to="0x00007ffff77774d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpng16.so.16",target-name="/lib/x86_64-linux-gnu/libpng16.so.16",host-name="/lib/x86_64-linux-gnu/libpng16.so.16",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff772d510",to="0x00007ffff775129d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjpeg.so.8",target-name="/lib/x86_64-linux-gnu/libjpeg.so.8",host-name="/lib/x86_64-linux-gnu/libjpeg.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff76a7540",to="0x00007ffff76ea469"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libtiff.so.5",target-name="/lib/x86_64-linux-gnu/libtiff.so.5",host-name="/lib/x86_64-linux-gnu/libtiff.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff762ae60",to="0x00007ffff766dcf5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwebp.so.6",target-name="/lib/x86_64-linux-gnu/libwebp.so.6",host-name="/lib/x86_64-linux-gnu/libwebp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff75b8320",to="0x00007ffff7608b78"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libfreetype.so.6",target-name="/lib/x86_64-linux-gnu/libfreetype.so.6",host-name="/lib/x86_64-linux-gnu/libfreetype.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7503790",to="0x00007ffff7582205"}]
+=library-loaded,id="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",target-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",host-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff74883e0",to="0x00007ffff74cd002"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdbus-1.so.3",target-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",host-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff742feb0",to="0x00007ffff745c915"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb.so.1",target-name="/lib/x86_64-linux-gnu/libxcb.so.1",host-name="/lib/x86_64-linux-gnu/libxcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7405620",to="0x00007ffff7418699"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrender.so.1",target-name="/lib/x86_64-linux-gnu/libXrender.so.1",host-name="/lib/x86_64-linux-gnu/libXrender.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71efa60",to="0x00007ffff71f5ab5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXfixes.so.3",target-name="/lib/x86_64-linux-gnu/libXfixes.so.3",host-name="/lib/x86_64-linux-gnu/libXfixes.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71e8300",to="0x00007ffff71ea6ea"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libffi.so.7",target-name="/lib/x86_64-linux-gnu/libffi.so.7",host-name="/lib/x86_64-linux-gnu/libffi.so.7",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71dc230",to="0x00007ffff71e1a46"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libz.so.1",target-name="/lib/x86_64-linux-gnu/libz.so.1",host-name="/lib/x86_64-linux-gnu/libz.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71c0280",to="0x00007ffff71d0e2b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libzstd.so.1",target-name="/lib/x86_64-linux-gnu/libzstd.so.1",host-name="/lib/x86_64-linux-gnu/libzstd.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7119240",to="0x00007ffff71aad0a"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblzma.so.5",target-name="/lib/x86_64-linux-gnu/liblzma.so.5",host-name="/lib/x86_64-linux-gnu/liblzma.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff70ed3c0",to="0x00007ffff71043a6"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjbig.so.0",target-name="/lib/x86_64-linux-gnu/libjbig.so.0",host-name="/lib/x86_64-linux-gnu/libjbig.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6edd0a0",to="0x00007ffff6ee55b5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsystemd.so.0",target-name="/lib/x86_64-linux-gnu/libsystemd.so.0",host-name="/lib/x86_64-linux-gnu/libsystemd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e3ebc0",to="0x00007ffff6eb1780"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwrap.so.0",target-name="/lib/x86_64-linux-gnu/libwrap.so.0",host-name="/lib/x86_64-linux-gnu/libwrap.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e24b20",to="0x00007ffff6e2888c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsndfile.so.1",target-name="/lib/x86_64-linux-gnu/libsndfile.so.1",host-name="/lib/x86_64-linux-gnu/libsndfile.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6daafa0",to="0x00007ffff6dfcf05"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasyncns.so.0",target-name="/lib/x86_64-linux-gnu/libasyncns.so.0",host-name="/lib/x86_64-linux-gnu/libasyncns.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b9e1d0",to="0x00007ffff6ba0848"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libapparmor.so.1",target-name="/lib/x86_64-linux-gnu/libapparmor.so.1",host-name="/lib/x86_64-linux-gnu/libapparmor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b898c0",to="0x00007ffff6b91380"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b7e720",to="0x00007ffff6b81d70"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXau.so.6",target-name="/lib/x86_64-linux-gnu/libXau.so.6",host-name="/lib/x86_64-linux-gnu/libXau.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b76360",to="0x00007ffff6b77052"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXdmcp.so.6",target-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",host-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b6f1a0",to="0x00007ffff6b70a03"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblz4.so.1",target-name="/lib/x86_64-linux-gnu/liblz4.so.1",host-name="/lib/x86_64-linux-gnu/liblz4.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b4e120",to="0x00007ffff6b678fb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcrypt.so.20",target-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",host-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a38580",to="0x00007ffff6b059dc"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnsl.so.1",target-name="/lib/x86_64-linux-gnu/libnsl.so.1",host-name="/lib/x86_64-linux-gnu/libnsl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a14d20",to="0x00007ffff6a23711"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libFLAC.so.8",target-name="/lib/x86_64-linux-gnu/libFLAC.so.8",host-name="/lib/x86_64-linux-gnu/libFLAC.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69d9800",to="0x00007ffff6a01c33"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libogg.so.0",target-name="/lib/x86_64-linux-gnu/libogg.so.0",host-name="/lib/x86_64-linux-gnu/libogg.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69c6480",to="0x00007ffff69ca539"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbis.so.0",target-name="/lib/x86_64-linux-gnu/libvorbis.so.0",host-name="/lib/x86_64-linux-gnu/libvorbis.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6999480",to="0x00007ffff69afc4d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbisenc.so.2",target-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",host-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68ff0c0",to="0x00007ffff690177e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libresolv.so.2",target-name="/lib/x86_64-linux-gnu/libresolv.so.2",host-name="/lib/x86_64-linux-gnu/libresolv.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68d1720",to="0x00007ffff68e011c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libbsd.so.0",target-name="/lib/x86_64-linux-gnu/libbsd.so.0",host-name="/lib/x86_64-linux-gnu/libbsd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68b7e40",to="0x00007ffff68c5e69"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgpg-error.so.0",target-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",host-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6894c60",to="0x00007ffff68a6a92"}]
+~"[Thread debugging using libthread_db enabled]\n"
+~"Using host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Breakpoint 1, main (argc=21845, argv=0x0) at catch.c:16\n"
+~"16\t{\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="7"
+1019^done,threads=[{id="1",target-id="Thread 0x7ffff68897c0 (LWP 21773)",name="catch",frame={level="0",addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},state="stopped",core="7"}],current-thread-id="1"
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+~"0x00007ffff7e533c0  0x00007ffff7ef9f18  Yes         /lib/x86_64-linux-gnu/libm.so.6\n"
+~"0x00007ffff7d11640  0x00007ffff7de51f2  Yes         /lib/x86_64-linux-gnu/libSDL2-2.0.so.0\n"
+~"0x00007ffff7cd0810  0x00007ffff7ce7f9e  Yes         /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0\n"
+~"0x00007ffff7cc5290  0x00007ffff7cc8e48  Yes         /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0\n"
+~"0x00007ffff7af6630  0x00007ffff7c6b20d  Yes         /lib/x86_64-linux-gnu/libc.so.6\n"
+~"0x00007ffff7a01380  0x00007ffff7a8e146  Yes         /lib/x86_64-linux-gnu/libasound.so.2\n"
+~"0x00007ffff79cf220  0x00007ffff79d0179  Yes         /lib/x86_64-linux-gnu/libdl.so.2\n"
+~"0x00007ffff7986f60  0x00007ffff79b4ab1  Yes         /lib/x86_64-linux-gnu/libpulse.so.0\n"
+~"0x00007ffff78550c0  0x00007ffff78de766  Yes         /lib/x86_64-linux-gnu/libX11.so.6\n"
+~"0x00007ffff782b5e0  0x00007ffff783584e  Yes         /lib/x86_64-linux-gnu/libXext.so.6\n"
+~"0x00007ffff781d660  0x00007ffff7822288  Yes         /lib/x86_64-linux-gnu/libXcursor.so.1\n"
+~"0x00007ffff78160f0  0x00007ffff7816a31  Yes         /lib/x86_64-linux-gnu/libXinerama.so.1\n"
+~"0x00007ffff7803460  0x00007ffff780dd1b  Yes         /lib/x86_64-linux-gnu/libXi.so.6\n"
+~"0x00007ffff77f6360  0x00007ffff77fc6b9  Yes         /lib/x86_64-linux-gnu/libXrandr.so.2\n"
+~"0x00007ffff77f0140  0x00007ffff77f0d5d  Yes         /lib/x86_64-linux-gnu/libXss.so.1\n"
+~"0x00007ffff77e9240  0x00007ffff77eb9f9  Yes         /lib/x86_64-linux-gnu/libXxf86vm.so.1\n"
+~"0x00007ffff77e4080  0x00007ffff77e4219  Yes         /lib/x86_64-linux-gnu/libwayland-egl.so.1\n"
+~"0x00007ffff77d75c0  0x00007ffff77dc345  Yes         /lib/x86_64-linux-gnu/libwayland-client.so.0\n"
+~"0x00007ffff77c7460  0x00007ffff77c8ff7  Yes         /lib/x86_64-linux-gnu/libwayland-cursor.so.0\n"
+~"0x00007ffff7787560  0x00007ffff77a2703  Yes         /lib/x86_64-linux-gnu/libxkbcommon.so.0\n"
+~"0x00007ffff7767ae0  0x00007ffff77774d5  Yes         /lib/x86_64-linux-gnu/libpthread.so.0\n"
+~"0x00007ffff772d510  0x00007ffff775129d  Yes         /lib/x86_64-linux-gnu/libpng16.so.16\n"
+~"0x00007ffff76a7540  0x00007ffff76ea469  Yes         /lib/x86_64-linux-gnu/libjpeg.so.8\n"
+~"0x00007ffff762ae60  0x00007ffff766dcf5  Yes         /lib/x86_64-linux-gnu/libtiff.so.5\n"
+~"0x00007ffff75b8320  0x00007ffff7608b78  Yes         /lib/x86_64-linux-gnu/libwebp.so.6\n"
+~"0x00007ffff7503790  0x00007ffff7582205  Yes         /lib/x86_64-linux-gnu/libfreetype.so.6\n"
+~"0x00007ffff74883e0  0x00007ffff74cd002  Yes         /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so\n"
+~"0x00007ffff742feb0  0x00007ffff745c915  Yes         /lib/x86_64-linux-gnu/libdbus-1.so.3\n"
+~"0x00007ffff7405620  0x00007ffff7418699  Yes         /lib/x86_64-linux-gnu/libxcb.so.1\n"
+~"0x00007ffff71efa60  0x00007ffff71f5ab5  Yes         /lib/x86_64-linux-gnu/libXrender.so.1\n"
+~"0x00007ffff71e8300  0x00007ffff71ea6ea  Yes         /lib/x86_64-linux-gnu/libXfixes.so.3\n"
+~"0x00007ffff71dc230  0x00007ffff71e1a46  Yes         /lib/x86_64-linux-gnu/libffi.so.7\n"
+~"0x00007ffff71c0280  0x00007ffff71d0e2b  Yes         /lib/x86_64-linux-gnu/libz.so.1\n"
+~"0x00007ffff7119240  0x00007ffff71aad0a  Yes         /lib/x86_64-linux-gnu/libzstd.so.1\n"
+~"0x00007ffff70ed3c0  0x00007ffff71043a6  Yes         /lib/x86_64-linux-gnu/liblzma.so.5\n"
+~"0x00007ffff6edd0a0  0x00007ffff6ee55b5  Yes         /lib/x86_64-linux-gnu/libjbig.so.0\n"
+~"0x00007ffff6e3ebc0  0x00007ffff6eb1780  Yes         /lib/x86_64-linux-gnu/libsystemd.so.0\n"
+~"0x00007ffff6e24b20  0x00007ffff6e2888c  Yes         /lib/x86_64-linux-gnu/libwrap.so.0\n"
+~"0x00007ffff6daafa0  0x00007ffff6dfcf05  Yes         /lib/x86_64-linux-gnu/libsndfile.so.1\n"
+~"0x00007ffff6b9e1d0  0x00007ffff6ba0848  Yes         /lib/x86_64-linux-gnu/libasyncns.so.0\n"
+~"0x00007ffff6b898c0  0x00007ffff6b91380  Yes         /lib/x86_64-linux-gnu/libapparmor.so.1\n"
+~"0x00007ffff6b7e720  0x00007ffff6b81d70  Yes         /lib/x86_64-linux-gnu/librt.so.1\n"
+~"0x00007ffff6b76360  0x00007ffff6b77052  Yes         /lib/x86_64-linux-gnu/libXau.so.6\n"
+~"0x00007ffff6b6f1a0  0x00007ffff6b70a03  Yes         /lib/x86_64-linux-gnu/libXdmcp.so.6\n"
+~"0x00007ffff6b4e120  0x00007ffff6b678fb  Yes         /lib/x86_64-linux-gnu/liblz4.so.1\n"
+~"0x00007ffff6a38580  0x00007ffff6b059dc  Yes         /lib/x86_64-linux-gnu/libgcrypt.so.20\n"
+~"0x00007ffff6a14d20  0x00007ffff6a23711  Yes         /lib/x86_64-linux-gnu/libnsl.so.1\n"
+~"0x00007ffff69d9800  0x00007ffff6a01c33  Yes         /lib/x86_64-linux-gnu/libFLAC.so.8\n"
+~"0x00007ffff69c6480  0x00007ffff69ca539  Yes         /lib/x86_64-linux-gnu/libogg.so.0\n"
+~"0x00007ffff6999480  0x00007ffff69afc4d  Yes         /lib/x86_64-linux-gnu/libvorbis.so.0\n"
+~"0x00007ffff68ff0c0  0x00007ffff690177e  Yes         /lib/x86_64-linux-gnu/libvorbisenc.so.2\n"
+~"0x00007ffff68d1720  0x00007ffff68e011c  Yes         /lib/x86_64-linux-gnu/libresolv.so.2\n"
+~"0x00007ffff68b7e40  0x00007ffff68c5e69  Yes         /lib/x86_64-linux-gnu/libbsd.so.0\n"
+~"0x00007ffff6894c60  0x00007ffff68a6a92  Yes         /lib/x86_64-linux-gnu/libgpg-error.so.0\n"
+1020^done
+(gdb) 
+1021^done,stack=[frame={level="0",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"}]
+(gdb) 
+1022^done
+(gdb) 
+1023^done,features=["frozen-varobjs","pending-breakpoints","thread-info","data-read-memory-bytes","breakpoint-notifications","ada-task-info","language-option","info-gdb-mi-command","undefined-command-error-code","exec-run-start-option","data-disassemble-a-option","python"]
+(gdb) 
+1024^done,stack-args=[frame={level="0",args=[name="argc",name="argv"]}]
+(gdb) 
+1025^done,name="var1",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1026^done,ndeleted="1"
+(gdb) 
+1027^done,name="var2",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1028^done,ndeleted="1"
+(gdb) 
+1029^done,variables=[{name="argc",arg="1"},{name="argv",arg="1"},{name="framecnt"},{name="atimer"},{name="loopflg"}]
+(gdb) 
+1030^done,name="var3",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1031^done,name="var4",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1032^done,name="var5",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1033^done,name="var6",numchild="0",value="32767",type="SDL_TimerID",thread-id="1",has_more="0"
+(gdb) 
+1034^done,name="var7",numchild="0",value="SDL_FALSE",type="SDL_bool",thread-id="1",has_more="0"
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+~"[New Thread 0x7ffff6888700 (LWP 21813)]\n"
+*running,thread-id="2"
+1035^done,threads=[{id="2",target-id="Thread 0x7ffff6888700 (LWP 21813)",name="SDLTimer",state="running",core="7"}]
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libGL.so.1",target-name="/lib/x86_64-linux-gnu/libGL.so.1",host-name="/lib/x86_64-linux-gnu/libGL.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff51631c0",to="0x00007ffff516601d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLdispatch.so.0",target-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",host-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4fe2240",to="0x00007ffff4fe44eb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX.so.0",target-name="/lib/x86_64-linux-gnu/libGLX.so.0",host-name="/lib/x86_64-linux-gnu/libGLX.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50ef700",to="0x00007ffff510948c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",target-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",host-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4caf990",to="0x00007ffff4d16082"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff49d4490",to="0x00007ffff4a2c7d2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff47bfb40",to="0x00007ffff47c1162"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff277d600",to="0x00007ffff37a0552"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50e8040",to="0x00007ffff50e811f"}]
+=library-unloaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb-glx.so.0",target-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",host-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50da0a0",to="0x00007ffff50e2b29"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdrm.so.2",target-name="/lib/x86_64-linux-gnu/libdrm.so.2",host-name="/lib/x86_64-linux-gnu/libdrm.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fa9700",to="0x00007ffff7fb2c49"}]
+~"[Thread 0x7ffff6888700 (LWP 21813) exited]\n"
+=thread-exited,id="2",group-id="i1"
+~"[Inferior 1 (process 21773) exited normally]\n"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1",exit-code="0"
+*stopped,reason="exited-normally"
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="22619"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+1014^running
+*running,thread-id="all"
+(gdb) 
+1015^done,threads=[{id="1",target-id="process 22619",name="catch",state="running",core="0"}]
+(gdb) 
+~"Stopped due to shared library event (no libraries added or removed)\n"
+*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="0"
+1016^done
+(gdb) 
+1017^done
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+1018^done
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e533c0",to="0x00007ffff7ef9f18"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7d11640",to="0x00007ffff7de51f2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cd0810",to="0x00007ffff7ce7f9e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cc5290",to="0x00007ffff7cc8e48"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7af6630",to="0x00007ffff7c6b20d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasound.so.2",target-name="/lib/x86_64-linux-gnu/libasound.so.2",host-name="/lib/x86_64-linux-gnu/libasound.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a01380",to="0x00007ffff7a8e146"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff79cf220",to="0x00007ffff79d0179"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpulse.so.0",target-name="/lib/x86_64-linux-gnu/libpulse.so.0",host-name="/lib/x86_64-linux-gnu/libpulse.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7986f60",to="0x00007ffff79b4ab1"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11.so.6",target-name="/lib/x86_64-linux-gnu/libX11.so.6",host-name="/lib/x86_64-linux-gnu/libX11.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78550c0",to="0x00007ffff78de766"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXext.so.6",target-name="/lib/x86_64-linux-gnu/libXext.so.6",host-name="/lib/x86_64-linux-gnu/libXext.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff782b5e0",to="0x00007ffff783584e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXcursor.so.1",target-name="/lib/x86_64-linux-gnu/libXcursor.so.1",host-name="/lib/x86_64-linux-gnu/libXcursor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff781d660",to="0x00007ffff7822288"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXinerama.so.1",target-name="/lib/x86_64-linux-gnu/libXinerama.so.1",host-name="/lib/x86_64-linux-gnu/libXinerama.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78160f0",to="0x00007ffff7816a31"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXi.so.6",target-name="/lib/x86_64-linux-gnu/libXi.so.6",host-name="/lib/x86_64-linux-gnu/libXi.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7803460",to="0x00007ffff780dd1b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrandr.so.2",target-name="/lib/x86_64-linux-gnu/libXrandr.so.2",host-name="/lib/x86_64-linux-gnu/libXrandr.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f6360",to="0x00007ffff77fc6b9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXss.so.1",target-name="/lib/x86_64-linux-gnu/libXss.so.1",host-name="/lib/x86_64-linux-gnu/libXss.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f0140",to="0x00007ffff77f0d5d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXxf86vm.so.1",target-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",host-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e9240",to="0x00007ffff77eb9f9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-egl.so.1",target-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",host-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e4080",to="0x00007ffff77e4219"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-client.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77d75c0",to="0x00007ffff77dc345"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77c7460",to="0x00007ffff77c8ff7"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxkbcommon.so.0",target-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",host-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7787560",to="0x00007ffff77a2703"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7767ae0",to="0x00007ffff77774d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpng16.so.16",target-name="/lib/x86_64-linux-gnu/libpng16.so.16",host-name="/lib/x86_64-linux-gnu/libpng16.so.16",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff772d510",to="0x00007ffff775129d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjpeg.so.8",target-name="/lib/x86_64-linux-gnu/libjpeg.so.8",host-name="/lib/x86_64-linux-gnu/libjpeg.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff76a7540",to="0x00007ffff76ea469"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libtiff.so.5",target-name="/lib/x86_64-linux-gnu/libtiff.so.5",host-name="/lib/x86_64-linux-gnu/libtiff.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff762ae60",to="0x00007ffff766dcf5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwebp.so.6",target-name="/lib/x86_64-linux-gnu/libwebp.so.6",host-name="/lib/x86_64-linux-gnu/libwebp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff75b8320",to="0x00007ffff7608b78"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libfreetype.so.6",target-name="/lib/x86_64-linux-gnu/libfreetype.so.6",host-name="/lib/x86_64-linux-gnu/libfreetype.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7503790",to="0x00007ffff7582205"}]
+=library-loaded,id="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",target-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",host-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff74883e0",to="0x00007ffff74cd002"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdbus-1.so.3",target-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",host-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff742feb0",to="0x00007ffff745c915"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb.so.1",target-name="/lib/x86_64-linux-gnu/libxcb.so.1",host-name="/lib/x86_64-linux-gnu/libxcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7405620",to="0x00007ffff7418699"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrender.so.1",target-name="/lib/x86_64-linux-gnu/libXrender.so.1",host-name="/lib/x86_64-linux-gnu/libXrender.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71efa60",to="0x00007ffff71f5ab5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXfixes.so.3",target-name="/lib/x86_64-linux-gnu/libXfixes.so.3",host-name="/lib/x86_64-linux-gnu/libXfixes.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71e8300",to="0x00007ffff71ea6ea"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libffi.so.7",target-name="/lib/x86_64-linux-gnu/libffi.so.7",host-name="/lib/x86_64-linux-gnu/libffi.so.7",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71dc230",to="0x00007ffff71e1a46"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libz.so.1",target-name="/lib/x86_64-linux-gnu/libz.so.1",host-name="/lib/x86_64-linux-gnu/libz.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71c0280",to="0x00007ffff71d0e2b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libzstd.so.1",target-name="/lib/x86_64-linux-gnu/libzstd.so.1",host-name="/lib/x86_64-linux-gnu/libzstd.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7119240",to="0x00007ffff71aad0a"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblzma.so.5",target-name="/lib/x86_64-linux-gnu/liblzma.so.5",host-name="/lib/x86_64-linux-gnu/liblzma.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff70ed3c0",to="0x00007ffff71043a6"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjbig.so.0",target-name="/lib/x86_64-linux-gnu/libjbig.so.0",host-name="/lib/x86_64-linux-gnu/libjbig.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6edd0a0",to="0x00007ffff6ee55b5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsystemd.so.0",target-name="/lib/x86_64-linux-gnu/libsystemd.so.0",host-name="/lib/x86_64-linux-gnu/libsystemd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e3ebc0",to="0x00007ffff6eb1780"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwrap.so.0",target-name="/lib/x86_64-linux-gnu/libwrap.so.0",host-name="/lib/x86_64-linux-gnu/libwrap.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e24b20",to="0x00007ffff6e2888c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsndfile.so.1",target-name="/lib/x86_64-linux-gnu/libsndfile.so.1",host-name="/lib/x86_64-linux-gnu/libsndfile.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6daafa0",to="0x00007ffff6dfcf05"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasyncns.so.0",target-name="/lib/x86_64-linux-gnu/libasyncns.so.0",host-name="/lib/x86_64-linux-gnu/libasyncns.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b9e1d0",to="0x00007ffff6ba0848"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libapparmor.so.1",target-name="/lib/x86_64-linux-gnu/libapparmor.so.1",host-name="/lib/x86_64-linux-gnu/libapparmor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b898c0",to="0x00007ffff6b91380"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b7e720",to="0x00007ffff6b81d70"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXau.so.6",target-name="/lib/x86_64-linux-gnu/libXau.so.6",host-name="/lib/x86_64-linux-gnu/libXau.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b76360",to="0x00007ffff6b77052"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXdmcp.so.6",target-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",host-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b6f1a0",to="0x00007ffff6b70a03"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblz4.so.1",target-name="/lib/x86_64-linux-gnu/liblz4.so.1",host-name="/lib/x86_64-linux-gnu/liblz4.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b4e120",to="0x00007ffff6b678fb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcrypt.so.20",target-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",host-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a38580",to="0x00007ffff6b059dc"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnsl.so.1",target-name="/lib/x86_64-linux-gnu/libnsl.so.1",host-name="/lib/x86_64-linux-gnu/libnsl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a14d20",to="0x00007ffff6a23711"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libFLAC.so.8",target-name="/lib/x86_64-linux-gnu/libFLAC.so.8",host-name="/lib/x86_64-linux-gnu/libFLAC.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69d9800",to="0x00007ffff6a01c33"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libogg.so.0",target-name="/lib/x86_64-linux-gnu/libogg.so.0",host-name="/lib/x86_64-linux-gnu/libogg.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69c6480",to="0x00007ffff69ca539"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbis.so.0",target-name="/lib/x86_64-linux-gnu/libvorbis.so.0",host-name="/lib/x86_64-linux-gnu/libvorbis.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6999480",to="0x00007ffff69afc4d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbisenc.so.2",target-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",host-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68ff0c0",to="0x00007ffff690177e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libresolv.so.2",target-name="/lib/x86_64-linux-gnu/libresolv.so.2",host-name="/lib/x86_64-linux-gnu/libresolv.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68d1720",to="0x00007ffff68e011c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libbsd.so.0",target-name="/lib/x86_64-linux-gnu/libbsd.so.0",host-name="/lib/x86_64-linux-gnu/libbsd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68b7e40",to="0x00007ffff68c5e69"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgpg-error.so.0",target-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",host-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6894c60",to="0x00007ffff68a6a92"}]
+~"[Thread debugging using libthread_db enabled]\n"
+~"Using host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Breakpoint 1, main (argc=21845, argv=0x0) at catch.c:16\n"
+~"16\t{\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="1"
+1019^done,threads=[{id="1",target-id="Thread 0x7ffff68897c0 (LWP 22619)",name="catch",frame={level="0",addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},state="stopped",core="1"}],current-thread-id="1"
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+~"0x00007ffff7e533c0  0x00007ffff7ef9f18  Yes         /lib/x86_64-linux-gnu/libm.so.6\n"
+~"0x00007ffff7d11640  0x00007ffff7de51f2  Yes         /lib/x86_64-linux-gnu/libSDL2-2.0.so.0\n"
+~"0x00007ffff7cd0810  0x00007ffff7ce7f9e  Yes         /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0\n"
+~"0x00007ffff7cc5290  0x00007ffff7cc8e48  Yes         /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0\n"
+~"0x00007ffff7af6630  0x00007ffff7c6b20d  Yes         /lib/x86_64-linux-gnu/libc.so.6\n"
+~"0x00007ffff7a01380  0x00007ffff7a8e146  Yes         /lib/x86_64-linux-gnu/libasound.so.2\n"
+~"0x00007ffff79cf220  0x00007ffff79d0179  Yes         /lib/x86_64-linux-gnu/libdl.so.2\n"
+~"0x00007ffff7986f60  0x00007ffff79b4ab1  Yes         /lib/x86_64-linux-gnu/libpulse.so.0\n"
+~"0x00007ffff78550c0  0x00007ffff78de766  Yes         /lib/x86_64-linux-gnu/libX11.so.6\n"
+~"0x00007ffff782b5e0  0x00007ffff783584e  Yes         /lib/x86_64-linux-gnu/libXext.so.6\n"
+~"0x00007ffff781d660  0x00007ffff7822288  Yes         /lib/x86_64-linux-gnu/libXcursor.so.1\n"
+~"0x00007ffff78160f0  0x00007ffff7816a31  Yes         /lib/x86_64-linux-gnu/libXinerama.so.1\n"
+~"0x00007ffff7803460  0x00007ffff780dd1b  Yes         /lib/x86_64-linux-gnu/libXi.so.6\n"
+~"0x00007ffff77f6360  0x00007ffff77fc6b9  Yes         /lib/x86_64-linux-gnu/libXrandr.so.2\n"
+~"0x00007ffff77f0140  0x00007ffff77f0d5d  Yes         /lib/x86_64-linux-gnu/libXss.so.1\n"
+~"0x00007ffff77e9240  0x00007ffff77eb9f9  Yes         /lib/x86_64-linux-gnu/libXxf86vm.so.1\n"
+~"0x00007ffff77e4080  0x00007ffff77e4219  Yes         /lib/x86_64-linux-gnu/libwayland-egl.so.1\n"
+~"0x00007ffff77d75c0  0x00007ffff77dc345  Yes         /lib/x86_64-linux-gnu/libwayland-client.so.0\n"
+~"0x00007ffff77c7460  0x00007ffff77c8ff7  Yes         /lib/x86_64-linux-gnu/libwayland-cursor.so.0\n"
+~"0x00007ffff7787560  0x00007ffff77a2703  Yes         /lib/x86_64-linux-gnu/libxkbcommon.so.0\n"
+~"0x00007ffff7767ae0  0x00007ffff77774d5  Yes         /lib/x86_64-linux-gnu/libpthread.so.0\n"
+~"0x00007ffff772d510  0x00007ffff775129d  Yes         /lib/x86_64-linux-gnu/libpng16.so.16\n"
+~"0x00007ffff76a7540  0x00007ffff76ea469  Yes         /lib/x86_64-linux-gnu/libjpeg.so.8\n"
+~"0x00007ffff762ae60  0x00007ffff766dcf5  Yes         /lib/x86_64-linux-gnu/libtiff.so.5\n"
+~"0x00007ffff75b8320  0x00007ffff7608b78  Yes         /lib/x86_64-linux-gnu/libwebp.so.6\n"
+~"0x00007ffff7503790  0x00007ffff7582205  Yes         /lib/x86_64-linux-gnu/libfreetype.so.6\n"
+~"0x00007ffff74883e0  0x00007ffff74cd002  Yes         /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so\n"
+~"0x00007ffff742feb0  0x00007ffff745c915  Yes         /lib/x86_64-linux-gnu/libdbus-1.so.3\n"
+~"0x00007ffff7405620  0x00007ffff7418699  Yes         /lib/x86_64-linux-gnu/libxcb.so.1\n"
+~"0x00007ffff71efa60  0x00007ffff71f5ab5  Yes         /lib/x86_64-linux-gnu/libXrender.so.1\n"
+~"0x00007ffff71e8300  0x00007ffff71ea6ea  Yes         /lib/x86_64-linux-gnu/libXfixes.so.3\n"
+~"0x00007ffff71dc230  0x00007ffff71e1a46  Yes         /lib/x86_64-linux-gnu/libffi.so.7\n"
+~"0x00007ffff71c0280  0x00007ffff71d0e2b  Yes         /lib/x86_64-linux-gnu/libz.so.1\n"
+~"0x00007ffff7119240  0x00007ffff71aad0a  Yes         /lib/x86_64-linux-gnu/libzstd.so.1\n"
+~"0x00007ffff70ed3c0  0x00007ffff71043a6  Yes         /lib/x86_64-linux-gnu/liblzma.so.5\n"
+~"0x00007ffff6edd0a0  0x00007ffff6ee55b5  Yes         /lib/x86_64-linux-gnu/libjbig.so.0\n"
+~"0x00007ffff6e3ebc0  0x00007ffff6eb1780  Yes         /lib/x86_64-linux-gnu/libsystemd.so.0\n"
+~"0x00007ffff6e24b20  0x00007ffff6e2888c  Yes         /lib/x86_64-linux-gnu/libwrap.so.0\n"
+~"0x00007ffff6daafa0  0x00007ffff6dfcf05  Yes         /lib/x86_64-linux-gnu/libsndfile.so.1\n"
+~"0x00007ffff6b9e1d0  0x00007ffff6ba0848  Yes         /lib/x86_64-linux-gnu/libasyncns.so.0\n"
+~"0x00007ffff6b898c0  0x00007ffff6b91380  Yes         /lib/x86_64-linux-gnu/libapparmor.so.1\n"
+~"0x00007ffff6b7e720  0x00007ffff6b81d70  Yes         /lib/x86_64-linux-gnu/librt.so.1\n"
+~"0x00007ffff6b76360  0x00007ffff6b77052  Yes         /lib/x86_64-linux-gnu/libXau.so.6\n"
+~"0x00007ffff6b6f1a0  0x00007ffff6b70a03  Yes         /lib/x86_64-linux-gnu/libXdmcp.so.6\n"
+~"0x00007ffff6b4e120  0x00007ffff6b678fb  Yes         /lib/x86_64-linux-gnu/liblz4.so.1\n"
+~"0x00007ffff6a38580  0x00007ffff6b059dc  Yes         /lib/x86_64-linux-gnu/libgcrypt.so.20\n"
+~"0x00007ffff6a14d20  0x00007ffff6a23711  Yes         /lib/x86_64-linux-gnu/libnsl.so.1\n"
+~"0x00007ffff69d9800  0x00007ffff6a01c33  Yes         /lib/x86_64-linux-gnu/libFLAC.so.8\n"
+~"0x00007ffff69c6480  0x00007ffff69ca539  Yes         /lib/x86_64-linux-gnu/libogg.so.0\n"
+~"0x00007ffff6999480  0x00007ffff69afc4d  Yes         /lib/x86_64-linux-gnu/libvorbis.so.0\n"
+~"0x00007ffff68ff0c0  0x00007ffff690177e  Yes         /lib/x86_64-linux-gnu/libvorbisenc.so.2\n"
+~"0x00007ffff68d1720  0x00007ffff68e011c  Yes         /lib/x86_64-linux-gnu/libresolv.so.2\n"
+~"0x00007ffff68b7e40  0x00007ffff68c5e69  Yes         /lib/x86_64-linux-gnu/libbsd.so.0\n"
+~"0x00007ffff6894c60  0x00007ffff68a6a92  Yes         /lib/x86_64-linux-gnu/libgpg-error.so.0\n"
+1020^done
+(gdb) 
+1021^done,stack=[frame={level="0",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"}]
+(gdb) 
+1022^done
+(gdb) 
+1023^done,features=["frozen-varobjs","pending-breakpoints","thread-info","data-read-memory-bytes","breakpoint-notifications","ada-task-info","language-option","info-gdb-mi-command","undefined-command-error-code","exec-run-start-option","data-disassemble-a-option","python"]
+(gdb) 
+1024^done,stack-args=[frame={level="0",args=[name="argc",name="argv"]}]
+(gdb) 
+1025^done,name="var1",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1026^done,ndeleted="1"
+(gdb) 
+1027^done,name="var2",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1028^done,ndeleted="1"
+(gdb) 
+1029^done,variables=[{name="argc",arg="1"},{name="argv",arg="1"},{name="framecnt"},{name="atimer"},{name="loopflg"}]
+(gdb) 
+1030^done,name="var3",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1031^done,name="var4",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1032^done,name="var5",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1033^done,name="var6",numchild="0",value="32767",type="SDL_TimerID",thread-id="1",has_more="0"
+(gdb) 
+1034^done,name="var7",numchild="0",value="SDL_FALSE",type="SDL_bool",thread-id="1",has_more="0"
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+~"[New Thread 0x7ffff6888700 (LWP 22649)]\n"
+*running,thread-id="2"
+1035^done,threads=[{id="2",target-id="Thread 0x7ffff6888700 (LWP 22649)",name="SDLTimer",state="running",core="1"}]
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libGL.so.1",target-name="/lib/x86_64-linux-gnu/libGL.so.1",host-name="/lib/x86_64-linux-gnu/libGL.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff51631c0",to="0x00007ffff516601d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLdispatch.so.0",target-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",host-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4fe2240",to="0x00007ffff4fe44eb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX.so.0",target-name="/lib/x86_64-linux-gnu/libGLX.so.0",host-name="/lib/x86_64-linux-gnu/libGLX.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50ef700",to="0x00007ffff510948c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",target-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",host-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4caf990",to="0x00007ffff4d16082"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff49d4490",to="0x00007ffff4a2c7d2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff47bfb40",to="0x00007ffff47c1162"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff277d600",to="0x00007ffff37a0552"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50e8040",to="0x00007ffff50e811f"}]
+=library-unloaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb-glx.so.0",target-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",host-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50da0a0",to="0x00007ffff50e2b29"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdrm.so.2",target-name="/lib/x86_64-linux-gnu/libdrm.so.2",host-name="/lib/x86_64-linux-gnu/libdrm.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fa9700",to="0x00007ffff7fb2c49"}]
+~"[Thread 0x7ffff6888700 (LWP 22649) exited]\n"
+=thread-exited,id="2",group-id="i1"
+~"[Inferior 1 (process 22619) exited normally]\n"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1",exit-code="0"
+*stopped,reason="exited-normally"
+^exit
+(gdb) 
+1001^done
+(gdb) 
+1002^done
+(gdb) 
+=cmd-param-changed,param="pagination",value="off"
+1003^done
+(gdb) 
+&"No symbol table is loaded.  Use the \"file\" command.\n"
+1004^error,msg="No symbol table is loaded.  Use the \"file\" command."
+(gdb) 
+1005^done
+(gdb) 
+1006^done
+(gdb) 
+1007^done
+(gdb) 
+1008^done
+(gdb) 
+1009^done
+(gdb) 
+~"The target architecture is set automatically (currently i386:x86-64)\n"
+1010^done
+(gdb) 
+1011^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000027a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+1012^done
+(gdb) 
+1013^done,bkpt={number="2",type="catchpoint",disp="keep",enabled="y",what="exception throw",catch-type="throw",times="0"}
+(gdb) 
+=thread-group-started,id="i1",pid="24422"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+1014^running
+*running,thread-id="all"
+(gdb) 
+1015^done,threads=[{id="1",target-id="process 24422",name="catch",state="running",core="2"}]
+(gdb) 
+~"Stopped due to shared library event (no libraries added or removed)\n"
+*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="2"
+1016^done
+(gdb) 
+1017^done
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+1018^done
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e533c0",to="0x00007ffff7ef9f18"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7d11640",to="0x00007ffff7de51f2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cd0810",to="0x00007ffff7ce7f9e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",target-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",host-name="/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7cc5290",to="0x00007ffff7cc8e48"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7af6630",to="0x00007ffff7c6b20d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasound.so.2",target-name="/lib/x86_64-linux-gnu/libasound.so.2",host-name="/lib/x86_64-linux-gnu/libasound.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a01380",to="0x00007ffff7a8e146"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff79cf220",to="0x00007ffff79d0179"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpulse.so.0",target-name="/lib/x86_64-linux-gnu/libpulse.so.0",host-name="/lib/x86_64-linux-gnu/libpulse.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7986f60",to="0x00007ffff79b4ab1"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11.so.6",target-name="/lib/x86_64-linux-gnu/libX11.so.6",host-name="/lib/x86_64-linux-gnu/libX11.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78550c0",to="0x00007ffff78de766"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXext.so.6",target-name="/lib/x86_64-linux-gnu/libXext.so.6",host-name="/lib/x86_64-linux-gnu/libXext.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff782b5e0",to="0x00007ffff783584e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXcursor.so.1",target-name="/lib/x86_64-linux-gnu/libXcursor.so.1",host-name="/lib/x86_64-linux-gnu/libXcursor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff781d660",to="0x00007ffff7822288"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXinerama.so.1",target-name="/lib/x86_64-linux-gnu/libXinerama.so.1",host-name="/lib/x86_64-linux-gnu/libXinerama.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff78160f0",to="0x00007ffff7816a31"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXi.so.6",target-name="/lib/x86_64-linux-gnu/libXi.so.6",host-name="/lib/x86_64-linux-gnu/libXi.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7803460",to="0x00007ffff780dd1b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrandr.so.2",target-name="/lib/x86_64-linux-gnu/libXrandr.so.2",host-name="/lib/x86_64-linux-gnu/libXrandr.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f6360",to="0x00007ffff77fc6b9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXss.so.1",target-name="/lib/x86_64-linux-gnu/libXss.so.1",host-name="/lib/x86_64-linux-gnu/libXss.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77f0140",to="0x00007ffff77f0d5d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXxf86vm.so.1",target-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",host-name="/lib/x86_64-linux-gnu/libXxf86vm.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e9240",to="0x00007ffff77eb9f9"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-egl.so.1",target-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",host-name="/lib/x86_64-linux-gnu/libwayland-egl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77e4080",to="0x00007ffff77e4219"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-client.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-client.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77d75c0",to="0x00007ffff77dc345"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",target-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",host-name="/lib/x86_64-linux-gnu/libwayland-cursor.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff77c7460",to="0x00007ffff77c8ff7"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxkbcommon.so.0",target-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",host-name="/lib/x86_64-linux-gnu/libxkbcommon.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7787560",to="0x00007ffff77a2703"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7767ae0",to="0x00007ffff77774d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpng16.so.16",target-name="/lib/x86_64-linux-gnu/libpng16.so.16",host-name="/lib/x86_64-linux-gnu/libpng16.so.16",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff772d510",to="0x00007ffff775129d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjpeg.so.8",target-name="/lib/x86_64-linux-gnu/libjpeg.so.8",host-name="/lib/x86_64-linux-gnu/libjpeg.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff76a7540",to="0x00007ffff76ea469"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libtiff.so.5",target-name="/lib/x86_64-linux-gnu/libtiff.so.5",host-name="/lib/x86_64-linux-gnu/libtiff.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff762ae60",to="0x00007ffff766dcf5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwebp.so.6",target-name="/lib/x86_64-linux-gnu/libwebp.so.6",host-name="/lib/x86_64-linux-gnu/libwebp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff75b8320",to="0x00007ffff7608b78"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libfreetype.so.6",target-name="/lib/x86_64-linux-gnu/libfreetype.so.6",host-name="/lib/x86_64-linux-gnu/libfreetype.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7503790",to="0x00007ffff7582205"}]
+=library-loaded,id="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",target-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",host-name="/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff74883e0",to="0x00007ffff74cd002"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdbus-1.so.3",target-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",host-name="/lib/x86_64-linux-gnu/libdbus-1.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff742feb0",to="0x00007ffff745c915"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb.so.1",target-name="/lib/x86_64-linux-gnu/libxcb.so.1",host-name="/lib/x86_64-linux-gnu/libxcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7405620",to="0x00007ffff7418699"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXrender.so.1",target-name="/lib/x86_64-linux-gnu/libXrender.so.1",host-name="/lib/x86_64-linux-gnu/libXrender.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71efa60",to="0x00007ffff71f5ab5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXfixes.so.3",target-name="/lib/x86_64-linux-gnu/libXfixes.so.3",host-name="/lib/x86_64-linux-gnu/libXfixes.so.3",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71e8300",to="0x00007ffff71ea6ea"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libffi.so.7",target-name="/lib/x86_64-linux-gnu/libffi.so.7",host-name="/lib/x86_64-linux-gnu/libffi.so.7",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71dc230",to="0x00007ffff71e1a46"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libz.so.1",target-name="/lib/x86_64-linux-gnu/libz.so.1",host-name="/lib/x86_64-linux-gnu/libz.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff71c0280",to="0x00007ffff71d0e2b"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libzstd.so.1",target-name="/lib/x86_64-linux-gnu/libzstd.so.1",host-name="/lib/x86_64-linux-gnu/libzstd.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7119240",to="0x00007ffff71aad0a"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblzma.so.5",target-name="/lib/x86_64-linux-gnu/liblzma.so.5",host-name="/lib/x86_64-linux-gnu/liblzma.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff70ed3c0",to="0x00007ffff71043a6"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libjbig.so.0",target-name="/lib/x86_64-linux-gnu/libjbig.so.0",host-name="/lib/x86_64-linux-gnu/libjbig.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6edd0a0",to="0x00007ffff6ee55b5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsystemd.so.0",target-name="/lib/x86_64-linux-gnu/libsystemd.so.0",host-name="/lib/x86_64-linux-gnu/libsystemd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e3ebc0",to="0x00007ffff6eb1780"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libwrap.so.0",target-name="/lib/x86_64-linux-gnu/libwrap.so.0",host-name="/lib/x86_64-linux-gnu/libwrap.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6e24b20",to="0x00007ffff6e2888c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libsndfile.so.1",target-name="/lib/x86_64-linux-gnu/libsndfile.so.1",host-name="/lib/x86_64-linux-gnu/libsndfile.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6daafa0",to="0x00007ffff6dfcf05"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libasyncns.so.0",target-name="/lib/x86_64-linux-gnu/libasyncns.so.0",host-name="/lib/x86_64-linux-gnu/libasyncns.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b9e1d0",to="0x00007ffff6ba0848"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libapparmor.so.1",target-name="/lib/x86_64-linux-gnu/libapparmor.so.1",host-name="/lib/x86_64-linux-gnu/libapparmor.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b898c0",to="0x00007ffff6b91380"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b7e720",to="0x00007ffff6b81d70"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXau.so.6",target-name="/lib/x86_64-linux-gnu/libXau.so.6",host-name="/lib/x86_64-linux-gnu/libXau.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b76360",to="0x00007ffff6b77052"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libXdmcp.so.6",target-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",host-name="/lib/x86_64-linux-gnu/libXdmcp.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b6f1a0",to="0x00007ffff6b70a03"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/liblz4.so.1",target-name="/lib/x86_64-linux-gnu/liblz4.so.1",host-name="/lib/x86_64-linux-gnu/liblz4.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6b4e120",to="0x00007ffff6b678fb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcrypt.so.20",target-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",host-name="/lib/x86_64-linux-gnu/libgcrypt.so.20",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a38580",to="0x00007ffff6b059dc"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnsl.so.1",target-name="/lib/x86_64-linux-gnu/libnsl.so.1",host-name="/lib/x86_64-linux-gnu/libnsl.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6a14d20",to="0x00007ffff6a23711"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libFLAC.so.8",target-name="/lib/x86_64-linux-gnu/libFLAC.so.8",host-name="/lib/x86_64-linux-gnu/libFLAC.so.8",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69d9800",to="0x00007ffff6a01c33"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libogg.so.0",target-name="/lib/x86_64-linux-gnu/libogg.so.0",host-name="/lib/x86_64-linux-gnu/libogg.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff69c6480",to="0x00007ffff69ca539"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbis.so.0",target-name="/lib/x86_64-linux-gnu/libvorbis.so.0",host-name="/lib/x86_64-linux-gnu/libvorbis.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6999480",to="0x00007ffff69afc4d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libvorbisenc.so.2",target-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",host-name="/lib/x86_64-linux-gnu/libvorbisenc.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68ff0c0",to="0x00007ffff690177e"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libresolv.so.2",target-name="/lib/x86_64-linux-gnu/libresolv.so.2",host-name="/lib/x86_64-linux-gnu/libresolv.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68d1720",to="0x00007ffff68e011c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libbsd.so.0",target-name="/lib/x86_64-linux-gnu/libbsd.so.0",host-name="/lib/x86_64-linux-gnu/libbsd.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff68b7e40",to="0x00007ffff68c5e69"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgpg-error.so.0",target-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",host-name="/lib/x86_64-linux-gnu/libgpg-error.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff6894c60",to="0x00007ffff68a6a92"}]
+~"[Thread debugging using libthread_db enabled]\n"
+~"Using host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Breakpoint 1, main (argc=21845, argv=0x0) at catch.c:16\n"
+~"16\t{\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="3"
+1019^done,threads=[{id="1",target-id="Thread 0x7ffff68897c0 (LWP 24422)",name="catch",frame={level="0",addr="0x00005555555567a9",func="main",args=[{name="argc",value="21845"},{name="argv",value="0x0"}],file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"},state="stopped",core="3"}],current-thread-id="1"
+(gdb) 
+~"From                To                  Syms Read   Shared Object Library\n"
+~"0x00007ffff7fd0100  0x00007ffff7ff2674  Yes         /lib64/ld-linux-x86-64.so.2\n"
+~"0x00007ffff7e533c0  0x00007ffff7ef9f18  Yes         /lib/x86_64-linux-gnu/libm.so.6\n"
+~"0x00007ffff7d11640  0x00007ffff7de51f2  Yes         /lib/x86_64-linux-gnu/libSDL2-2.0.so.0\n"
+~"0x00007ffff7cd0810  0x00007ffff7ce7f9e  Yes         /lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0\n"
+~"0x00007ffff7cc5290  0x00007ffff7cc8e48  Yes         /lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0\n"
+~"0x00007ffff7af6630  0x00007ffff7c6b20d  Yes         /lib/x86_64-linux-gnu/libc.so.6\n"
+~"0x00007ffff7a01380  0x00007ffff7a8e146  Yes         /lib/x86_64-linux-gnu/libasound.so.2\n"
+~"0x00007ffff79cf220  0x00007ffff79d0179  Yes         /lib/x86_64-linux-gnu/libdl.so.2\n"
+~"0x00007ffff7986f60  0x00007ffff79b4ab1  Yes         /lib/x86_64-linux-gnu/libpulse.so.0\n"
+~"0x00007ffff78550c0  0x00007ffff78de766  Yes         /lib/x86_64-linux-gnu/libX11.so.6\n"
+~"0x00007ffff782b5e0  0x00007ffff783584e  Yes         /lib/x86_64-linux-gnu/libXext.so.6\n"
+~"0x00007ffff781d660  0x00007ffff7822288  Yes         /lib/x86_64-linux-gnu/libXcursor.so.1\n"
+~"0x00007ffff78160f0  0x00007ffff7816a31  Yes         /lib/x86_64-linux-gnu/libXinerama.so.1\n"
+~"0x00007ffff7803460  0x00007ffff780dd1b  Yes         /lib/x86_64-linux-gnu/libXi.so.6\n"
+~"0x00007ffff77f6360  0x00007ffff77fc6b9  Yes         /lib/x86_64-linux-gnu/libXrandr.so.2\n"
+~"0x00007ffff77f0140  0x00007ffff77f0d5d  Yes         /lib/x86_64-linux-gnu/libXss.so.1\n"
+~"0x00007ffff77e9240  0x00007ffff77eb9f9  Yes         /lib/x86_64-linux-gnu/libXxf86vm.so.1\n"
+~"0x00007ffff77e4080  0x00007ffff77e4219  Yes         /lib/x86_64-linux-gnu/libwayland-egl.so.1\n"
+~"0x00007ffff77d75c0  0x00007ffff77dc345  Yes         /lib/x86_64-linux-gnu/libwayland-client.so.0\n"
+~"0x00007ffff77c7460  0x00007ffff77c8ff7  Yes         /lib/x86_64-linux-gnu/libwayland-cursor.so.0\n"
+~"0x00007ffff7787560  0x00007ffff77a2703  Yes         /lib/x86_64-linux-gnu/libxkbcommon.so.0\n"
+~"0x00007ffff7767ae0  0x00007ffff77774d5  Yes         /lib/x86_64-linux-gnu/libpthread.so.0\n"
+~"0x00007ffff772d510  0x00007ffff775129d  Yes         /lib/x86_64-linux-gnu/libpng16.so.16\n"
+~"0x00007ffff76a7540  0x00007ffff76ea469  Yes         /lib/x86_64-linux-gnu/libjpeg.so.8\n"
+~"0x00007ffff762ae60  0x00007ffff766dcf5  Yes         /lib/x86_64-linux-gnu/libtiff.so.5\n"
+~"0x00007ffff75b8320  0x00007ffff7608b78  Yes         /lib/x86_64-linux-gnu/libwebp.so.6\n"
+~"0x00007ffff7503790  0x00007ffff7582205  Yes         /lib/x86_64-linux-gnu/libfreetype.so.6\n"
+~"0x00007ffff74883e0  0x00007ffff74cd002  Yes         /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-13.99.so\n"
+~"0x00007ffff742feb0  0x00007ffff745c915  Yes         /lib/x86_64-linux-gnu/libdbus-1.so.3\n"
+~"0x00007ffff7405620  0x00007ffff7418699  Yes         /lib/x86_64-linux-gnu/libxcb.so.1\n"
+~"0x00007ffff71efa60  0x00007ffff71f5ab5  Yes         /lib/x86_64-linux-gnu/libXrender.so.1\n"
+~"0x00007ffff71e8300  0x00007ffff71ea6ea  Yes         /lib/x86_64-linux-gnu/libXfixes.so.3\n"
+~"0x00007ffff71dc230  0x00007ffff71e1a46  Yes         /lib/x86_64-linux-gnu/libffi.so.7\n"
+~"0x00007ffff71c0280  0x00007ffff71d0e2b  Yes         /lib/x86_64-linux-gnu/libz.so.1\n"
+~"0x00007ffff7119240  0x00007ffff71aad0a  Yes         /lib/x86_64-linux-gnu/libzstd.so.1\n"
+~"0x00007ffff70ed3c0  0x00007ffff71043a6  Yes         /lib/x86_64-linux-gnu/liblzma.so.5\n"
+~"0x00007ffff6edd0a0  0x00007ffff6ee55b5  Yes         /lib/x86_64-linux-gnu/libjbig.so.0\n"
+~"0x00007ffff6e3ebc0  0x00007ffff6eb1780  Yes         /lib/x86_64-linux-gnu/libsystemd.so.0\n"
+~"0x00007ffff6e24b20  0x00007ffff6e2888c  Yes         /lib/x86_64-linux-gnu/libwrap.so.0\n"
+~"0x00007ffff6daafa0  0x00007ffff6dfcf05  Yes         /lib/x86_64-linux-gnu/libsndfile.so.1\n"
+~"0x00007ffff6b9e1d0  0x00007ffff6ba0848  Yes         /lib/x86_64-linux-gnu/libasyncns.so.0\n"
+~"0x00007ffff6b898c0  0x00007ffff6b91380  Yes         /lib/x86_64-linux-gnu/libapparmor.so.1\n"
+~"0x00007ffff6b7e720  0x00007ffff6b81d70  Yes         /lib/x86_64-linux-gnu/librt.so.1\n"
+~"0x00007ffff6b76360  0x00007ffff6b77052  Yes         /lib/x86_64-linux-gnu/libXau.so.6\n"
+~"0x00007ffff6b6f1a0  0x00007ffff6b70a03  Yes         /lib/x86_64-linux-gnu/libXdmcp.so.6\n"
+~"0x00007ffff6b4e120  0x00007ffff6b678fb  Yes         /lib/x86_64-linux-gnu/liblz4.so.1\n"
+~"0x00007ffff6a38580  0x00007ffff6b059dc  Yes         /lib/x86_64-linux-gnu/libgcrypt.so.20\n"
+~"0x00007ffff6a14d20  0x00007ffff6a23711  Yes         /lib/x86_64-linux-gnu/libnsl.so.1\n"
+~"0x00007ffff69d9800  0x00007ffff6a01c33  Yes         /lib/x86_64-linux-gnu/libFLAC.so.8\n"
+~"0x00007ffff69c6480  0x00007ffff69ca539  Yes         /lib/x86_64-linux-gnu/libogg.so.0\n"
+~"0x00007ffff6999480  0x00007ffff69afc4d  Yes         /lib/x86_64-linux-gnu/libvorbis.so.0\n"
+~"0x00007ffff68ff0c0  0x00007ffff690177e  Yes         /lib/x86_64-linux-gnu/libvorbisenc.so.2\n"
+~"0x00007ffff68d1720  0x00007ffff68e011c  Yes         /lib/x86_64-linux-gnu/libresolv.so.2\n"
+~"0x00007ffff68b7e40  0x00007ffff68c5e69  Yes         /lib/x86_64-linux-gnu/libbsd.so.0\n"
+~"0x00007ffff6894c60  0x00007ffff68a6a92  Yes         /lib/x86_64-linux-gnu/libgpg-error.so.0\n"
+1020^done
+(gdb) 
+1021^done,stack=[frame={level="0",addr="0x00005555555567a9",func="main",file="catch.c",fullname="/usrhome/OTF25/c612501080/soft_experiment/08/sample/game/catch2026/catch.c",line="16",arch="i386:x86-64"}]
+(gdb) 
+1022^done
+(gdb) 
+1023^done,features=["frozen-varobjs","pending-breakpoints","thread-info","data-read-memory-bytes","breakpoint-notifications","ada-task-info","language-option","info-gdb-mi-command","undefined-command-error-code","exec-run-start-option","data-disassemble-a-option","python"]
+(gdb) 
+1024^done,stack-args=[frame={level="0",args=[name="argc",name="argv"]}]
+(gdb) 
+1025^done,name="var1",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1026^done,ndeleted="1"
+(gdb) 
+1027^done,name="var2",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1028^done,ndeleted="1"
+(gdb) 
+1029^done,variables=[{name="argc",arg="1"},{name="argv",arg="1"},{name="framecnt"},{name="atimer"},{name="loopflg"}]
+(gdb) 
+1030^done,name="var3",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1031^done,name="var4",numchild="1",value="0x0",type="char **",thread-id="1",has_more="0"
+(gdb) 
+1032^done,name="var5",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+1033^done,name="var6",numchild="0",value="32767",type="SDL_TimerID",thread-id="1",has_more="0"
+(gdb) 
+1034^done,name="var7",numchild="0",value="SDL_FALSE",type="SDL_bool",thread-id="1",has_more="0"
+(gdb) 
+^running
+*running,thread-id="all"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+~"[New Thread 0x7ffff6888700 (LWP 24442)]\n"
+*running,thread-id="2"
+1035^done,threads=[{id="2",target-id="Thread 0x7ffff6888700 (LWP 24442)",name="SDLTimer",state="running",core="3"}]
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libGL.so.1",target-name="/lib/x86_64-linux-gnu/libGL.so.1",host-name="/lib/x86_64-linux-gnu/libGL.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff51631c0",to="0x00007ffff516601d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLdispatch.so.0",target-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",host-name="/lib/x86_64-linux-gnu/libGLdispatch.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4fe2240",to="0x00007ffff4fe44eb"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX.so.0",target-name="/lib/x86_64-linux-gnu/libGLX.so.0",host-name="/lib/x86_64-linux-gnu/libGLX.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50ef700",to="0x00007ffff510948c"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",target-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",host-name="/lib/x86_64-linux-gnu/libGLX_nvidia.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff4caf990",to="0x00007ffff4d16082"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glsi.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff49d4490",to="0x00007ffff4a2c7d2"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-tls.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff47bfb40",to="0x00007ffff47c1162"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",target-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",host-name="/lib/x86_64-linux-gnu/libnvidia-glcore.so.510.39.01",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff277d600",to="0x00007ffff37a0552"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50e8040",to="0x00007ffff50e811f"}]
+=library-unloaded,id="/lib/x86_64-linux-gnu/libX11-xcb.so.1",target-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",host-name="/lib/x86_64-linux-gnu/libX11-xcb.so.1",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libxcb-glx.so.0",target-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",host-name="/lib/x86_64-linux-gnu/libxcb-glx.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff50da0a0",to="0x00007ffff50e2b29"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdrm.so.2",target-name="/lib/x86_64-linux-gnu/libdrm.so.2",host-name="/lib/x86_64-linux-gnu/libdrm.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fa9700",to="0x00007ffff7fb2c49"}]
+~"[Thread 0x7ffff6888700 (LWP 24442) exited]\n"
+=thread-exited,id="2",group-id="i1"
+~"[Inferior 1 (process 24422) exited normally]\n"
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1",exit-code="0"
+*stopped,reason="exited-normally"
+^exit

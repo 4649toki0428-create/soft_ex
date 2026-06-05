@@ -259,9 +259,12 @@ CharaInfo* SearchChara(const CharaInfo* ch)
 
         // 近いキャラを探す
         float dist = GetDistance(ch, p);
-        if (!ret || near > dist) {
-            ret  = p;
-            near = dist;
+        if(dist <= SEARCH_RADIUS) //決められた範囲内でプレイヤーと子供の間に壁がない時に検知するようにした
+        {
+            if (!ret || near > dist) {
+                ret  = p;
+                near = dist;
+            }
         }
     }
     return ret;

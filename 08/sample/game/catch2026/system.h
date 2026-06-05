@@ -109,6 +109,8 @@ typedef struct {
     GameStts stts;
     KeyStts input;
     float timeDelta;                // 時間の増分(1フレームの時間,s)
+    float TimeLimit;                // 時間制限
+    float MaxTime;                  // 初期時間
     CharaInfo* player;              // プレイヤー
     CharaInfo* wall;                // 壁のリスト
     Msg msg;                        // 表示中のメッセージ番号

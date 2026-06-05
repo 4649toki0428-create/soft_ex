@@ -41,6 +41,10 @@ int main(int argc, char* argv[])
         goto DESTROYALL;
     }
 
+    //制限時間の初期化
+    gGame.MaxTime = 60;
+    gGame.TimeLimit = gGame.MaxTime;
+
     /** メイン処理 **/
     /* ゲーム開始 */
     gGame.stts = GS_Ready;
@@ -155,9 +159,25 @@ void UpdateGameInfo(void)
             }
         }
     }
+
     if (num == held) {
         gGame.stts = GS_End;
         gGame.msg  = MSG_Clear;
+        
+    }
+
+
+    //制限時間が切れたらゲームオーバーになる
+    if(gGame.stts == GS_Playing)
+    {
+        gGame.TimeLimit -= gGame.timeDelta;
+
+        if(gGame.TimeLimit <= 0.0)
+        {
+            gGame.TimeLimit = 0.0;
+            gGame.stts = GS_End;
+            gGame.msg = MSG_GameOver;
+        }
     }
 }
 
