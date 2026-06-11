@@ -84,7 +84,7 @@ int joy_func(void *args)
     /////////////////////////////////////////
 
     // ***** STEP_7_1_BEGIN *****
-    // SDL_mutex *mtx = (SDL_mutex *)args; // ミューテックスを取得
+    SDL_mutex *mtx = (SDL_mutex *)args; // ミューテックスを取得
     // ***** STEP_7_1_END *****
     
     while(1)
@@ -97,6 +97,44 @@ int joy_func(void *args)
         /////////////////////////////////////////
 
         // ***** STEP_2_1_BEGIN (Joy-Conのイベント処理の初め) *****
+        // ***** STEP_1_1_BEGIN (Joy-Conのイベント処理の初め) *****
+        // Joy-Conの状態を取得
+        joycon_get_state(&jc);
+
+        /////////////////////////////////////////
+        // STEP. 8_1                           //
+        // STEP_8_1_BEGINからSTEP_8_1_ENDまでの//
+        // コードのコメンドを外す              //
+        /////////////////////////////////////////
+
+        // ***** STEP_8_1_BEGIN *****
+        SDL_LockMutex(mtx); // ミューテックスをロック
+        //***** STEP_8_1_END *****
+
+        // ボタンの状態が前回と異なる場合はイベントを発生させる
+        if (prev_btn.btn.B != jc.button.btn.Y ||
+            prev_btn.btn.X != jc.button.btn.A ||
+            prev_btn.btn.Y != jc.button.btn.X ||
+            prev_btn.btn.Home != jc.button.btn.Home) {
+
+            SDL_Event joycon_event; // Joy-Conイベントを作成
+            joycon_event.type = JOYCON_BUTTON_EVENT; // イベントタイプを設定
+            SDL_PushEvent(&joycon_event); // イベントをキューに追加
+
+            prev_btn = jc.button; // 現在のボタン状態を保存
+        }
+
+        /////////////////////////////////////////
+        // STEP. 9_1                           //
+        // STEP_9_1_BEGINからSTEP_9_1_ENDまでの//
+        // コードのコメンドを外す              //
+        /////////////////////////////////////////
+
+        // ***** STEP_9_1_BEGIN *****
+        SDL_UnlockMutex(mtx); // Mutexをアンロックし、他のスレッドが共有変数にアクセスできるようにする
+        // ***** STEP_9_1_END *****
+
+        // ***** STEP_1_1_END (Joy-Conのイベント処理の終わり) *****
         // ***** STEP_2_1_END (Joy-Conのイベント処理の終わり) *****
     }
     return 0;
@@ -112,7 +150,7 @@ int event_func(void *args)
     /////////////////////////////////////////
 
     // ***** STEP_7_2_BEGIN *****
-    // SDL_mutex *mtx = (SDL_mutex *)args; // ミューテックスを取得
+    SDL_mutex *mtx = (SDL_mutex *)args; // ミューテックスを取得
     // ***** STEP_7_2_END *****
 
     while(1)
@@ -125,6 +163,89 @@ int event_func(void *args)
         /////////////////////////////////////////
 
         // ***** STEP_2_2_BEGIN (イベント処理の初め) *****
+        // ***** STEP_1_2_BEGIN (イベント処理の初め) *****
+        // イベントを待機
+        if(SDL_WaitEventTimeout(&event, 1))
+        {
+            /////////////////////////////////////////
+            // STEP. 8_2                           //
+            // STEP_8_2_BEGINからSTEP_8_2_ENDまでの//
+            // コードのコメンドを外す              //
+            /////////////////////////////////////////
+
+            // ***** STEP_8_2_BEGIN *****
+            SDL_LockMutex(mtx); // ミューテックスをロック
+            //***** STEP_8_2_END *****
+
+            // イベントタイプごとに処理を分岐
+            switch (event.type)
+            {
+                case JOYCON_BUTTON_EVENT:
+                    // Joy-Conのボタンに応じたマリオの動き
+                    if (jc.button.btn.Y) {
+                        mario_left(); // 左に移動
+                    }
+                    if (jc.button.btn.A) {
+                        mario_right(); // 右に移動
+                    }
+                    if (jc.button.btn.X) {
+                        mario_wide(); // 幅を広げる
+                    } else {
+                        mario_narrow(); // 幅を元に戻す
+                    }
+                    if (jc.button.btn.Home) {
+                        SDL_Event quit_event; // 終了イベントを作成
+                        quit_event.type = SDL_QUIT; // イベントタイプを設定
+                        SDL_PushEvent(&quit_event); // イベントをキューに追加
+                    }
+                    break;
+                case SDL_KEYDOWN:
+                    // キーボードのキーに応じたマリオの動き
+                    switch(event.key.keysym.sym)
+                    {
+                        case SDLK_RIGHT:
+                            mario_right(); // 右に移動
+                            break;
+                        case SDLK_LEFT:
+                            mario_left(); // 左に移動
+                            break;
+                        case SDLK_SPACE:
+                            mario_wide(); // 幅を広げる
+                            break;
+                        case SDLK_ESCAPE:
+                            SDL_Quit(); // SDLを終了
+                            exit(0); // プログラム終了
+                            break;
+                    }
+                    break;
+                case SDL_KEYUP:
+                    // キーボードのキーリリースに応じたマリオの動き
+                    switch(event.key.keysym.sym)
+                    {
+                        case SDLK_SPACE:
+                            mario_narrow(); // 幅を元に戻す
+                            break;
+                    }
+                    break;
+                case SDL_QUIT:
+                    SDL_Quit(); // SDLを終了
+                    exit(0); // プログラム終了
+                    break;
+                default:
+                    break;
+            }
+
+            /////////////////////////////////////////
+            // STEP. 9_2                           //
+            // STEP_9_2_BEGINからSTEP_9_2_ENDまでの//
+            // コードのコメンドを外す              //
+            /////////////////////////////////////////
+
+            // ***** STEP_9_2_BEGIN *****
+            SDL_UnlockMutex(mtx); // ミューテックスをアンロック
+            // ***** STEP_9_2_BEGIN *****
+        }
+        // ***** STEP_1_2_END (イベント処理の初め) *****
         // ***** STEP_2_2_END (イベント処理の終わり) *****
     }
     return 0;
@@ -198,8 +319,8 @@ int main(int argc, char *argv[])
     ///////////////////////////////////////
 
     // ***** STEP_3_BEGIN *****
-    // SDL_Thread * joy_thread; // joy_threadを用いる
-    // SDL_Thread * event_thread; // keyboard_threadを用いる
+    SDL_Thread * joy_thread; // joy_threadを用いる
+    SDL_Thread * event_thread; // keyboard_threadを用いる
     // ***** STEP_3_END *****
 
     ///////////////////////////////////////
@@ -210,7 +331,7 @@ int main(int argc, char *argv[])
 
     // ミューテックスの作成
     // ***** STEP_6_BEGIN *****
-    // SDL_mutex *mtx = SDL_CreateMutex();
+    SDL_mutex *mtx = SDL_CreateMutex();
     // ***** STEP_6_END *****
 
     ///////////////////////////////////////
@@ -221,8 +342,8 @@ int main(int argc, char *argv[])
     ///////////////////////////////////////
 
     // ***** STEP_4_BEGIN *****
-    // joy_thread = SDL_CreateThread(joy_func, "joy_thread", mtx); // Joy-Conの状態を監視するスレッドの作成
-    // event_thread = SDL_CreateThread(event_func, "event_thread", mtx); // イベントを処理するスレッドの作成
+    joy_thread = SDL_CreateThread(joy_func, "joy_thread", mtx); // Joy-Conの状態を監視するスレッドの作成
+    event_thread = SDL_CreateThread(event_func, "event_thread", mtx); // イベントを処理するスレッドの作成
     // ***** STEP_4_END *****
 
     int flips = 0; // 1秒あたりの描画回数
@@ -237,44 +358,7 @@ int main(int argc, char *argv[])
         // に移動する                          //
         /////////////////////////////////////////
 
-        // ***** STEP_1_1_BEGIN (Joy-Conのイベント処理の初め) *****
-        // Joy-Conの状態を取得
-        joycon_get_state(&jc);
-
-        /////////////////////////////////////////
-        // STEP. 8_1                           //
-        // STEP_8_1_BEGINからSTEP_8_1_ENDまでの//
-        // コードのコメンドを外す              //
-        /////////////////////////////////////////
-
-        // ***** STEP_8_1_BEGIN *****
-        // SDL_LockMutex(mtx); // ミューテックスをロック
-        //***** STEP_8_1_END *****
-
-        // ボタンの状態が前回と異なる場合はイベントを発生させる
-        if (prev_btn.btn.B != jc.button.btn.Y ||
-            prev_btn.btn.X != jc.button.btn.A ||
-            prev_btn.btn.Y != jc.button.btn.X ||
-            prev_btn.btn.Home != jc.button.btn.Home) {
-
-            SDL_Event joycon_event; // Joy-Conイベントを作成
-            joycon_event.type = JOYCON_BUTTON_EVENT; // イベントタイプを設定
-            SDL_PushEvent(&joycon_event); // イベントをキューに追加
-
-            prev_btn = jc.button; // 現在のボタン状態を保存
-        }
-
-        /////////////////////////////////////////
-        // STEP. 9_1                           //
-        // STEP_9_1_BEGINからSTEP_9_1_ENDまでの//
-        // コードのコメンドを外す              //
-        /////////////////////////////////////////
-
-        // ***** STEP_9_1_BEGIN *****
-        // SDL_UnlockMutex(mtx); // Mutexをアンロックし、他のスレッドが共有変数にアクセスできるようにする
-        // ***** STEP_9_1_END *****
-
-        // ***** STEP_1_1_END (Joy-Conのイベント処理の終わり) *****
+       
 
         /////////////////////////////////////////
         // STEP. 1_2                           //
@@ -283,88 +367,7 @@ int main(int argc, char *argv[])
         // に移動する                          //
         /////////////////////////////////////////
 
-        // ***** STEP_1_2_BEGIN (イベント処理の初め) *****
-        // イベントを待機
-        if(SDL_WaitEventTimeout(&event, 1))
-        {
-            /////////////////////////////////////////
-            // STEP. 8_2                           //
-            // STEP_8_2_BEGINからSTEP_8_2_ENDまでの//
-            // コードのコメンドを外す              //
-            /////////////////////////////////////////
-
-            // ***** STEP_8_2_BEGIN *****
-            // SDL_LockMutex(mtx); // ミューテックスをロック
-            //***** STEP_8_2_END *****
-
-            // イベントタイプごとに処理を分岐
-            switch (event.type)
-            {
-                case JOYCON_BUTTON_EVENT:
-                    // Joy-Conのボタンに応じたマリオの動き
-                    if (jc.button.btn.Y) {
-                        mario_left(); // 左に移動
-                    }
-                    if (jc.button.btn.A) {
-                        mario_right(); // 右に移動
-                    }
-                    if (jc.button.btn.X) {
-                        mario_wide(); // 幅を広げる
-                    } else {
-                        mario_narrow(); // 幅を元に戻す
-                    }
-                    if (jc.button.btn.Home) {
-                        SDL_Event quit_event; // 終了イベントを作成
-                        quit_event.type = SDL_QUIT; // イベントタイプを設定
-                        SDL_PushEvent(&quit_event); // イベントをキューに追加
-                    }
-                    break;
-                case SDL_KEYDOWN:
-                    // キーボードのキーに応じたマリオの動き
-                    switch(event.key.keysym.sym)
-                    {
-                        case SDLK_RIGHT:
-                            mario_right(); // 右に移動
-                            break;
-                        case SDLK_LEFT:
-                            mario_left(); // 左に移動
-                            break;
-                        case SDLK_SPACE:
-                            mario_wide(); // 幅を広げる
-                            break;
-                        case SDLK_ESCAPE:
-                            SDL_Quit(); // SDLを終了
-                            exit(0); // プログラム終了
-                            break;
-                    }
-                    break;
-                case SDL_KEYUP:
-                    // キーボードのキーリリースに応じたマリオの動き
-                    switch(event.key.keysym.sym)
-                    {
-                        case SDLK_SPACE:
-                            mario_narrow(); // 幅を元に戻す
-                            break;
-                    }
-                    break;
-                case SDL_QUIT:
-                    SDL_Quit(); // SDLを終了
-                    exit(0); // プログラム終了
-                    break;
-                default:
-                    break;
-            }
-
-            /////////////////////////////////////////
-            // STEP. 9_2                           //
-            // STEP_9_2_BEGINからSTEP_9_2_ENDまでの//
-            // コードのコメンドを外す              //
-            /////////////////////////////////////////
-
-            // ***** STEP_9_2_BEGIN *****
-            // SDL_UnlockMutex(mtx); // ミューテックスをアンロック
-            // ***** STEP_9_2_BEGIN *****
-        }
+        
         // ***** STEP_1_2_END (イベント処理の初め) *****
 
         // 描画処理
@@ -389,8 +392,8 @@ int main(int argc, char *argv[])
     ///////////////////////////////////////
 
     // ***** STEP_5_BEGIN *****
-    // SDL_WaitThread(joy_thread, NULL); // Joy-Con監視スレッドの終了を待機
-    // SDL_WaitThread(event_thread, NULL); // イベント処理スレッドの終了を待機
+    SDL_WaitThread(joy_thread, NULL); // Joy-Con監視スレッドの終了を待機
+    SDL_WaitThread(event_thread, NULL); // イベント処理スレッドの終了を待機
     // ***** STEP_5_END *****
 
     ///////////////////////////////////////
@@ -400,7 +403,7 @@ int main(int argc, char *argv[])
     ///////////////////////////////////////
 
     // ***** STEP_10_BEGIN *****
-    // SDL_DestroyMutex(mtx); // ミューテックスを破棄
+    SDL_DestroyMutex(mtx); // ミューテックスを破棄
     // ***** STEP_10_END *****
 
     SDL_DestroyRenderer(renderer); // レンダラを破棄

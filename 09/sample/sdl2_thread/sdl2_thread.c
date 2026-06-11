@@ -86,6 +86,54 @@ int joy_func(void *args)
         ///////////////////////////////////////
 
         // ***** STEP_2_BEGIN (Joy-Conのイベント処理の初め) *****
+        joycon_get_state(&jc);
+
+        // ボタンの状態が前回と異なる場合はイベントを発生させる
+        if (prev_btn.btn.B != jc.button.btn.Y ||
+            prev_btn.btn.X != jc.button.btn.A ||
+            prev_btn.btn.Y != jc.button.btn.X ||
+            prev_btn.btn.Home != jc.button.btn.Home) {
+
+            SDL_Event joycon_event; // Joy-Conイベントを作成
+            joycon_event.type = JOYCON_BUTTON_EVENT; // イベントタイプを設定
+            SDL_PushEvent(&joycon_event); // イベントをキューに追加
+
+            prev_btn = jc.button; // 現在のボタン状態を保存
+        }
+
+        // イベントを待機
+        if(SDL_WaitEventTimeout(&event, 1))
+        {
+            // イベントタイプごとに処理を分岐
+            switch (event.type)
+            {
+                case JOYCON_BUTTON_EVENT:
+                    // Joy-Conのボタンに応じたマリオの動き
+                    if (jc.button.btn.Y) {
+                        mario_left(); // 左に移動
+                    }
+                    if (jc.button.btn.A) {
+                        mario_right(); // 右に移動
+                    }
+                    if (jc.button.btn.X) {
+                        mario_wide(); // 幅を広げる
+                    } else {
+                        mario_narrow(); // 幅を元に戻す
+                    }
+                    if (jc.button.btn.Home) {
+                        SDL_Event quit_event; // 終了イベントを作成
+                        quit_event.type = SDL_QUIT; // イベントタイプを設定
+                        SDL_PushEvent(&quit_event); // イベントをキューに追加
+                    }
+                    break;
+                case SDL_QUIT:
+                    SDL_Quit(); // SDLを終了
+                    exit(0); // プログラム終了
+                    break;
+                default:
+                    break;
+            }
+        }
         // ***** STEP_2_END (Joy-Conのイベント処理の終わり) *****
     }
     return 0;
@@ -159,7 +207,7 @@ int main(int argc, char *argv[])
     ///////////////////////////////////////
 
     // ***** STEP_3_BEGIN *****
-    // SDL_Thread * joy_thread; // joy_threadを用いる
+    SDL_Thread * joy_thread; // joy_threadを用いる
     // ***** STEP_3_END *****
 
     ///////////////////////////////////////
@@ -170,7 +218,7 @@ int main(int argc, char *argv[])
 
     // ***** STEP_4_BEGIN *****
     // スレッドを作成・実行
-    // joy_thread = SDL_CreateThread(joy_func, "joy_thread", NULL); // joy_threadを作成し、スレッド関数joy_funcを実行（引数なし）
+    joy_thread = SDL_CreateThread(joy_func, "joy_thread", NULL); // joy_threadを作成し、スレッド関数joy_funcを実行（引数なし）
     // ***** STEP_4_END *****
 
     int flips = 0; // 1秒あたりの描画回数
@@ -186,55 +234,55 @@ int main(int argc, char *argv[])
         ///////////////////////////////////////
 
         // ***** STEP_1_BEGIN (Joy-Conのイベント処理の初め) *****
-        // Joy-Conの状態を取得
-        joycon_get_state(&jc);
+        // // Joy-Conの状態を取得
+        // joycon_get_state(&jc);
 
-        // ボタンの状態が前回と異なる場合はイベントを発生させる
-        if (prev_btn.btn.B != jc.button.btn.Y ||
-            prev_btn.btn.X != jc.button.btn.A ||
-            prev_btn.btn.Y != jc.button.btn.X ||
-            prev_btn.btn.Home != jc.button.btn.Home) {
+        // // ボタンの状態が前回と異なる場合はイベントを発生させる
+        // if (prev_btn.btn.B != jc.button.btn.Y ||
+        //     prev_btn.btn.X != jc.button.btn.A ||
+        //     prev_btn.btn.Y != jc.button.btn.X ||
+        //     prev_btn.btn.Home != jc.button.btn.Home) {
 
-            SDL_Event joycon_event; // Joy-Conイベントを作成
-            joycon_event.type = JOYCON_BUTTON_EVENT; // イベントタイプを設定
-            SDL_PushEvent(&joycon_event); // イベントをキューに追加
+        //     SDL_Event joycon_event; // Joy-Conイベントを作成
+        //     joycon_event.type = JOYCON_BUTTON_EVENT; // イベントタイプを設定
+        //     SDL_PushEvent(&joycon_event); // イベントをキューに追加
 
-            prev_btn = jc.button; // 現在のボタン状態を保存
-        }
+        //     prev_btn = jc.button; // 現在のボタン状態を保存
+        // }
 
-        // イベントを待機
-        if(SDL_WaitEventTimeout(&event, 1))
-        {
-            // イベントタイプごとに処理を分岐
-            switch (event.type)
-            {
-                case JOYCON_BUTTON_EVENT:
-                    // Joy-Conのボタンに応じたマリオの動き
-                    if (jc.button.btn.Y) {
-                        mario_left(); // 左に移動
-                    }
-                    if (jc.button.btn.A) {
-                        mario_right(); // 右に移動
-                    }
-                    if (jc.button.btn.X) {
-                        mario_wide(); // 幅を広げる
-                    } else {
-                        mario_narrow(); // 幅を元に戻す
-                    }
-                    if (jc.button.btn.Home) {
-                        SDL_Event quit_event; // 終了イベントを作成
-                        quit_event.type = SDL_QUIT; // イベントタイプを設定
-                        SDL_PushEvent(&quit_event); // イベントをキューに追加
-                    }
-                    break;
-                case SDL_QUIT:
-                    SDL_Quit(); // SDLを終了
-                    exit(0); // プログラム終了
-                    break;
-                default:
-                    break;
-            }
-        }
+        // // イベントを待機
+        // if(SDL_WaitEventTimeout(&event, 1))
+        // {
+        //     // イベントタイプごとに処理を分岐
+        //     switch (event.type)
+        //     {
+        //         case JOYCON_BUTTON_EVENT:
+        //             // Joy-Conのボタンに応じたマリオの動き
+        //             if (jc.button.btn.Y) {
+        //                 mario_left(); // 左に移動
+        //             }
+        //             if (jc.button.btn.A) {
+        //                 mario_right(); // 右に移動
+        //             }
+        //             if (jc.button.btn.X) {
+        //                 mario_wide(); // 幅を広げる
+        //             } else {
+        //                 mario_narrow(); // 幅を元に戻す
+        //             }
+        //             if (jc.button.btn.Home) {
+        //                 SDL_Event quit_event; // 終了イベントを作成
+        //                 quit_event.type = SDL_QUIT; // イベントタイプを設定
+        //                 SDL_PushEvent(&quit_event); // イベントをキューに追加
+        //             }
+        //             break;
+        //         case SDL_QUIT:
+        //             SDL_Quit(); // SDLを終了
+        //             exit(0); // プログラム終了
+        //             break;
+        //         default:
+        //             break;
+        //     }
+        // }
         // ***** STEP_1_END (Joy-Conのイベント処理の終わり) *****
 
         // 描画処理
@@ -259,7 +307,7 @@ int main(int argc, char *argv[])
     ///////////////////////////////////////
 
     // ***** STEP_5_BEGIN *****
-    // SDL_WaitThread(joy_thread, NULL); // Joy-Con監視スレッドの終了を待機
+    SDL_WaitThread(joy_thread, NULL); // Joy-Con監視スレッドの終了を待機
     // ***** STEP_5_END *****
 
     SDL_DestroyRenderer(renderer); // レンダラを破棄
