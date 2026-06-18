@@ -1,0 +1,221 @@
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.1.27)  18 JUN 2026 14:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**c612501080_kadai.tex
+(./c612501080_kadai.tex
+pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2020/02/02 jsclasses (okumura, texjporg)
+\jsc@mpt=\dimen150
+\jsc@mmm=\dimen151
+\jsc@smallskipamount=\skip47
+LaTeX Info: Redefining \textmc on input line 496.
+LaTeX Info: Redefining \textgt on input line 498.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 560.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 751.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 751.
+\fullwidth=\dimen152
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 904.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 904.
+\c@part=\count166
+\c@section=\count167
+\c@subsection=\count168
+\c@subsubsection=\count169
+\c@paragraph=\count170
+\c@subparagraph=\count171
+\@abstractbox=\box61
+\c@figure=\count172
+\c@table=\count173
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\jsc@tocl@width=\dimen153
+\@lnumwidth=\dimen154
+\bibindent=\dimen155
+(/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 94.
+LaTeX Info: Redefining \LaTeX on input line 147.
+LaTeX Info: Redefining \LaTeXe on input line 200.
+)
+\heisei=\count174
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+File: l3backend-dvipdfmx.def 2020-02-03 L3 backend support: dvipdfmx
+\g__graphics_track_int=\count175
+\l__pdf_internal_box=\box62
+\g__pdf_backend_object_int=\count176
+\g__pdf_backend_annotation_int=\count177
+)
+(./c612501080_kadai.aux)
+\openout1 = `c612501080_kadai.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 30.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 30.
+
+Overfull \hbox (61.39879pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject$ 
+echo This is readme file. > readme.txt[] 
+ []
+
+
+Overfull \hbox (381.646pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject$ 
+svn import file:///usrhome/OTF25/c612501080/soft_experiment/10/repos/myproject 
+-m "Initial import."[] 
+ []
+
+
+Overfull \hbox (281.89687pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work$ svn checko
+ut file:///usrhome/OTF25/c612501080/soft_experiment/10/repos/myproject myprojec
+t[] 
+ []
+
+[1
+
+]
+Overfull \hbox (50.89888pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject$ 
+echo Nice to meet you. >> readme.txt[] 
+ []
+
+
+Overfull \hbox (24.64911pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject$ 
+svn commit -m "Add a greeting."[] 
+ []
+
+
+Overfull \hbox (19.39915pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject$ 
+svn commit -m "Add hello.txt."[] 
+ []
+
+[2]
+Overfull \hbox (92.89851pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject/s
+rc$ svn commit -m "Add an exclamation mark."[] 
+ []
+
+
+Overfull \hbox (92.89851pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject/s
+rc$ svn commit -m "Add an exclamation mark."[] 
+ []
+
+
+Overfull \hbox (29.89906pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject/s
+rc$ svn move Good.java Main.java[] 
+ []
+
+
+Overfull \hbox (19.39915pt too wide) in paragraph at lines 126--126
+[]    \OT1/cmtt/m/n/10 c612501080@clpc019:~/soft_experiment/10/work/myproject/s
+rc$ svn commit -m "Rename it."[] 
+ []
+
+[3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 143.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 143.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 143.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 143.
+ [4] (./c612501080_kadai.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1074 strings out of 482863
+ 15087 string characters out of 5959218
+ 254578 words of memory out of 5000000
+ 16435 multiletter control sequences out of 15000+600000
+ 542595 words of font info for 72 fonts, out of 8000000 for 9000
+ 269 hyphenation exceptions out of 8191
+ 30i,6n,25p,209b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on c612501080_kadai.dvi (4 pages, 7568 bytes).

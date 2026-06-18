@@ -1,0 +1,146 @@
+\documentclass[dvipdfmx]{jsarticle}
+\usepackage{graphicx}
+\usepackage{url}
+
+\title{ソフトウェア設計及び実験\\第10回（バージョン管理について）}
+\author{学生番号 \ 6125010806　氏名 \ 清水 \ 統貴}
+\date{2026年6月18日提出}
+
+\begin{document}
+\maketitle
+
+\section{課題の目的}
+%
+% 1. 目的
+% 2. 原理・理論
+% 3. 方法
+% 4. 結果
+% 5. 考察
+% 6. 参考文献
+% 7. 付録
+本課題の目的は以下のとおりである．\\
+• IDEの使い方について理解する\\
+
+% \section{原理}
+% %
+
+\section{課題1}
+%
+以下, 実際にsvnをつかった時の実行したコマンドと結果.\\
+\begin{verbatim}
+    c612501080@clpc019:~/soft_experiment/10$ mkdir repos
+    c612501080@clpc019:~/soft_experiment/10$ svnadmin create repos
+    c612501080@clpc019:~/soft_experiment/10$ mkdir work
+    c612501080@clpc019:~/soft_experiment/10$ cd work
+    c612501080@clpc019:~/soft_experiment/10/work$ mkdir myproject
+    c612501080@clpc019:~/soft_experiment/10/work$ cd myproject
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ echo This is readme file. > readme.txt
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ cat readme.txt 
+    This is readme file.
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn import file:///usrhome/OTF25/c612501080/soft_experiment/10/repos/myproject -m "Initial import."
+    追加しています              
+    readme.txt
+    リビジョン 1 をコミットしました。
+    (元あったmyprojectを消去後)
+    c612501080@clpc019:~/soft_experiment/10/work$ svn checkout file:///usrhome/OTF25/c612501080/soft_experiment/10/repos/myproject myproject
+    A  myproject\readme.txt
+    リビジョン 1 をチェックアウトしました。
+    c612501080@clpc019:~/soft_experiment/10/work$ cd myproject
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ ls
+    readme.txt
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ cat readme.txt
+    This is readme file.
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ echo Nice to meet you. >> readme.txt
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ cat readme.txt
+    This is readme file.
+    Nice to meet you.
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn diff
+    Index: readme.txt
+    ===================================================================
+    --- readme.txt  (リビジョン 1)
+    +++ readme.txt  (作業コピー)
+    @@ -1 +1,2 @@
+    This is readme file.
+    +Nice to meet you.
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn commit -m "Add a greeting."
+    送信しています              readme.txt
+    ファイルのデータを送信しています .
+    リビジョン 2 をコミットしました。
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn status
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn update
+    リビジョン 2 です。
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ echo Hello. > hello.txt
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ type hello.txt
+    Hello.
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn add hello.txt
+    A         hello.txt           
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn status
+    A         hello.txt       
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn commit -m "Add hello.txt."
+    追加しています              hello.txt
+    ファイルのデータを送信しています .
+    リビジョン 3 をコミットしました。
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn status   
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ svn mkdir src
+    A         src
+    c612501080@clpc019:~/soft_experiment/10/work/myproject$ cd src
+    (テキストエディタでGood.javaを編集)
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ cat Good.java 
+    public class Good {
+        public static void main(String[] args) {
+            System.out.println("Good!");
+        }
+    }
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn diff
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn status
+    A       .
+    ?       Good.java
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn commit -m "Add an exclamation mark."
+    追加しています              .
+    Committing transaction...
+    リビジョン 4 をコミットしました。
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn status
+    ?       Good.java
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn add Good.java 
+    A         Good.java
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn commit -m "Add an exclamation mark."
+    追加しています              Good.java
+    ファイルのデータを送信しています .done
+    Committing transaction...
+    リビジョン 5 をコミットしました。
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn move Good.java Main.java
+    A         Main.java
+    D         Good.java
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ ls
+    Main.java
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn status
+    D       Good.java
+            > moved to Main.java
+    A  +    Main.java
+            > moved from Good.java
+    c612501080@clpc019:~/soft_experiment/10/work/myproject/src$ svn commit -m "Rename it."
+    削除しています              Good.java
+    追加しています              Main.java
+    Committing transaction...
+    リビジョン 6 をコミットしました。
+\end{verbatim}
+
+\section{感想}
+%
+IDEは前期の個人開発ではあまり使うことはないかもしれないが, 後期のグループ開発
+になると, 必須になるので, 今のうちになれておいて, グループ開発をする時にスムーズ
+に使えるようにしておきたい. 授業だけでなく, 社会に出てからもグループで開発すること
+が多くなるため, 正しい知識を身に着けておきたい.\\
+
+\begin{thebibliography}{99}
+%
+% \bibitem{chatGPT} Open AI : ChatGPT \url{https://chatgpt.com/ja-JP} (2026年4月30日閲覧).
+% %
+% \bibitem{claude} Anthropic : Claude \url{https://claude.ai/new} (2026年5月5日閲覧).
+% %
+%\bibitem{gemini} Google : Gemini \url{https://gemini.google.com/?hl=ja}
+%%
+\bibitem{hyuki} 結城 浩 : Subversionの基礎練習 \url{https://www.hyuki.com/techinfo/svninit.html}
+%
+\end{thebibliography}
+\end{document}
