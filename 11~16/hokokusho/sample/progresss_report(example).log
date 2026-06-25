@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.1.27)  25 JUN 2026 13:03
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.1.27)  25 JUN 2026 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c612501080_kikakusho.tex
-(./c612501080_kikakusho.tex
+**progresss_report(example).tex
+(./progresss_report(example).tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -71,19 +71,41 @@ File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
-File: l3backend-dvipdfmx.def 2020-02-03 L3 backend support: dvipdfmx
-\g__graphics_track_int=\count175
-\l__pdf_internal_box=\box62
+(/usr/share/texlive/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+\@savetbaselineshift=\dimen158
+\@saveybaselineshift=\dimen159
+\scb@x=\box62
+\scscb@x=\box63
+\@bw=\dimen160
+\@nbox=\box64
+\@nbody=\box65
+\@scw=\dimen161
+\ascmac@hoboxa=\box66
+\ascmac@hoboxb=\box67
+\@itemh=\dimen162
+\@iboxpos=\toks16
+\@iboxstr=\box68
+\@bwsp=\box69
+\@@bwsp=\box70
+\@bcal=\count175
+\shaderule=\dimen163
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
+\l__pdf_internal_box=\box71
 \g__pdf_backend_object_int=\count176
+\l__pdf_backend_content_box=\box72
+\l__pdf_backend_model_box=\box73
 \g__pdf_backend_annotation_int=\count177
+\g__pdf_backend_link_int=\count178
+\g__pdf_backend_link_sf_int=\count179
 )
-(./c612501080_kikakusho.aux)
-\openout1 = `c612501080_kikakusho.aux'.
+No file progresss_report(example).aux.
+\openout1 = `progresss_report(example).aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -108,10 +130,6 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 16.60605pt on input line 13.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 13.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 13.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 13.
@@ -135,50 +153,116 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 17.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 17.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 46.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 46.
- [1
-
-]
-File: gamenkousei.png Graphic file (type bmp)
-<gamenkousei.png>
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 59.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 59.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 66.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 66.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 66.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 66.
- [2]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 130.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 130.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 130.
+(Font)              scaled to size 9.60999pt on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 130.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 130.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 130.
+(Font)              scaled to size 9.60999pt on input line 28.
+
+LaTeX Warning: Reference `table1' on page 1 undefined on input line 28.
+
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 32.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 34.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 34.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 34.
+
+LaTeX Warning: Citation `mathphys' on page 1 undefined on input line 36.
+
+
+LaTeX Warning: Reference `fig1' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Reference `fig1' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Reference `figure2' on page 1 undefined on input line 38.
+
+
+LaTeX Warning: File `player.png' not found on input line 47.
+
+
+! LaTeX Error: Cannot determine size of graphic in player.xbb (no BoundingBox).
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \includegraphics[width=230pt]{player.png}
+                                              
+? 
+File: player.png Graphic file (type bmp)
+<player.png>
+
+LaTeX Warning: File `emenies.png' not found on input line 55.
+
+
+! LaTeX Error: Cannot determine size of graphic in emenies.xbb (no BoundingBox)
+.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \includegraphics[width=230pt]{emenies.png}
+                                               
+? 
+File: emenies.png Graphic file (type bmp)
+<emenies.png>
+[1
+
+] [2] [3]
+
+LaTeX Warning: Reference `fig3' on page 4 undefined on input line 107.
+
+
+LaTeX Warning: File `ganttchart.png' not found on input line 111.
+
+
+! LaTeX Error: Cannot determine size of graphic in ganttchart.xbb (no BoundingB
+ox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...ludegraphics[width=230pt]{ganttchart.png}
+                                                  
+? 
 File: ganttchart.png Graphic file (type bmp)
 <ganttchart.png>
- [3] [4] [5] (./c612501080_kikakusho.aux) ) 
-Here is how much of TeX's memory you used:
- 1108 strings out of 482863
- 15610 string characters out of 5959218
- 262556 words of memory out of 5000000
- 16460 multiletter control sequences out of 15000+600000
- 544956 words of font info for 83 fonts, out of 8000000 for 9000
- 269 hyphenation exceptions out of 8191
- 30i,10n,25p,213b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
+[4
 
-Output written on c612501080_kikakusho.dvi (5 pages, 13276 bytes).
+] [5] (./progresss_report(example).aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1208 strings out of 482863
+ 16779 string characters out of 5959218
+ 256561 words of memory out of 5000000
+ 16533 multiletter control sequences out of 15000+600000
+ 544167 words of font info for 80 fonts, out of 8000000 for 9000
+ 269 hyphenation exceptions out of 8191
+ 30i,10n,25p,414b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on progresss_report(example).dvi (5 pages, 9604 bytes).
