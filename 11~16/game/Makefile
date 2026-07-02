@@ -1,6 +1,6 @@
 TARGET = soda_dash
 VPATH = src
-SRCS = main.c window.c player.c
+SRCS = main.c window.c player.c gimmick.c
 OBJS = $(SRCS:.c=.o)
 
 CFLAGS = -Iheader

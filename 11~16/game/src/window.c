@@ -50,7 +50,7 @@ void DrawGame(GameContext* ctx)
     SDL_RenderClear(ctx->render);
 
     //プレイヤーの描画
-    SDL_Rect player_rect = { (int)ctx->player.x, (int)ctx->player.y, 50, 50 };
+    SDL_Rect player_rect = { (int)ctx->player.x - (int)ctx->camera_x, (int)ctx->player.y, 50, 50 };
     SDL_SetRenderDrawColor(ctx->render, 0, 100, 255, 255);
     SDL_RenderFillRect(ctx->render, &player_rect);
 
@@ -61,4 +61,19 @@ void DrawGame(GameContext* ctx)
 
     //レンダリングの更新
     SDL_RenderPresent(ctx->render);
+}
+
+void    camera_update(GameContext* ctx)
+{
+    if(ctx->player.x > 400.0f)
+    {
+        if(ctx->player.x - 400.0f > ctx->camera_x)
+        {
+            ctx->camera_x = ctx->player.x - 400.0f;
+        }
+    }
+    else
+    {
+        ctx->camera_x = 0.0f;
+    }
 }

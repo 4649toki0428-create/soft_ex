@@ -14,7 +14,7 @@
 void InitPlayer(Player *p);
 int IsJumpButtonPressed(joyconlib_t *jc);
 int IsBoostButtonPressed(joyconlib_t *jc);
-void UpdatePlayer(Player *p, joyconlib_t *jc);
+void UpdatePlayer(Player *p, joyconlib_t *jc, GameContext *ctx);
 
 
 #endif

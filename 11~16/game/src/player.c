@@ -1,11 +1,12 @@
 #include "system.h"
 #include "window.h"
 #include "player.h"
+#include "gimmick.h"
 
 void    InitPlayer(Player *p)
 {
     p->x = 50.0; //スタート地点のX座標
-    p->y = 300.0; //スタート地点のY座標
+    p->y = 480.0; //スタート地点のY座標
     p->vx = 0.0; //X方向の速度の初期化
     p->vy = 0.0; //Y方向の速度の初期化
     p->hp = 50; //初期ゲージ
@@ -22,7 +23,7 @@ int IsBoostButtonPressed(joyconlib_t *jc)
     return jc->button.btn.B;
 }
 
-void    UpdatePlayer(Player *p, joyconlib_t *jc)
+void    UpdatePlayer(Player *p, joyconlib_t *jc, GameContext *ctx)
 {
     //Joy-Conを横持ちで使う方法
     float   input_x = -jc->stick.y;
@@ -44,8 +45,10 @@ void    UpdatePlayer(Player *p, joyconlib_t *jc)
     }
 
     //ウィンドウの境界チェック
-    if(p->x < 0) p->x = 0;
-    if(p->x > 640 - 50) p->x = 640 - 50;
+    if(p->x < ctx->camera_x)
+    {
+        p->x = ctx->camera_x;
+    }
 
     //ブーストの設定
     // ゲージ溜めの処理
@@ -63,7 +66,7 @@ void    UpdatePlayer(Player *p, joyconlib_t *jc)
     }
 
     //ブーストの処理
-    if(IsBoostButtonPressed(jc) && p->hp > 0)
+    if(IsBoostButtonPressed(jc) && p->hp > 1)
     {
         current_speed = PLAYER_BURST_SPEED;
         p->hp -= 1; //ブースト中はゲージを消費
@@ -89,19 +92,4 @@ void    UpdatePlayer(Player *p, joyconlib_t *jc)
         p->y += p->vy;
     }
 
-}
-
-int CheckCollision(Player *p, Gimmick *g)
-{
-    // プレイヤーの矩形
-    SDL_Rect playerRect = { (int)p->x, (int)p->y, 50, 50 };
-    // ギミックの矩形
-    SDL_Rect gimmickRect = { (int)g->x, (int)g->y, (int)g->w, (int)g->h };
-
-    // 矩形の衝突判定
-    if(SDL_HasIntersection(&playerRect, &gimmickRect))
-    {
-        return 1; // 衝突あり
-    }
-    return 0; // 衝突なし
 }

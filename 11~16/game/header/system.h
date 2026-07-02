@@ -26,4 +26,5 @@ typedef struct
     int is_active; // 1:アクティブ, 0:非アクティブ
 } Gimmick;
 
+
 #endif

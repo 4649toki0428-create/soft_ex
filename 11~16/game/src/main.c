@@ -2,6 +2,7 @@
 #include "system.h"
 #include "window.h"
 #include "player.h"
+#include "gimmick.h"
 
 int main()
 {
@@ -30,18 +31,29 @@ int main()
         joycon_get_state(&ctx.jc);
 
         //プレイヤーの更新
-        UpdatePlayer(&ctx.player, &ctx.jc);
+        UpdatePlayer(&ctx.player, &ctx.jc, &ctx);
+
+        //ギミックの更新
+        UpdateGimmick(&ctx.player, &ctx.spike, IsBoostButtonPressed(&ctx.jc));
 
         //描画処理
         DrawGame(&ctx);
+        camera_update(&ctx);
+
+        if(ctx.player.hp <= 0)
+        {
+            printf("ゲームオーバー！\n");
+            ctx.state = 0;
+        }
         
         //30FPSにする
-        SDL_Delay(10);
+        SDL_Delay(14);
     }
 
-
-
     //終了処理
+    if(ctx.render) SDL_DestroyRenderer(ctx.render);
+    if(ctx.window) SDL_DestroyWindow(ctx.window);
+    SDL_Quit();
     joycon_close(&ctx.jc);
     return 0;
 }
