@@ -1,5 +1,6 @@
 #include "system.h"
 #include "window.h"
+#include "player.h"
 
 int InitSystem(GameContext* ctx)
 {
@@ -40,4 +41,24 @@ int InitSystem(GameContext* ctx)
     //実行フラグを立てて終了
     ctx->state = 1;
     return 0;
+}
+
+void DrawGame(GameContext* ctx)
+{
+    //画面を黒でクリア
+    SDL_SetRenderDrawColor(ctx->render, 0, 0, 0, 255);
+    SDL_RenderClear(ctx->render);
+
+    //プレイヤーの描画
+    SDL_Rect player_rect = { (int)ctx->player.x, (int)ctx->player.y, 50, 50 };
+    SDL_SetRenderDrawColor(ctx->render, 0, 100, 255, 255);
+    SDL_RenderFillRect(ctx->render, &player_rect);
+
+    //ゲージの描画
+    SDL_Rect hpBarRect = {20, 20, ctx->player.hp * 2, 20};
+    SDL_SetRenderDrawColor(ctx->render, 0, 200, 255, 255);
+    SDL_RenderFillRect(ctx->render, &hpBarRect);
+
+    //レンダリングの更新
+    SDL_RenderPresent(ctx->render);
 }

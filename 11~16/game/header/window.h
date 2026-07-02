@@ -11,3 +11,5 @@ typedef struct
 } GameContext;
 
 int InitSystem(GameContext* ctx);
+
+void DrawGame(GameContext* ctx);
