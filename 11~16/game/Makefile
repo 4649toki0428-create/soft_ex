@@ -4,7 +4,7 @@ SRCS = main.c window.c player.c gimmick.c
 OBJS = $(SRCS:.c=.o)
 
 CFLAGS = -Iheader
-LIBS = -lSDL2 -ljoyconlib -lhidapi-hidraw -lm
+LIBS = -lSDL2 -ljoyconlib -lhidapi-hidraw -lm -lSDL2_ttf
 
 $(TARGET): $(OBJS)
 		gcc $(OBJS) -o $(TARGET) $(LIBS)

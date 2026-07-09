@@ -13,7 +13,11 @@ typedef struct
     double vy;
     int hp;
     int state;
-    double prev_acc_z;
+    double prev_acc_z; //Joy-Conの加速度センサー
+    int invincible_timer; //無敵時間の管理
+    int is_goal; //ゴール判定
+    int is_boosting; //ブースト中かどうかのフラグ
+    int score; //スコアの管理
 } Player;
 
 typedef struct
