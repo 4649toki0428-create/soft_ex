@@ -15,6 +15,7 @@ void    InitPlayer(Player *p)
     p->is_goal = 0; //ゴール判定の初期化
     p->is_boosting = 0; //ブースト状態の初期化
     p->score = 0; //スコアの初期化
+    p->direction = 1; // 初期の向きは右
 }
 
 int IsJumpButtonPressed(joyconlib_t *jc)
@@ -105,6 +106,13 @@ void UpdatePlayer(Player *p, joyconlib_t *jc, GameContext *ctx)
     {
         p->vy += PLAYER_GRAVITY;
         p->y += p->vy;
+    }
+
+    // ★追加：移動方向に応じてキャラクターの向きを更新する
+    if (input_x > 0.0f) {
+        p->direction = 1; // 右移動なら右向き
+    } else if (input_x < 0.0f) {
+        p->direction = -1; // 左移動なら左向き
     }
 
     // 左画面外に出ないための壁

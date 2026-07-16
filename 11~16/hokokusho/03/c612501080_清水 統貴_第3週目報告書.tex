@@ -1,0 +1,76 @@
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac} % itemboxを利用するために必要
+\usepackage{url}
+
+%図にEPSファイルを採用した場合，PDFファイルが生成されないことがあるので，PNGやJPEG，PDFファイルを図に採用したほうがよい．
+
+\title{ソフトウェア設計及び実験\\前期・個人開発進捗報告書}
+
+\author{学生番号：6125010806　氏名：清水 統貴}
+\date{2026年7月15日}
+
+\begin{document}
+\maketitle
+
+\section{開発期間2025年7月9日～7月15日の進捗状況}
+%
+
+\subsection{前回からの課題と進展事項}
+%
+現在までにキャラクターやギミックの画像の実装，新たなギミックの実装，ステージの作成など
+を行った．詳細は表\ref{table1}にを参照．
+
+\begin{table}[htb]
+\begin{center}
+\caption{課題と進展}
+\label{table1}
+\begin{tabular}{|p{7cm}|p{7cm}|}\hline
+課題 & 進展 \\ \hline \hline
+キャラクター，ギミックの画像を追加 & 今まで簡易的にしていたキャラクターやギミックに画像を割り当てた．また，背景の画像も変更した． \\ \hline
+ブーストの仕様変更 & 以前はブーストボタンを押しながらもゲージを貯めることができるようにしていたが，ブースト中はゲージがたまらないように変更．また，キーボード操作のときはwキーを長押しではなく連打しないとゲージがたまらないように変更．さらに，ゲージを少し溜めてすぐにブーストすることで，擬似的に常時無敵になることができていたので，ゲージが少なすぎるときには，ブーストボタンを押しても，ゲージは減るが，ブースト状態にはならないようにした． \\ \hline
+敵キャラクターの実装 & プレイヤーが一定距離近づくとプレイヤーを追尾してくる敵キャラクターを実装した． \\ \hline
+ステージ作成 & ブーストを使わなければ攻略できないようにギミックを配置した．しかし，まだあまり面白みがないので，改善の余地がある． \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[htb]
+\centering
+\label{figure1}
+\includegraphics[scale=0.3]{window.png}
+\caption{ゲームを実行したときの様子}
+\end{figure}
+
+\section{発生した課題と解決策}
+今回の実装過程において，不具合及びエラーが発生したが，原因を特定しすべて解決した．
+不具合と解決策は表\ref{table2}を参照．
+\begin{table}[htb]
+\begin{center}
+\caption{課題と進展}
+\label{table2}
+\begin{tabular}{|p{7cm}|p{7cm}|}\hline
+不具合 & 解決策 \\ \hline \hline
+wキー長押しによるゲージの増加 & キーが押されているかどうかだけを判定していたため，1フレーム前のキーの状態を記憶する処理を追加し，現在キーが押されていて，かつ前のフレームでキーが押されていないときだけゲージを増加させるようにした． \\ \hline
+キャラクターとゲージの描画ミス & キャラクターやUIの描画の後に背景を描画していたため，描画の順番を見直し，正しい順番で描画するようにした． \\ \hline
+UIの視認性低下 & スコア，タイマー，ゲージが背景の色とかぶり視認性が悪かったので，色を変更し，視認性を向上させた． \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\section{開発期間2026年7月16日～21日の予定}
+
+\subsection{完了させる事項}
+ステージに配置するギミックをもう少し面白くしたい．
+
+\subsection{新しく取り組む事項}
+タイトルやクリア後の画面などを実装したい．また，時間があれば，新たなギミックやBGM，Joy-Conの振動機能
+などもつけてみたい．
+
+
+\begin{thebibliography}{9}
+\bibitem{gemini} Google : Gemini \url{https://gemini.google.com/?hl=ja} (2026年7月15日閲覧)
+\end{thebibliography}
+\end{document}
+

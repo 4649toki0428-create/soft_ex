@@ -3,6 +3,7 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_image.h>
 #include <joyconlib.h>
 #include "system.h"
 #include "gimmick.h"
@@ -14,7 +15,7 @@ typedef struct
     joyconlib_t jc;
     int state;
     Player player;
-    Gimmick stage_gimmicks[100];
+    Gimmick stage_gimmicks[300];
     int gimmick_count;
     float camera_x;
     SDL_Texture* bgTexture;
@@ -36,5 +37,9 @@ int InitSystem(GameContext* ctx);
 void DrawGame(GameContext* ctx);
 
 void camera_update(GameContext* ctx);
+
+void DrawTitle(GameContext* ctx);
+
+void DrawResult(GameContext* ctx);
 
 #endif

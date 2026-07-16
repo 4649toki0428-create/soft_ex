@@ -55,9 +55,16 @@ int InitSystem(GameContext* ctx)
         return -1;
     }
 
+    // TTFフォントの読み込み
+    ctx->font = TTF_OpenFont("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", 24);
+    if(!ctx->font)
+    {
+        printf("フォントの読み込みエラー（font.ttfがありません）: %s\n", TTF_GetError());
+    }
+
     //画像の読み込み
     ctx->bgTexture = LoadImage(ctx->render, "assets/bg.bmp");
-    ctx->tex_player = LoadImage(ctx->render, "assets/player.bmp");
+    ctx->tex_player = IMG_LoadTexture(ctx->render, "assets/player.png");
     ctx->tex_spike = LoadImage(ctx->render, "assets/spike.bmp");
     ctx->tex_item = LoadImage(ctx->render, "assets/item.bmp");
     ctx->tex_block = LoadImage(ctx->render, "assets/block.bmp");
@@ -151,23 +158,27 @@ void DrawGame(GameContext* ctx)
         }
     }
 
-    //プレイヤーの描画
+    // プレイヤーの描画
     if (ctx->player.invincible_timer == 0 || (ctx->player.invincible_timer / 4) % 2 == 0) {
         SDL_Rect player_rect = { (int)ctx->player.x - (int)ctx->camera_x, (int)ctx->player.y, 50, 50 };
         
+        // ★追加：向きに応じて反転フラグを設定（左向きなら水平反転）
+        SDL_RendererFlip flip = (ctx->player.direction == 1) ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE;
+
         if (ctx->tex_player != NULL) {
-            // 画像がある場合
+            // 画像が読み込めている場合
             if (ctx->player.invincible_timer > 0) {
-                // ダメージ中は画像全体を赤っぽく染める
+                // ダメージを受けた直後は画像を赤っぽく染める
                 SDL_SetTextureColorMod(ctx->tex_player, 255, 50, 50);
             } else {
                 // 通常時は元の色に戻す
                 SDL_SetTextureColorMod(ctx->tex_player, 255, 255, 255);
             }
-            // 画像を貼り付ける！
-            SDL_RenderCopy(ctx->render, ctx->tex_player, NULL, &player_rect);
+            
+            // ★変更：画像を反転フラグ付きで描画する（SDL_RenderCopyEx）
+            SDL_RenderCopyEx(ctx->render, ctx->tex_player, NULL, &player_rect, 0.0, NULL, flip);
         } else {
-            // 画像が無い場合（四角形）
+            // 万が一画像が読み込めなかった場合の予備（今まで通りの四角形）
             if (ctx->player.invincible_timer > 0) {
                 SDL_SetRenderDrawColor(ctx->render, 255, 50, 50, 255);
             } else {
@@ -178,15 +189,13 @@ void DrawGame(GameContext* ctx)
     }
 
     //ゲージの描画
+    SDL_Rect hpBarBg = {18, 18, 204, 24}; // ゲージより上下左右に2ピクセルずつ大きい四角
+    SDL_SetRenderDrawColor(ctx->render, 0, 0, 0, 255); // 黒色
+    SDL_RenderFillRect(ctx->render, &hpBarBg);
     SDL_Rect hpBarRect = {20, 20, ctx->player.hp * 2, 20};
-    SDL_SetRenderDrawColor(ctx->render, 0, 200, 255, 255);
+    SDL_SetRenderDrawColor(ctx->render, 255, 200, 0, 255); 
     SDL_RenderFillRect(ctx->render, &hpBarRect);
 
-    ctx->font = TTF_OpenFont("assets/font.ttf", 24);
-    if(!ctx->font)
-    {
-        printf("フォントの読み込みエラー（font.ttfがありません）: %s\n", TTF_GetError());
-    }
     
     // スコアとタイマーの描画
     if (ctx->font != NULL) {
@@ -199,7 +208,7 @@ void DrawGame(GameContext* ctx)
         snprintf(text_buf, sizeof(text_buf), "SCORE: %d   TIME: %d", ctx->player.score, remaining_time);
 
         // 白色でテキストサーフェスを作成
-        SDL_Color textColor = {255, 255, 255, 255};
+        SDL_Color textColor = {0, 0, 0, 255};
         SDL_Surface* textSurface = TTF_RenderUTF8_Blended(ctx->font, text_buf, textColor);
         
         if (textSurface != NULL) {
@@ -210,9 +219,9 @@ void DrawGame(GameContext* ctx)
             
             SDL_RenderCopy(ctx->render, textTexture, NULL, &textRect);
             
-            SDL_FreeSurface(textSurface);
             SDL_DestroyTexture(textTexture);
         }
+        SDL_FreeSurface(textSurface);
     }
 
     //レンダリングの更新
@@ -235,3 +244,71 @@ void    camera_update(GameContext* ctx)
     }
 }
 
+void DrawTitle(GameContext* ctx)
+{
+    // 背景を青色でクリア
+    SDL_SetRenderDrawColor(ctx->render, 0, 0, 100, 255);
+    SDL_RenderClear(ctx->render);
+
+    if (ctx->font != NULL) {
+        SDL_Color textColor = {255, 255, 255, 255}; // 白色
+        
+        // タイトル文字
+        SDL_Surface* surfTitle = TTF_RenderUTF8_Solid(ctx->font, "そ〜だっしゅ!", textColor);
+        if (surfTitle) {
+            SDL_Texture* texTitle = SDL_CreateTextureFromSurface(ctx->render, surfTitle);
+            SDL_Rect rectTitle = { 320 - surfTitle->w / 2, 150, surfTitle->w, surfTitle->h };
+            SDL_RenderCopy(ctx->render, texTitle, NULL, &rectTitle);
+            SDL_DestroyTexture(texTitle);
+            SDL_FreeSurface(surfTitle);
+        }
+
+        // 操作説明・スタート文字
+        SDL_Surface* surfStart = TTF_RenderUTF8_Solid(ctx->font, "PRESS SPACE TO START", textColor);
+        if (surfStart) {
+            SDL_Texture* texStart = SDL_CreateTextureFromSurface(ctx->render, surfStart);
+            SDL_Rect rectStart = { 320 - surfStart->w / 2, 300, surfStart->w, surfStart->h };
+            SDL_RenderCopy(ctx->render, texStart, NULL, &rectStart);
+            SDL_DestroyTexture(texStart);
+            SDL_FreeSurface(surfStart);
+        }
+    }
+
+    SDL_RenderPresent(ctx->render);
+}
+
+void DrawResult(GameContext* ctx)
+{
+    // 背景を黒色でクリア
+    SDL_SetRenderDrawColor(ctx->render, 0, 0, 0, 255);
+    SDL_RenderClear(ctx->render);
+
+    if (ctx->font != NULL) {
+        SDL_Color textColor = {255, 255, 255, 255}; // 白色
+        
+        // 状態に応じて表示する文字を変更
+        char scoreStr[100];
+        // スコアを文字列にする（%06d で6桁のゼロ埋め表示になります）
+        sprintf(scoreStr, "SCORE: %06d", ctx->player.score); 
+        SDL_Surface* surfScore = TTF_RenderUTF8_Solid(ctx->font, scoreStr, textColor);
+        if (surfScore) {
+            SDL_Texture* texScore = SDL_CreateTextureFromSurface(ctx->render, surfScore);
+            SDL_Rect rectScore = { 320 - surfScore->w / 2, 200, surfScore->w, surfScore->h };
+            SDL_RenderCopy(ctx->render, texScore, NULL, &rectScore);
+            SDL_DestroyTexture(texScore);
+            SDL_FreeSurface(surfScore);
+        }
+        
+        // タイトルへ戻る案内
+        SDL_Surface* surfBack = TTF_RenderUTF8_Solid(ctx->font, "PRESS SPACE TO RETURN TITLE", textColor);
+        if (surfBack) {
+            SDL_Texture* texBack = SDL_CreateTextureFromSurface(ctx->render, surfBack);
+            SDL_Rect rectBack = { 320 - surfBack->w / 2, 300, surfBack->w, surfBack->h };
+            SDL_RenderCopy(ctx->render, texBack, NULL, &rectBack);
+            SDL_DestroyTexture(texBack);
+            SDL_FreeSurface(surfBack);
+        }
+    }
+
+    SDL_RenderPresent(ctx->render);
+}
