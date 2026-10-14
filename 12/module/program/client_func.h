@@ -26,7 +26,7 @@ void SendRockCommand(void);
 void SendScissorsCommand(void);
 void SendPaperCommand(void);
 void EnableHandButtons(void);
-static void RecvResultData(void);
+void DrawResult(int result);
 
 /* client_command.c */
 extern int ExecuteCommand(char command);

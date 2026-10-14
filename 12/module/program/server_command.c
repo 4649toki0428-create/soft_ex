@@ -5,10 +5,10 @@
 
 #include"server_common.h"
 #include"server_func.h"
+#include<arpa/inet.h>
 
 static void SetIntData2DataBlock(void *data,int intData,int *dataSize);
 static void SetCharData2DataBlock(void *data,char charData,int *dataSize);
-static int GetRandomInt(int n);
 static int hands[2] = {-1, -1};
 
 /*****************************************************************
@@ -91,34 +91,6 @@ int ExecuteCommand(char command,int pos)
     return endFlag;
 }
 
-/*****************************************************************
-�ؿ�̾	: SendDiamondCommand
-��ǽ	: ���饤����Ȥ�ɩ����ɽ�������뤿��˥ǡ���������
-����	: �ʤ�
-����	: �ʤ�
-*****************************************************************/
-void SendDiamondCommand(void)
-{
-    unsigned char data[MAX_DATA];
-    int           dataSize;
-
-#ifndef NDEBUG
-    printf("#####\n");
-    printf("SendDiamondCommand\n");
-#endif
-    dataSize = 0;
-    /* ���ޥ�ɤΥ��å� */
-    SetCharData2DataBlock(data,DIAMOND_COMMAND,&dataSize);
-    /* ɩ���κ���� x ��ɸ */
-    SetIntData2DataBlock(data,GetRandomInt(500),&dataSize);
-    /* ɩ���κ���� y ��ɸ */
-    SetIntData2DataBlock(data,GetRandomInt(300),&dataSize);
-    /* ɩ���ι⤵ */
-    SetIntData2DataBlock(data,GetRandomInt(100),&dataSize);
-
-    /* ���饤����Ȥ����� */
-    SendData(ALL_CLIENTS,data,dataSize);
-}
 
 /*****
 static
@@ -165,15 +137,4 @@ static void SetCharData2DataBlock(void *data,char charData,int *dataSize)
     *(char *)(data + (*dataSize)) = charData;
     /* �ǡ��������������䤹 */
     (*dataSize) += sizeof(char);
-}
-
-/*****************************************************************
-�ؿ�̾	: GetRandomInt
-��ǽ	: ���������������
-����	: int		n	: ����κ�����
-����	: �����
-*****************************************************************/
-static int GetRandomInt(int n)
-{
-    return rand()%n;
 }

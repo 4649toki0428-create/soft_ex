@@ -5,8 +5,7 @@
 
 #include<SDL2/SDL.h>
 #include"server_common.h"
-
-static Uint32 SignalHandler(Uint32 interval, void *param);
+#include"server_func.h"
 
 int main(int argc,char *argv[])
 {
@@ -18,11 +17,14 @@ int main(int argc,char *argv[])
 		fprintf(stderr,"Usage: number of clients\n");
 		exit(-1);
 	}
-	if((num = atoi(argv[1])) < 0 ||  num > MAX_CLIENTS){
-		fprintf(stderr,"clients limit = %d \n",MAX_CLIENTS);
-		exit(-1);
-	}
 	
+	num = atoi(argv[1]);
+
+	if(num != 2)
+	{
+		fprintf(stderr,"This program is for 2 clients\n");
+		return -1;
+	}
 	/* SDL�ν���� */
 	if(SDL_Init(SDL_INIT_TIMER) < 0) {
 		printf("failed to initialize SDL.\n");
@@ -47,16 +49,3 @@ int main(int argc,char *argv[])
 	return 0;
 }
 
-/*****************************************************************
-�ؿ�̾  : SignalHandler
-��ǽ    : �������Ѵؿ� 
-����    : Uint32	interval	: �����ޡ�
-		  void		*param		: �����߽����ΰ���
-����    : �����ޡ��μ��δֳ�
-*****************************************************************/
-static Uint32 SignalHandler(Uint32 interval, void *param)
-{
-	SendDiamondCommand();
-
-	return interval;
-}
