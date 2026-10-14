@@ -1,6 +1,6 @@
 /*****************************************************************
-¥Õ¥¡¥¤¥ëÌ¾	: server_command.c
-µ¡Ç½		: ¥µ¡¼¥Ð¡¼¤Î¥³¥Þ¥ó¥É½èÍý
+ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾	: server_command.c
+ï¿½ï¿½Ç½		: ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Î¥ï¿½ï¿½Þ¥ï¿½É½ï¿½ï¿½ï¿½
 *****************************************************************/
 
 #include"server_common.h"
@@ -9,15 +9,16 @@
 static void SetIntData2DataBlock(void *data,int intData,int *dataSize);
 static void SetCharData2DataBlock(void *data,char charData,int *dataSize);
 static int GetRandomInt(int n);
+static int hands[2] = {-1, -1};
 
 /*****************************************************************
-´Ø¿ôÌ¾	: ExecuteCommand
-µ¡Ç½	: ¥¯¥é¥¤¥¢¥ó¥È¤«¤éÁ÷¤é¤ì¤Æ¤­¤¿¥³¥Þ¥ó¥É¤ò¸µ¤Ë¡¤
-		  °ú¤­¿ô¤ò¼õ¿®¤·¡¤¼Â¹Ô¤¹¤ë
-°ú¿ô	: char	command		: ¥³¥Þ¥ó¥É
-		  int	pos			: ¥³¥Þ¥ó¥É¤òÁ÷¤Ã¤¿¥¯¥é¥¤¥¢¥ó¥ÈÈÖ¹æ
-½ÐÎÏ	: ¥×¥í¥°¥é¥à½ªÎ»¥³¥Þ¥ó¥É¤¬Á÷¤é¤ì¤Æ¤­¤¿»þ¤Ë¤Ï0¤òÊÖ¤¹¡¥
-		  ¤½¤ì°Ê³°¤Ï1¤òÊÖ¤¹
+ï¿½Ø¿ï¿½Ì¾	: ExecuteCommand
+ï¿½ï¿½Ç½	: ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¥ï¿½É¤ò¸µ¤Ë¡ï¿½
+		  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¹Ô¤ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: char	command		: ï¿½ï¿½ï¿½Þ¥ï¿½ï¿½
+		  int	pos			: ï¿½ï¿½ï¿½Þ¥ï¿½É¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½×¥ï¿½ï¿½ï¿½ï¿½ï¿½à½ªÎ»ï¿½ï¿½ï¿½Þ¥ï¿½É¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¤ï¿½0ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½
+		  ï¿½ï¿½ï¿½ï¿½Ê³ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Ö¤ï¿½
 *****************************************************************/
 int ExecuteCommand(char command,int pos)
 {
@@ -25,7 +26,7 @@ int ExecuteCommand(char command,int pos)
     int			dataSize,intData;
     int			endFlag = 1;
 
-    /* °ú¤­¿ô¥Á¥§¥Ã¥¯ */
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¥ï¿½ */
     assert(0<=pos && pos<MAX_CLIENTS);
 
 #ifndef NDEBUG
@@ -36,59 +37,65 @@ int ExecuteCommand(char command,int pos)
     switch(command){
 	    case END_COMMAND:
 			dataSize = 0;
-			/* ¥³¥Þ¥ó¥É¤Î¥»¥Ã¥È */
+			/* ï¿½ï¿½ï¿½Þ¥ï¿½É¤Î¥ï¿½ï¿½Ã¥ï¿½ */
 			SetCharData2DataBlock(data,command,&dataSize);
 
-			/* Á´¥æ¡¼¥¶¡¼¤ËÁ÷¤ë */
+			/* ï¿½ï¿½ï¿½æ¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 			SendData(ALL_CLIENTS,data,dataSize);
 
 			endFlag = 0;
 			break;
-	    case CIRCLE_COMMAND:
-			/* ±ß¤òÉ½¼¨¤¹¤ë¥¯¥é¥¤¥¢¥ó¥ÈÈÖ¹æ¤ò¼õ¿®¤¹¤ë */
-			RecvIntData(pos,&intData);
+	    case ROCK_COMMAND:
+		case SCISSORS_COMMAND:
+		case PAPER_COMMAND:
+			if(command == ROCK_COMMAND) {
+				hands[pos] = 0;
+			} else if(command == SCISSORS_COMMAND) {
+				hands[pos] = 1;
+			} else if(command == PAPER_COMMAND) {
+				hands[pos] = 2;
+			}
 
-			dataSize = 0;
-			/* ¥³¥Þ¥ó¥É¤Î¥»¥Ã¥È */
-			SetCharData2DataBlock(data,command,&dataSize);
-			/* º¸¾å¤Î x ºÂÉ¸¤Î¥»¥Ã¥È */
-			SetIntData2DataBlock(data,GetRandomInt(500),&dataSize);
-			/* º¸¾å¤Î y ºÂÉ¸¤Î¥»¥Ã¥È */
-			SetIntData2DataBlock(data,GetRandomInt(300),&dataSize);
-			/* Ä¾·Â¤Î¥»¥Ã¥È */
-			SetIntData2DataBlock(data,GetRandomInt(100),&dataSize);
+			if(hands[0] != -1 && hands[1] != -1) {
+				int result0, result1;
 
-			/* »ØÄê¤µ¤ì¤¿¥¯¥é¥¤¥¢¥ó¥È¤ËÁ÷¤ë */
-			SendData(intData,data,dataSize);
-			break;
-	    case RECT_COMMAND:
-			dataSize = 0;
-			/* ¥³¥Þ¥ó¥É¤Î¥»¥Ã¥È */
-			SetCharData2DataBlock(data,command,&dataSize);
-			/* »Í³Ñ¤Îº¸¾å¤Î x ºÂÉ¸ */
-			SetIntData2DataBlock(data,GetRandomInt(500),&dataSize);
-			/* »Í³Ñ¤Îº¸¾å¤Î y ºÂÉ¸ */
-			SetIntData2DataBlock(data,GetRandomInt(300),&dataSize);
-			/* »Í³Ñ¤Î²£Éý */
-			SetIntData2DataBlock(data,GetRandomInt(100),&dataSize);
-			/* »Í³Ñ¤Î¹â¤µ */
-			SetIntData2DataBlock(data,GetRandomInt(100),&dataSize);
+				if(hands[0] == hands[1]) {
+					result0 = 0;
+					result1 = 0;
+				} else if((hands[0] == 0 && hands[1] == 1) || (hands[0] == 1 && hands[1] == 2) || (hands[0] == 2 && hands[1] == 0)) {
+					result0 = 1;
+					result1 = 2;
+				} else {
+					result0 = 2;
+					result1 = 1;
+				}
+				dataSize = 0;
+				SetCharData2DataBlock(data,RESULT_COMMAND,&dataSize);
+				SetIntData2DataBlock(data,result0,&dataSize);
+				SendData(0,data,dataSize);
 
-			/* Á´¥æ¡¼¥¶¡¼¤ËÁ÷¤ë */
-			SendData(ALL_CLIENTS,data,dataSize);
+				dataSize = 0;
+				SetCharData2DataBlock(data,RESULT_COMMAND,&dataSize);
+				SetIntData2DataBlock(data,result1,&dataSize);
+				SendData(1,data,dataSize);
+
+				hands[0] = -1;
+				hands[1] = -1;
+			}
 			break;
 	    default:
-			/* Ì¤ÃÎ¤Î¥³¥Þ¥ó¥É¤¬Á÷¤é¤ì¤Æ¤­¤¿ */
+			/* Ì¤ï¿½Î¤Î¥ï¿½ï¿½Þ¥ï¿½É¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ */
 			fprintf(stderr,"0x%02x is not command!\n",command);
     }
+
     return endFlag;
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: SendDiamondCommand
-µ¡Ç½	: ¥¯¥é¥¤¥¢¥ó¥È¤ËÉ©·Á¤òÉ½¼¨¤µ¤»¤ë¤¿¤á¤Ë¥Ç¡¼¥¿¤òÁ÷¤ë
-°ú¿ô	: ¤Ê¤·
-½ÐÎÏ	: ¤Ê¤·
+ï¿½Ø¿ï¿½Ì¾	: SendDiamondCommand
+ï¿½ï¿½Ç½	: ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¤ï¿½É©ï¿½ï¿½ï¿½ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¤¿ï¿½ï¿½Ë¥Ç¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
 *****************************************************************/
 void SendDiamondCommand(void)
 {
@@ -100,16 +107,16 @@ void SendDiamondCommand(void)
     printf("SendDiamondCommand\n");
 #endif
     dataSize = 0;
-    /* ¥³¥Þ¥ó¥É¤Î¥»¥Ã¥È */
+    /* ï¿½ï¿½ï¿½Þ¥ï¿½É¤Î¥ï¿½ï¿½Ã¥ï¿½ */
     SetCharData2DataBlock(data,DIAMOND_COMMAND,&dataSize);
-    /* É©·Á¤Îº¸¾å¤Î x ºÂÉ¸ */
+    /* É©ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ x ï¿½ï¿½É¸ */
     SetIntData2DataBlock(data,GetRandomInt(500),&dataSize);
-    /* É©·Á¤Îº¸¾å¤Î y ºÂÉ¸ */
+    /* É©ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ y ï¿½ï¿½É¸ */
     SetIntData2DataBlock(data,GetRandomInt(300),&dataSize);
-    /* É©·Á¤Î¹â¤µ */
+    /* É©ï¿½ï¿½ï¿½Î¹â¤µ */
     SetIntData2DataBlock(data,GetRandomInt(100),&dataSize);
 
-    /* ¥¯¥é¥¤¥¢¥ó¥È¤ËÁ÷¤ë */
+    /* ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½ï¿½ */
     SendData(ALL_CLIENTS,data,dataSize);
 }
 
@@ -117,54 +124,54 @@ void SendDiamondCommand(void)
 static
 *****/
 /*****************************************************************
-´Ø¿ôÌ¾	: SetIntData2DataBlock
-µ¡Ç½	: int ·¿¤Î¥Ç¡¼¥¿¤òÁ÷¿®ÍÑ¥Ç¡¼¥¿¤ÎºÇ¸å¤Ë¥»¥Ã¥È¤¹¤ë
-°ú¿ô	: void		*data		: Á÷¿®ÍÑ¥Ç¡¼¥¿
-		  int		intData		: ¥»¥Ã¥È¤¹¤ë¥Ç¡¼¥¿
-		  int		*dataSize	: Á÷¿®ÍÑ¥Ç¡¼¥¿¤Î¸½ºß¤Î¥µ¥¤¥º
-½ÐÎÏ	: ¤Ê¤·
+ï¿½Ø¿ï¿½Ì¾	: SetIntData2DataBlock
+ï¿½ï¿½Ç½	: int ï¿½ï¿½ï¿½Î¥Ç¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½ï¿½ÎºÇ¸ï¿½Ë¥ï¿½ï¿½Ã¥È¤ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: void		*data		: ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½
+		  int		intData		: ï¿½ï¿½ï¿½Ã¥È¤ï¿½ï¿½ï¿½Ç¡ï¿½ï¿½ï¿½
+		  int		*dataSize	: ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ß¤Î¥ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
 *****************************************************************/
 static void SetIntData2DataBlock(void *data,int intData,int *dataSize)
 {
     int tmp;
 
-    /* °ú¤­¿ô¥Á¥§¥Ã¥¯ */
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¥ï¿½ */
     assert(data!=NULL);
     assert(0<=(*dataSize));
 
     tmp = htonl(intData);
 
-    /* int ·¿¤Î¥Ç¡¼¥¿¤òÁ÷¿®ÍÑ¥Ç¡¼¥¿¤ÎºÇ¸å¤Ë¥³¥Ô¡¼¤¹¤ë */
+    /* int ï¿½ï¿½ï¿½Î¥Ç¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½ï¿½ÎºÇ¸ï¿½Ë¥ï¿½ï¿½Ô¡ï¿½ï¿½ï¿½ï¿½ï¿½ */
     memcpy(data + (*dataSize),&tmp,sizeof(int));
-    /* ¥Ç¡¼¥¿¥µ¥¤¥º¤òÁý¤ä¤¹ */
+    /* ï¿½Ç¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä¤¹ */
     (*dataSize) += sizeof(int);
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: SetCharData2DataBlock
-µ¡Ç½	: char ·¿¤Î¥Ç¡¼¥¿¤òÁ÷¿®ÍÑ¥Ç¡¼¥¿¤ÎºÇ¸å¤Ë¥»¥Ã¥È¤¹¤ë
-°ú¿ô	: void		*data		: Á÷¿®ÍÑ¥Ç¡¼¥¿
-		  int		intData		: ¥»¥Ã¥È¤¹¤ë¥Ç¡¼¥¿
-		  int		*dataSize	: Á÷¿®ÍÑ¥Ç¡¼¥¿¤Î¸½ºß¤Î¥µ¥¤¥º
-½ÐÎÏ	: ¤Ê¤·
+ï¿½Ø¿ï¿½Ì¾	: SetCharData2DataBlock
+ï¿½ï¿½Ç½	: char ï¿½ï¿½ï¿½Î¥Ç¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½ï¿½ÎºÇ¸ï¿½Ë¥ï¿½ï¿½Ã¥È¤ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: void		*data		: ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½
+		  int		intData		: ï¿½ï¿½ï¿½Ã¥È¤ï¿½ï¿½ï¿½Ç¡ï¿½ï¿½ï¿½
+		  int		*dataSize	: ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ß¤Î¥ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
 *****************************************************************/
 static void SetCharData2DataBlock(void *data,char charData,int *dataSize)
 {
-    /* °ú¤­¿ô¥Á¥§¥Ã¥¯ */
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¥ï¿½ */
     assert(data!=NULL);
     assert(0<=(*dataSize));
 
-    /* int ·¿¤Î¥Ç¡¼¥¿¤òÁ÷¿®ÍÑ¥Ç¡¼¥¿¤ÎºÇ¸å¤Ë¥³¥Ô¡¼¤¹¤ë */
+    /* int ï¿½ï¿½ï¿½Î¥Ç¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥Ç¡ï¿½ï¿½ï¿½ï¿½ÎºÇ¸ï¿½Ë¥ï¿½ï¿½Ô¡ï¿½ï¿½ï¿½ï¿½ï¿½ */
     *(char *)(data + (*dataSize)) = charData;
-    /* ¥Ç¡¼¥¿¥µ¥¤¥º¤òÁý¤ä¤¹ */
+    /* ï¿½Ç¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä¤¹ */
     (*dataSize) += sizeof(char);
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: GetRandomInt
-µ¡Ç½	: À°¿ô¤ÎÍð¿ô¤òÆÀ¤ë
-°ú¿ô	: int		n	: Íð¿ô¤ÎºÇÂçÃÍ
-½ÐÎÏ	: Íð¿ôÃÍ
+ï¿½Ø¿ï¿½Ì¾	: GetRandomInt
+ï¿½ï¿½Ç½	: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: int		n	: ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************************************************/
 static int GetRandomInt(int n)
 {

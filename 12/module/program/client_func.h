@@ -1,6 +1,6 @@
 /*****************************************************************
-¥Õ¥¡¥¤¥ëÌ¾	: client_func.h
-µ¡Ç½		: ¥¯¥é¥¤¥¢¥ó¥È¤Î³°Éô´Ø¿ô¤ÎÄêµÁ
+ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾	: client_func.h
+ï¿½ï¿½Ç½		: ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¤Î³ï¿½ï¿½ï¿½ï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************************************************/
 
 #ifndef _CLIENT_FUNC_H_
@@ -22,11 +22,18 @@ extern void WindowEvent(int num);
 extern void DrawRectangle(int x,int y,int width,int height);
 extern void DrawCircle(int x,int y,int r);
 extern void DrawDiamond(int x,int y,int height);
+void SendRockCommand(void);
+void SendScissorsCommand(void);
+void SendPaperCommand(void);
+void EnableHandButtons(void);
+static void RecvResultData(void);
 
 /* client_command.c */
 extern int ExecuteCommand(char command);
 extern void SendRectangleCommand(void);
 extern void SendCircleCommand(int pos);
 extern void SendEndCommand(void);
+
+
 
 #endif

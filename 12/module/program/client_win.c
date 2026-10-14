@@ -1,6 +1,6 @@
 /*****************************************************************
-¥Õ¥¡¥¤¥ëÌ¾	: client_win.c
-µ¡Ç½		: ¥¯¥é¥¤¥¢¥ó¥È¤Î¥æ¡¼¥¶¡¼¥¤¥ó¥¿¡¼¥Õ¥§¡¼¥¹½èÍı
+ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾	: client_win.c
+ï¿½ï¿½Ç½		: ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¤Î¥æ¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó¥¿¡ï¿½ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************************************************/
 
 #include<SDL2/SDL.h>
@@ -14,13 +14,14 @@ static SDL_Renderer *gMainRenderer;
 static SDL_Rect gButtonRect[MAX_CLIENTS+2];
 
 static int CheckButtonNO(int x,int y,int num);
+static int waitingResult = 0;
 
 /*****************************************************************
-´Ø¿ôÌ¾	: InitWindows
-µ¡Ç½	: ¥á¥¤¥ó¥¦¥¤¥ó¥É¥¦¤ÎÉ½¼¨¡¤ÀßÄê¤ò¹Ô¤¦
-°ú¿ô	: int	clientID		: ¥¯¥é¥¤¥¢¥ó¥ÈÈÖ¹æ
-		  int	num				: Á´¥¯¥é¥¤¥¢¥ó¥È¿ô
-½ĞÎÏ	: Àµ¾ï¤ËÀßÄê¤Ç¤­¤¿¤È¤­0¡¤¼ºÇÔ¤·¤¿¤È¤­-1
+ï¿½Ø¿ï¿½Ì¾	: InitWindows
+ï¿½ï¿½Ç½	: ï¿½</tool_call>ó¥¦¥É¥É½Ô¤
+	: int	clientID		: é¥¤Ö¹
+		  int	num				: ï¿½ï¿½ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¿ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¤ï¿½ï¿½ï¿½ï¿½È¤ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½È¤ï¿½-1
 *****************************************************************/
 int InitWindows(int clientID,int num,char name[][MAX_NAME_SIZE])
 {
@@ -34,16 +35,16 @@ int InitWindows(int clientID,int num,char name[][MAX_NAME_SIZE])
 	char allButton[]="ALL.jpg";
 	char *s,title[10];
 
-    /* °ú¤­¿ô¥Á¥§¥Ã¥¯ */
-    assert(0<num && num<=MAX_CLIENTS);
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¥ï¿½ */
+    assert(num==2);
 	
-	/* SDL¤Î½é´ü²½ */
+	/* SDLï¿½Î½ï¿½ï¿½ï¿½ï¿½ */
 	if(SDL_Init(SDL_INIT_VIDEO) < 0) {
 		printf("failed to initialize SDL.\n");
 		return -1;
 	}
 	
-	/* ¥á¥¤¥ó¤Î¥¦¥¤¥ó¥É¥¦¤òºîÀ®¤¹¤ë */
+	/* ï¿½á¥¤ï¿½ï¿½Î¥ï¿½ï¿½ï¿½ï¿½ï¿½É¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	if((gMainWindow = SDL_CreateWindow("My Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 500, 300, 0)) == NULL) {
 		printf("failed to initialize videomode.\n");
 		return -1;
@@ -51,27 +52,25 @@ int InitWindows(int clientID,int num,char name[][MAX_NAME_SIZE])
 
 	gMainRenderer = SDL_CreateRenderer(gMainWindow, -1, SDL_RENDERER_SOFTWARE);//SDL_RENDERER_ACCELERATED |SDL_RENDERER_PRESENTVSYNC);//0);
 
-	/* ¥¦¥¤¥ó¥É¥¦¤Î¥¿¥¤¥È¥ë¤ò¥»¥Ã¥È */
+	/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¥ï¿½ï¿½Î¥ï¿½ï¿½ï¿½ï¿½È¥ï¿½ò¥»¥Ã¥ï¿½ */
 	sprintf(title,"%d",clientID);
 	SDL_SetWindowTitle(gMainWindow, title);
 	
-	/* ÇØ·Ê¤òÇò¤Ë¤¹¤ë */
+	/* ï¿½Ø·Ê¤ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ */
 	SDL_SetRenderDrawColor(gMainRenderer, 255, 255, 255, 255);
   	SDL_RenderClear(gMainRenderer);
 
-	/* ¥Ü¥¿¥ó¤ÎºîÀ® */
-	for(i=0;i<num+2;i++){
+	/* ï¿½Ü¥ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ */
+	for(i=0;i<4;i++){
 		gButtonRect[i].x = 20+80*i;
 		gButtonRect[i].y=10;
 		gButtonRect[i].w=70;
 		gButtonRect[i].h=20;
       
-		if(i==num){
-			s=allButton;
-		}
-		else if(i==num+1){
+		if(i==3){
 			s=endButton;
 		}
+		
 		else{
 			s=clientButton[i];
 		}
@@ -87,21 +86,27 @@ int InitWindows(int clientID,int num,char name[][MAX_NAME_SIZE])
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: DestroyWindow
-µ¡Ç½	: SDL¤ò½ªÎ»¤¹¤ë
-°ú¿ô	: ¤Ê¤·
-½ĞÎÏ	: ¤Ê¤·
-*****************************************************************/
+ï¿½Ø¿ï¿½Ì¾	: DestroyWindow
+ï¿½ï¿½Ç½	: SDLï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
+********************mmand(void);
+ã“ã‚Œã§ client_win.c ã®ã‚¯ãƒªãƒƒã‚¯å‡¦ç†ã‹ã‚‰å‘¼ã³å‡ºã›ã¾ã™ã€‚çµæœå¾…ã¡ä¸­ã®é€ä¿¡åˆ¶é™ã¯ã€ãƒœã‚¿ãƒ³ã¨é€ä¿¡ã‚’ã¤ãªã„ã å¾Œã«è¿½åŠ ã—ã¾ã—ã‚‡ã†ã€‚
+
+ï¿¼
+ï¿¼
+ï¿¼
+*********************************************/
 void DestroyWindow(void)
 {
 	SDL_Quit();
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: WindowEvent
-µ¡Ç½	: ¥á¥¤¥ó¥¦¥¤¥ó¥É¥¦¤ËÂĞ¤¹¤ë¥¤¥Ù¥ó¥È½èÍı¤ò¹Ô¤¦
-°ú¿ô	: int		num		: Á´¥¯¥é¥¤¥¢¥ó¥È¿ô
-½ĞÎÏ	: ¤Ê¤·
+ï¿½Ø¿ï¿½Ì¾	: WindowEvent
+ï¿½ï¿½Ç½	: ï¿½á¥¤ï¿½ó¥¦¥ï¿½ï¿½ï¿½É¥ï¿½ï¿½ï¿½ï¿½Ğ¤ï¿½ï¿½ë¥¤ï¿½Ù¥ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½
+ï¿½ï¿½ï¿½ï¿½	: int		num		: ï¿½ï¿½ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¿ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
 *****************************************************************/
 void WindowEvent(int num)
 {
@@ -109,7 +114,7 @@ void WindowEvent(int num)
 	SDL_MouseButtonEvent *mouse;
 	int buttonNO;
 
-    /* °ú¤­¿ô¥Á¥§¥Ã¥¯ */
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¥ï¿½ */
     assert(0<num && num<=MAX_CLIENTS);
 
 	if(SDL_PollEvent(&event)){
@@ -127,17 +132,28 @@ void WindowEvent(int num)
 					printf("WindowEvent()\n");
 					printf("Button %d is pressed\n",buttonNO);
 #endif
-					if(0<=buttonNO && buttonNO<num){
-						/* Ì¾Á°¤Î½ñ¤«¤ì¤¿¥Ü¥¿¥ó¤¬²¡¤µ¤ì¤¿ */
-						SendCircleCommand(buttonNO);
-					}
-					else if(buttonNO==num){
-						/* ¡ÖAll¡×¤È½ñ¤«¤ì¤¿¥Ü¥¿¥ó¤¬²¡¤µ¤ì¤¿ */
-						SendRectangleCommand();
-					}
-					else if(buttonNO==num+1){
-						/* ¡ÖEnd¡×¤È½ñ¤«¤ì¤¿¥Ü¥¿¥ó¤¬²¡¤µ¤ì¤¿ */
-						SendEndCommand();
+					switch(buttonNO){
+						case 0:
+							if(waitingResult == 0) {
+								SendRockCommand();
+								waitingResult = 1;
+							}
+							break;
+						case 1:
+							if(waitingResult == 0) {
+								SendScissorsCommand();
+								waitingResult = 1;
+							}
+							break;
+						case 2:
+							if(waitingResult == 0) {
+								SendPaperCommand();
+								waitingResult = 1;
+							}
+							break;
+						case 3:
+							SendEndCommand();
+							break;
 					}
 				}
 				break;
@@ -146,13 +162,13 @@ void WindowEvent(int num)
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: DrawRectangle
-µ¡Ç½	: ¥á¥¤¥ó¥¦¥¤¥ó¥É¥¦¤Ë»Í³Ñ¤òÉ½¼¨¤¹¤ë
-°ú¿ô	: int		x			: »Í³Ñ¤Îº¸¾å¤Î x ºÂÉ¸
-		  int		y			: »Í³Ñ¤Îº¸¾å¤Î y ºÂÉ¸
-		  int		width		: »Í³Ñ¤Î²£Éı
-		  int		height		: »Í³Ñ¤Î¹â¤µ
-½ĞÎÏ	: ¤Ê¤·
+ï¿½Ø¿ï¿½Ì¾	: DrawRectangle
+ï¿½ï¿½Ç½	: ï¿½á¥¤ï¿½ó¥¦¥ï¿½ï¿½ï¿½É¥ï¿½ï¿½Ë»Í³Ñ¤ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: int		x			: ï¿½Í³Ñ¤Îºï¿½ï¿½ï¿½ï¿½ x ï¿½ï¿½É¸
+		  int		y			: ï¿½Í³Ñ¤Îºï¿½ï¿½ï¿½ï¿½ y ï¿½ï¿½É¸
+		  int		width		: ï¿½Í³Ñ¤Î²ï¿½ï¿½ï¿½
+		  int		height		: ï¿½Í³Ñ¤Î¹â¤µ
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
 *****************************************************************/
 void DrawRectangle(int x,int y,int width,int height)
 {
@@ -169,12 +185,12 @@ void DrawRectangle(int x,int y,int width,int height)
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: DrawCircle
-µ¡Ç½	: ¥á¥¤¥ó¥¦¥¤¥ó¥É¥¦¤Ë±ß¤òÉ½¼¨¤¹¤ë
-°ú¿ô	: int		x		: ±ß¤Î x ºÂÉ¸
-		  int		y		: ±ß¤Î y ºÂÉ¸
-		  int		r		: ±ß¤ÎÈ¾·Â
-½ĞÎÏ	: ¤Ê¤·
+ï¿½Ø¿ï¿½Ì¾	: DrawCircle
+ï¿½ï¿½Ç½	: ï¿½á¥¤ï¿½ó¥¦¥ï¿½ï¿½ï¿½É¥ï¿½ï¿½Ë±ß¤ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: int		x		: ï¿½ß¤ï¿½ x ï¿½ï¿½É¸
+		  int		y		: ï¿½ß¤ï¿½ y ï¿½ï¿½É¸
+		  int		r		: ï¿½ß¤ï¿½È¾ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
 *****************************************************************/
 void DrawCircle(int x,int y,int r)
 {
@@ -189,12 +205,12 @@ void DrawCircle(int x,int y,int r)
 }
 
 /*****************************************************************
-´Ø¿ôÌ¾	: DrawDiamond
-µ¡Ç½	: ¥á¥¤¥ó¥¦¥¤¥ó¥É¥¦¤ËÉ©·Á¤òÉ½¼¨¤¹¤ë
-°ú¿ô	: int		x		: º¸¾å¤Î x ºÂÉ¸
-		  int		y		: º¸¾å¤Î y ºÂÉ¸
-		  int		height		: ¹â¤µ
-½ĞÎÏ	: ¤Ê¤·
+ï¿½Ø¿ï¿½Ì¾	: DrawDiamond
+ï¿½ï¿½Ç½	: ï¿½á¥¤ï¿½ó¥¦¥ï¿½ï¿½ï¿½É¥ï¿½ï¿½ï¿½É©ï¿½ï¿½ï¿½ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½	: int		x		: ï¿½ï¿½ï¿½ï¿½ï¿½ x ï¿½ï¿½É¸
+		  int		y		: ï¿½ï¿½ï¿½ï¿½ï¿½ y ï¿½ï¿½É¸
+		  int		height		: ï¿½â¤µ
+ï¿½ï¿½ï¿½ï¿½	: ï¿½Ê¤ï¿½
 *****************************************************************/
 void DrawDiamond(int x,int y,int height)
 {
@@ -223,19 +239,19 @@ void DrawDiamond(int x,int y,int height)
 static
 *****/
 /*****************************************************************
-´Ø¿ôÌ¾	: CheckButtonNO
-µ¡Ç½	: ¥¯¥ê¥Ã¥¯¤µ¤ì¤¿¥Ü¥¿¥ó¤ÎÈÖ¹æ¤òÊÖ¤¹
-°ú¿ô	: int	   x		: ¥Ş¥¦¥¹¤Î²¡¤µ¤ì¤¿ x ºÂÉ¸
-		  int	   y		: ¥Ş¥¦¥¹¤Î²¡¤µ¤ì¤¿ y ºÂÉ¸
-		  char	   num		: Á´¥¯¥é¥¤¥¢¥ó¥È¿ô
-½ĞÎÏ	: ²¡¤µ¤ì¤¿¥Ü¥¿¥ó¤ÎÈÖ¹æ¤òÊÖ¤¹
-		  ¥Ü¥¿¥ó¤¬²¡¤µ¤ì¤Æ¤¤¤Ê¤¤»ş¤Ï-1¤òÊÖ¤¹
+ï¿½Ø¿ï¿½Ì¾	: CheckButtonNO
+ï¿½ï¿½Ç½	: ï¿½ï¿½ï¿½ï¿½Ã¥ï¿½ï¿½ï¿½ï¿½ì¤¿ï¿½Ü¥ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½Ö¤ï¿½
+ï¿½ï¿½ï¿½ï¿½	: int	   x		: ï¿½Ş¥ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½ì¤¿ x ï¿½ï¿½É¸
+		  int	   y		: ï¿½Ş¥ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½ì¤¿ y ï¿½ï¿½É¸
+		  char	   num		: ï¿½ï¿½ï¿½ï¿½ï¿½é¥¤ï¿½ï¿½ï¿½ï¿½È¿ï¿½
+ï¿½ï¿½ï¿½ï¿½	: ï¿½ï¿½ï¿½ï¿½ï¿½ì¤¿ï¿½Ü¥ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½Ö¤ï¿½
+		  ï¿½Ü¥ï¿½ï¿½ó¤¬²ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½Ê¤ï¿½ï¿½ï¿½ï¿½ï¿½-1ï¿½ï¿½ï¿½Ö¤ï¿½
 *****************************************************************/
 static int CheckButtonNO(int x,int y,int num)
 {
 	int i;
 
- 	for(i=0;i<num+2;i++){
+ 	for(i=0;i<4;i++){
 		if(gButtonRect[i].x < x &&
 			gButtonRect[i].y < y &&
       		gButtonRect[i].x + gButtonRect[i].w > x &&
@@ -244,4 +260,38 @@ static int CheckButtonNO(int x,int y,int num)
 		}
 	}
  	return -1;
+}
+
+void EnableHandButtons(void)
+{
+	waitingResult = 0;
+}
+
+void DrawResult(int result)
+{
+    const char *message;
+
+    switch (result) {
+        case 0:
+            message = "DRAW";
+            break;
+        case 1:
+            message = "WIN";
+            break;
+        case 2:
+            message = "LOSE";
+            break;
+        default:
+            return;
+    }
+
+    /* å‰å›ã®çµæœã‚’ç™½ã§æ¶ˆã™ã€‚ä¸Šéƒ¨ã®ãƒœã‚¿ãƒ³ã¯æ®‹ã™ */
+    SDL_Rect area = {0, 60, 500, 240};
+    SDL_SetRenderDrawColor(gMainRenderer, 255, 255, 255, 255);
+    SDL_RenderFillRect(gMainRenderer, &area);
+
+    /* é»’ã„æ–‡å­—ã§çµæœã‚’æç”»ã™ã‚‹ */
+    stringRGBA(gMainRenderer, 200, 120, message, 0, 0, 0, 255);
+
+    SDL_RenderPresent(gMainRenderer);
 }
