@@ -1,6 +1,6 @@
 /*****************************************************************
-¥Õ¥¡¥¤¥ëÌ¾	: server_func.h
-µ¡Ç½		: ¥µ¡¼¥Ð¡¼¤Î³°Éô´Ø¿ô¤ÎÄêµÁ
+ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾	: server_func.h
+ï¿½ï¿½Ç½		: ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Î³ï¿½ï¿½ï¿½ï¿½Ø¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************************************************/
 
 #ifndef _SERVER_FUNC_H_
@@ -17,6 +17,5 @@ extern int SendRecvManager(void);
 
 /* server_command.c */
 extern int ExecuteCommand(char command,int pos);
-extern void SendDiamondCommand(void);
 
 #endif

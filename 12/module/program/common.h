@@ -21,9 +21,6 @@
 #define MAX_DATA		200				/* ����������ǡ����κ����� */
 
 #define END_COMMAND		'E'		  		/* �ץ�����ཪλ���ޥ�� */
-#define CIRCLE_COMMAND	'C'				/* ��ɽ�����ޥ�� */
-#define RECT_COMMAND	'R'				/* �ͳ�ɽ�����ޥ�� */
-#define DIAMOND_COMMAND	'D'				/* ɩ��ɽ�����ޥ�� */
 
 #define ROCK_COMMAND 'G'
 #define SCISSORS_COMMAND 'S'

@@ -30,12 +30,12 @@ int InitWindows(int clientID,int num,char name[][MAX_NAME_SIZE])
 	SDL_Surface *image;
 	SDL_Rect src_rect;
 	SDL_Rect dest_rect;
-	char clientButton[4][6]={"0.jpg","1.jpg","2.jpg","3.jpg"};
+	const char *handImages[3]={"janken_gu.png","janken_choki.png","janken_pa.png"};
 	char endButton[]="END.jpg";
-	char allButton[]="ALL.jpg";
-	char *s,title[10];
+	const char *s;
+	char title[10];
 
-    /* �����������å� */
+    /*å */
     assert(num==2);
 	
 	/* SDL�ν���� */
@@ -72,9 +72,14 @@ int InitWindows(int clientID,int num,char name[][MAX_NAME_SIZE])
 		}
 		
 		else{
-			s=clientButton[i];
+			s=handImages[i];
 		}
 		image = IMG_Load(s);
+		if (image == NULL) {
+    		fprintf(stderr, "画像を読み込めません [%s]: %s\n",
+            s, IMG_GetError());
+    	return -1;
+		}
 		texture = SDL_CreateTextureFromSurface(gMainRenderer, image);
 		src_rect = (SDL_Rect){0, 0, image->w, image->h};
 		SDL_RenderCopy(gMainRenderer, texture, &src_rect, (&gButtonRect[i]));
@@ -161,79 +166,8 @@ void WindowEvent(int num)
 	}
 }
 
-/*****************************************************************
-�ؿ�̾	: DrawRectangle
-��ǽ	: �ᥤ�󥦥���ɥ��˻ͳѤ�ɽ������
-����	: int		x			: �ͳѤκ���� x ��ɸ
-		  int		y			: �ͳѤκ���� y ��ɸ
-		  int		width		: �ͳѤβ���
-		  int		height		: �ͳѤι⤵
-����	: �ʤ�
-*****************************************************************/
-void DrawRectangle(int x,int y,int width,int height)
-{
-#ifndef NDEBUG
-    printf("#####\n");
-    printf("DrawRectangle()\n");
-    printf("x=%d,y=%d,width=%d,height=%d\n",x,y,width,height);
-#endif
 
 
-	rectangleColor(gMainRenderer,x,y,x+width,y+height,0xff0000ff);
-	SDL_RenderPresent(gMainRenderer);
-
-}
-
-/*****************************************************************
-�ؿ�̾	: DrawCircle
-��ǽ	: �ᥤ�󥦥���ɥ��˱ߤ�ɽ������
-����	: int		x		: �ߤ� x ��ɸ
-		  int		y		: �ߤ� y ��ɸ
-		  int		r		: �ߤ�Ⱦ��
-����	: �ʤ�
-*****************************************************************/
-void DrawCircle(int x,int y,int r)
-{
-#ifndef NDEBUG
-	printf("#####\n");
-    printf("DrawCircle()\n");
-    printf("x=%d,y=%d,tyokkei=%d\n",x,y,r);
-#endif
-
-     circleColor(gMainRenderer,x,y,r,0xff0000ff);
-	SDL_RenderPresent(gMainRenderer);
-}
-
-/*****************************************************************
-�ؿ�̾	: DrawDiamond
-��ǽ	: �ᥤ�󥦥���ɥ���ɩ����ɽ������
-����	: int		x		: ����� x ��ɸ
-		  int		y		: ����� y ��ɸ
-		  int		height		: �⤵
-����	: �ʤ�
-*****************************************************************/
-void DrawDiamond(int x,int y,int height)
-{
-	Sint16	vx[5],vy[5];
-	int	i;
-
-#ifndef NDEBUG
-    printf("#####\n");
-    printf("DrawDiamond()\n");
-    printf("x=%d,y=%d,height=%d\n",x,y,height);
-#endif
-
-    for(i=0;i<4;i++){
-        vx[i] = x + height*((1-i)%2)/2;
-        vy[i] = y + height*((2-i)%2);
-    }
-    vx[4]=vx[0];
-    vy[4]=vy[0];
-	
-	polygonColor(gMainRenderer, vx, vy, 5 , 0xff0000ff);
-	SDL_RenderPresent(gMainRenderer);
-
-}
 
 /*****
 static
